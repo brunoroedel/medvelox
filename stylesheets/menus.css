@@ -1,0 +1,49 @@
+/*--Vertical Left Menu--*/
+/* line 4, ../sass/menus.scss */
+nav.vertical-menu-left {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #555;
+  width: 80px;
+  height: 100%;
+  display: block;
+}
+/* line 13, ../sass/menus.scss */
+nav.vertical-menu-left ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+/* line 18, ../sass/menus.scss */
+nav.vertical-menu-left li {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+/* line 23, ../sass/menus.scss */
+nav.vertical-menu-left a {
+  width: 40px;
+  height: 40px;
+  background: #444;
+  display: block;
+  margin: 10px 20px 0px 20px;
+  border-radius: 4px;
+}
+/* line 31, ../sass/menus.scss */
+nav.vertical-menu-left ul.sublevel {
+  background: #444;
+  margin: 15px 0px;
+  padding: 10px 20px;
+}
+/* line 36, ../sass/menus.scss */
+nav.vertical-menu-left ul.sublevel a {
+  background: #555;
+  margin: 10px 5px 0px 5px;
+  width: 30px;
+  height: 30px;
+}
+/* line 42, ../sass/menus.scss */
+nav.vertical-menu-left ul.sublevel li:first-child a {
+  margin-top: 0px;
+}
