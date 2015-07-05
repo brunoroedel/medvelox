@@ -3,7 +3,8 @@
 // When true, asset path helpers are used, otherwise regular url() is used
 // When there no function is defined, `fn('')` is parsed as string that equals the right hand side
 // NB: in Sass 3.3 there is a native function: function-exists(twbs-font-path)
-// $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")'))
+// $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")'));
+$bootstrap-sass-asset-helper: false;
 
 //
 // Variables
@@ -13,17 +14,19 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-// $gray-darker:            lighten(#000, 13.5%) // #222
+$gray-darker:               #222;
 $gray-dark:                 #444;
 $gray:                   	#555;
 $gray-light:				#f5f5f5;
-// $gray-lighter:           lighten(#000, 93.5%) // #eee
+$gray-lighter:              #f9f9f9;
 
-// $brand-primary:         #428bca
-// $brand-success:         #5cb85c
-// $brand-info:            #5bc0de
-// $brand-warning:         #f0ad4e
-// $brand-danger:          #d9534f
+$border-color-light:        #ddd;
+
+$brand-primary:         	#428bca;
+$brand-success:         	#5cb85c;
+$brand-info:            	#5bc0de;
+$brand-warning:         	#f0ad4e;
+$brand-danger:          	#ce181f;
 
 //== Scaffolding
 //
@@ -43,22 +46,30 @@ $body-bg:					$gray-light;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-// $font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Bootstrap/Montserrat-Regular.ttf') format('truetype');
+}
+
+$font-family-titles:      "Montserrat", sans-serif;
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
 // $font-family-serif:       Georgia, "Times New Roman", Times, serif
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
-// $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace
-// $font-family-base:        $font-family-sans-serif
-
-// $font-size-base:          14px
-// $font-size-large:         ceil(($font-size-base * 1.25)) // ~18px
-// $font-size-small:         ceil(($font-size-base * 0.85)) // ~12px
-
-// $font-size-h1:            floor(($font-size-base * 2.6)) // ~36px
-// $font-size-h2:            floor(($font-size-base * 2.15)) // ~30px
-// $font-size-h3:            ceil(($font-size-base * 1.7)) // ~24px
-// $font-size-h4:            ceil(($font-size-base * 1.25)) // ~18px
-// $font-size-h5:            $font-size-base
-// $font-size-h6:            ceil(($font-size-base * 0.85)) // ~12px
+$font-family-monospace:          Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base:               $font-family-sans-serif;
+$font-titles:                    $font-family-titles;
+$font-size-base:                 14px;
+$font-size-large:         	     ceil(($font-size-base * 1.25));
+$font-size-small:         	     ceil(($font-size-base * 0.85));
+$font-size-h1:            	     floor(($font-size-base * 2.6));
+$font-size-h2:            	     floor(($font-size-base * 2.15));
+$font-size-h3:            	     ceil(($font-size-base * 1.7));
+$font-size-h4:            	     ceil(($font-size-base * 1.25));
+$font-size-h5:            	     $font-size-base;
+$font-size-h6:            	     ceil(($font-size-base * 0.85));
 
 //** Unit-less `line-height` for use in components like buttons.
 // $line-height-base:        1.428571429 // 20/14
@@ -78,10 +89,12 @@ $body-bg:					$gray-light;
 //** Load fonts from this directory.
 
 // [converter] Asset helpers such as Sprockets and Node.js Mincer do not resolve relative paths
-// $icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/")
+//$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap", "fonts");
+$icon-font-path:          "../fonts/bootstrap/";
 
 //** File name for all font files.
-// $icon-font-name:          "glyphicons-halflings-regular"
+$icon-font-name:          "glyphicons-halflings-regular";
+
 //** Element ID within SVG icon file.
 // $icon-font-svg-id:        "glyphicons_halflingsregular"
 
@@ -105,8 +118,9 @@ $body-bg:					$gray-light;
 // $line-height-small:         1.5
 
 $border-radius-base:           4px;
-// $border-radius-large:       6px
-// $border-radius-small:       3px
+$border-radius-large:          6px;
+$border-radius-small:          3px;
+$border-radius-rounded:        50px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 // $component-active-color:    #fff

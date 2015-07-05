@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
+.btn {
+  border-radius: 50px;
+}

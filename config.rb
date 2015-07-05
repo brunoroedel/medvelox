@@ -18,3 +18,13 @@ javascripts_dir = "javascripts"
 # line_comments = false
 
 preferred_syntax = :scss
+
+css_dir = "stylesheets" # by Compass.app 
+sass_dir = "sass" # by Compass.app 
+images_dir = "img" # by Compass.app 
+output_style = :expanded # by Compass.app 
+relative_assets = true # by Compass.app 
+line_comments = false # by Compass.app 
+sass_options = {:debug_info=>false} # by Compass.app 
+sourcemap = false # by Compass.app 
+fonts_dir = "fonts"

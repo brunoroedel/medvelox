@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
+/*--Horizontal top Menu--*/
+.navbar {
+  margin: 0px;
+  background: #fff;
+  border-color: #ddd;
+  min-height: 70px;
+}
+.navbar .container-fluid {
+  margin: 0px;
+}
+.navbar .thumbnail-user {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #ddd;
+}
+.navbar .nav.navbar-nav li {
+  height: 69px;
+}
+.navbar .nav.navbar-nav li a {
+  line-height: 40px;
+}
+.navbar li.searchBox {
+  width: 280px;
+}
+
+/*--Vertical Left Menu--*/
+nav#vertical-menu-left {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #555;
+  width: 260px;
+  height: 100%;
+  display: block;
+  padding: 80px 0px 0px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+nav#vertical-menu-left ul {
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  list-style: none;
+  display: block;
+}
+nav#vertical-menu-left li {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+nav#vertical-menu-left a {
+  width: 40px;
+  height: 40px;
+  background: #444;
+  display: block;
+  margin: 10px 20px 0px 20px;
+  border-radius: 4px;
+}
+nav#vertical-menu-left li.active a {
+  background: #ce181f;
+}
+nav#vertical-menu-left ul.sublevel {
+  background: #444;
+  margin: 10px 0px 0px;
+  padding: 10px 20px;
+}
+nav#vertical-menu-left ul.sublevel a {
+  background: #555;
+  margin: 10px 5px 0px 5px;
+  width: 30px;
+  height: 30px;
+}
+nav#vertical-menu-left ul.sublevel li:first-child a {
+  margin-top: 0px;
+}
+
+/*--Breadcrumb--*/
+.breadcrumb {
+  background: none;
+  margin: 10px 0px 0px;
+  padding: 0px;
+}
+
+.breadcrumb > li,
+.breadcrumb > li.active {
+  margin: 0px 10px 0px 0px;
+  text-transform: uppercase;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.breadcrumb > li + li:before {
+  font-family: "glyphicons-halflings-regular";
+  content: none;
+}
+
+.breadcrumb > li a .glyphicon,
+.breadcrumb > li .glyphicon {
+  color: #222;
+  margin: 0px 10px 0px 0px;
+}

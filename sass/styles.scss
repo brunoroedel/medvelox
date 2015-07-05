@@ -1,14 +1,67 @@
 @import "bootstrap-compass";
 @import "bootstrap-variables";
 @import "bootstrap";
-@import "menus";
+@import "navigation-components";
+@import "forms";
+@import "buttons";
+@import "tables";
 
 /*--Grid customization--*/
 .container-fluid{
-	margin-left: 80px;
+	margin-left: 260px;
+	padding: 0px 25px;
 }
 
+/*--Top Pages--*/
+.top-page{
+	background: $gray-lighter;
+	border-bottom: 1px solid $border-color-light;
+	margin: 70px -25px 30px -25px;
+	padding: 15px 25px;
 
+	h1{
+		font-size: $font-size-h3;
+		margin-bottom: 0px;
+	}
+
+	ul.round-details{
+		margin: 25px 0px 0px 0px;
+		float: right;
+
+		li{
+			color: $gray;
+			padding: 0px 10px 0px 0px;
+
+			strong{
+				margin: 0px 5px;
+			}
+		}
+		li:after{
+			content: " | ";
+		}
+		li:last-child:after{
+			content: "";
+		}	
+	}
+}
+
+.spacer{
+	width: 100%;
+	clear: both;
+}
+
+.spacer.sm{
+	height: 10px;
+}
+.spacer.md{
+	height: 20px;
+}
+.spacer.lg{
+	height: 30px;
+}
+.spacer.xl{
+	height: 40px;
+}
 
 
 

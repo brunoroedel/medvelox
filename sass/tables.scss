@@ -1,0 +1,27 @@
+// tables Customizations
+
+@import "bootstrap-variables";
+
+.table{ 
+	thead tr{ 
+		th{
+			font-family: 'Montserrat', Helvetica, sans-serif;
+			padding: 15px;
+			color: $gray;
+			font-size: $font-size-small;
+			font-weight: 100;
+		}
+		th:first-child{
+			color: $gray-darker;
+		}
+	}
+
+	tbody{
+		background: #fff;
+
+		tr td{
+			padding: 15px;
+		}
+	}
+
+}
