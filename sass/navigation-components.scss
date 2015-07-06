@@ -30,7 +30,30 @@
 	li.searchBox{
 		width: 280px;
 	}
+
+	li .icon.icon-right-menu{
+		color: $gray;
+		font-size: 16px;
+	}
 }
+
+/*--Alert Box--*/
+
+#alertBox{
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	padding: 90px 10px 10px;
+	width: 260px;
+	box-sizing: border-box;
+	background: #fff;
+	border-left: 1px solid #ddd;
+	min-height: 200px;
+	height: 100%;
+	z-index: 2;
+	display: none;
+}
+
 /*--Vertical Left Menu--*/
 
 nav#vertical-menu-left{
@@ -45,44 +68,137 @@ nav#vertical-menu-left{
   	box-sizing: border-box;
   	overflow-y: auto;
 
+  	#openMenu{
+		position: absolute;
+		right: 20px;
+		top: 90px;
+		width: 40px;
+		height: 40px;
+		line-height: 44px;
+		border-radius: $border-radius-base;
+		cursor: pointer;
+
+		.icon{
+			color: rgba(255,255,255,0.7);
+			font-size: 16px;
+			margin-top: 2px;
+		}
+	}
+
 	ul{
-		margin: 0px 0px 0px 0px;
+		margin: 60px 0px 0px 0px;
 		padding: 0px;
 		list-style: none;
 		display: block;
 	}
+
 	li{
 		display: block;
 		margin: 0px;
 		padding: 0px;
 	}
-	a{
-		width: 40px;
-		height: 40px;
-		background: $gray-dark;
-		display: block;
-		margin: 10px 20px 0px 20px;
-		border-radius: $border-radius-base;
+
+	li:first-child{
+		margin-top: 0px;
 	}
-	li.active a{
+	
+	a{
+		display: block;
+		position: relative;
+
+		.iconMenu{
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			background: $gray-dark;
+			margin: 10px 20px 0px 20px;
+			border-radius: $border-radius-base;
+			line-height: 44px;
+			
+			.icon{
+				color: rgba(255,255,255,0.7);
+				font-size: 16px;
+				margin-top: 2px;
+			}
+		}
+
+		.label{
+			position: absolute;
+			left: 60px;
+			top: 10px;
+			font-size: 14px;
+			font-weight: 100;
+			max-width: 160px;
+			text-align: left;
+			color: $gray-light;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipses;
+		}
+
+		.label .badge{
+			margin-left: 5px;
+			background: #777;
+			color: rgba(255,255,255,0.7);
+		}
+
+		.chevron{
+			position: absolute;
+			top: 15px;
+			right: 20px;
+		}
+
+		.chevron .glyphicon.glyphicon-chevron-down,
+		.chevron .glyphicon.glyphicon-chevron-left{
+			color: #fff;
+			font-size: 11px;
+		}	
+	}
+
+	li.active a .iconMenu{
 		background: $brand-danger;
+	}
+
+	li.active a .iconMenu .glyphicon{
+		color: rgba(255,255,255,1);
 	}
 
 	ul.sublevel{
 		background: $gray-dark;
 		margin: 10px 0px 0px;
-		padding: 10px 20px;
-		
-		a{
-			background: $gray;
-			margin: 10px 5px 0px 5px;
-			width: 30px;
-			height: 30px;
-		}
+		padding: 5px 20px 15px;
+
 		li:first-child a{
 			margin-top: 0px;
 		}
+
+		a{
+			display: block;
+
+			.iconMenu{
+				background: $gray;
+				margin: 10px 5px 0px 5px;
+				width: 30px;
+				height: 30px;
+				font-weight: bold;
+				color: rgba(255,255,255,0.5);
+				text-align: center;
+				line-height: 30px;
+				border-radius: $border-radius-base;
+			}
+
+			.label{
+				left: 40px;
+  				top: 5px;
+  				color: rgba(255,255,255,0.5); 
+			}
+		}	
 	}	
+}
+
+body.menu-open #openMenu{
+	transition: background-color 2s ease;
+	background-color: $gray-dark;
 }
 
 /*--Breadcrumb--*/

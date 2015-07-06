@@ -12,9 +12,29 @@
 .table thead tr th:first-child {
   color: #222;
 }
+.table thead tr th .icon {
+  margin-right: 5px;
+  color: #ce181f;
+  font-size: 14px;
+}
 .table tbody {
   background: #fff;
 }
 .table tbody tr td {
-  padding: 15px;
+  padding: 10px;
+  vertical-align: middle;
+}
+.table tbody tr td .numberBox {
+  display: block;
+  width: 35px;
+  height: 25px;
+  line-height: 25px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin: 0px auto;
+  font-size: 12px;
+  color: #555;
+}
+.table tbody tr:last-child {
+  border-bottom: 1px solid #ddd;
 }
