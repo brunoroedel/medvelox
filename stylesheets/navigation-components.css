@@ -50,6 +50,7 @@
   height: 100%;
   z-index: 2;
   display: none;
+  overflow-y: auto;
 }
 #alertBox .title {
   background: #444;
@@ -70,6 +71,7 @@
 }
 #alertBox .panel-group .panel-heading {
   background: none;
+  padding: 10px;
 }
 #alertBox .panel-group .panel-heading .panel-title {
   font-size: 14px;
@@ -80,10 +82,13 @@
 }
 #alertBox .panel-group .panel-heading .panel-title a {
   padding-right: 30px;
-  width: 205px;
+  width: 215px;
   float: left;
   position: relative;
   text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #alertBox .panel-group .panel-heading .panel-title a .chevron {
   position: absolute;
@@ -91,7 +96,7 @@
   right: 0px;
 }
 #alertBox .panel-group .panel-heading .panel-title a .badge {
-  background: #555;
+  background: #777;
   font-size: 10px;
   margin: -3px 0px 0px 5px;
   line-height: 12px;
@@ -278,7 +283,7 @@ body.menu-open #openMenu {
 /*--Breadcrumb--*/
 .breadcrumb {
   background: none;
-  margin: 10px 0px 0px;
+  margin: 0px 0px 0px;
   padding: 0px;
 }
 

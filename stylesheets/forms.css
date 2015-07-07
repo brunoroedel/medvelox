@@ -152,4 +152,77 @@
   transform: translate3d(0, -1.6em, 0) scale3d(0.7, 0.7, 1);
 }
 
-/* / Nariko input */
+/* Bootstrap Form Custom */
+.checkbox {
+  /* checkbox aspect */
+  /* checked mark aspect */
+  /* checked mark aspect changes */
+  /* disabled checkbox */
+  /* accessibility */
+  /* hover style just for information */
+}
+.checkbox [type="checkbox"]:not(:checked),
+.checkbox [type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+.checkbox [type="checkbox"]:not(:checked) + label,
+.checkbox [type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 22px;
+  line-height: 23px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #555;
+}
+.checkbox [type="checkbox"]:not(:checked) + label:before,
+.checkbox [type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #ce181f;
+  background: #ce181f;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.checkbox [type="checkbox"]:not(:checked) + label:after,
+.checkbox [type="checkbox"]:checked + label:after {
+  font-family: "custom-icons";
+  content: '\e60a';
+  position: absolute;
+  top: 0px;
+  left: 4px;
+  font-size: 10px;
+  color: #fff;
+  transition: all .2s;
+}
+.checkbox [type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+.checkbox [type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
+.checkbox [type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd;
+}
+.checkbox [type="checkbox"]:disabled:checked + label:after {
+  color: #999;
+}
+.checkbox [type="checkbox"]:disabled + label {
+  color: #aaa;
+}
+.checkbox [type="checkbox"]:checked:focus + label:before,
+.checkbox [type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted blue;
+}
+.checkbox label:hover:before {
+  border: 1px solid #4778d9 !important;
+}
