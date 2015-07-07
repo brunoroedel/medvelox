@@ -69,7 +69,7 @@
     <!--Vertical Menu Left-->
     <nav id="vertical-menu-left">
       <div id="openMenu">
-        <span class="glyphicon glyphicon-menu-hamburger"></span>
+        <span class="icon icon-menu"></span>
       </div>
       <ul>
         <li>
@@ -88,6 +88,7 @@
             <div class="label">Rounds <span class="badge">5</span></div>
             <div class="chevron">
               <span class="glyphicon glyphicon-chevron-down"></span>
+              <span class="glyphicon glyphicon-chevron-left"></span>
             </div>
           </a>
           <div class="panel-collapse collapse in" id="submenu-rounds">
@@ -126,19 +127,30 @@
           </div>
         </li>
         <li>
-          <a href="#submenu-hospitais" data-toggle="collapse">
+          <a href="#submenu-hospitais" data-toggle="collapse" class="collapsed">
             <div class="iconMenu">
               <span class="icon icon-hospitais"></span>
             </div>
-            <div class="label">Hospitais <span class="badge">3</span></div>
+            <div class="label">Hospitais <span class="badge">2</span></div>
             <div class="chevron">
               <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
             </div>
           </a>
           <div class="panel-collapse collapse" id="submenu-hospitais">
             <ul class="sublevel">
-              <li><a href="">CD</a></li>
-              <li><a href="">Sa</a></li>
+              <li>
+                <a href="">
+                  <div class="iconMenu">CD</div>
+                  <div class="label">Copa D'Or</div>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <div class="iconMenu">Sa</div>
+                  <div class="label">Samaritano </div>
+                </a>
+              </li>
             </ul>
           </div>
         </li>
@@ -146,46 +158,44 @@
     </nav>
     <!--/ Vertical Menu Left-->
 
-    <!--Task Box-->
-    <div class="collapse" id="alertBox">
+    <!--Alert Box-->
+    <div id="alertBox">
+      <div class="title">
+        <h5>Tarefas</h5>
+      </div>
+
       <!--Task 01-->
       <div class="panel-group" id="accordion">
         <div class="panel panel-default">
           <div class="panel-heading">
             <h4 class="panel-title">
               <a data-toggle="collapse" href="#task-01">
-                COPA D'OR
+                COPA D'Or <span class="badge">2</span>
+
+                <div class="chevron">
+                  <span class="glyphicon glyphicon-chevron-down"></span>
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </div>
               </a>
             </h4>
           </div>
           <div id="task-01" class="panel-collapse collapse in" >
             <div class="panel-body">
-              teste
+              <h5>Bernardo Joaquim</h5>
+              <h6>CTI Cardiaco - Leito 5</h6>
+            </div>
+
+            <div class="panel-body">
+              <h5>Bruno Roedel</h5>
+              <h6>CTI Cardiaco - Leit0 1</h6>
             </div>
           </div>
         </div>     
       </div>
       <!--/ Task 01-->
-      <!--Task 02-->
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a data-toggle="collapse" href="#task-02">
-                COPA D'OR
-              </a>
-            </h4>
-          </div>
-          <div id="task-02" class="panel-collapse collapse" >
-            <div class="panel-body">
-              teste
-            </div>
-          </div>
-        </div>     
-      </div>
-      <!--/ Task 02-->
+      
     </div>
-    <!--/Task Box-->
+    <!--/Alert Box-->
 
     <div class="container-fluid" id="pageContent">      
       <!--top page-->

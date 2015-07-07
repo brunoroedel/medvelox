@@ -30,13 +30,18 @@
   color: #555;
   font-size: 16px;
 }
+.navbar li:last-child {
+  margin-right: -10px;
+  width: 60px;
+  text-align: center;
+}
 
 /*--Alert Box--*/
 #alertBox {
   position: fixed;
   right: 0px;
   top: 0px;
-  padding: 90px 10px 10px;
+  padding: 70px 0px 20px;
   width: 260px;
   box-sizing: border-box;
   background: #fff;
@@ -45,6 +50,93 @@
   height: 100%;
   z-index: 2;
   display: none;
+}
+#alertBox .title {
+  background: #444;
+  width: 100%;
+  height: 45px;
+  padding: 10px 15px;
+  margin: 0px 0px 10px 0px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#alertBox .title h5 {
+  color: #fff;
+  margin: 5px 0px;
+}
+#alertBox .panel-group {
+  margin: 10px;
+}
+#alertBox .panel-group .panel-heading {
+  background: none;
+}
+#alertBox .panel-group .panel-heading .panel-title {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #555;
+  height: 15px;
+}
+#alertBox .panel-group .panel-heading .panel-title a {
+  padding-right: 30px;
+  width: 205px;
+  float: left;
+  position: relative;
+  text-decoration: none;
+}
+#alertBox .panel-group .panel-heading .panel-title a .chevron {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+#alertBox .panel-group .panel-heading .panel-title a .badge {
+  background: #555;
+  font-size: 10px;
+  margin: -3px 0px 0px 5px;
+  line-height: 12px;
+}
+#alertBox .panel-group .panel-heading .panel-title a:hover,
+#alertBox .panel-group .panel-heading .panel-title a:active {
+  text-decoration: none;
+}
+#alertBox .panel-group .panel-heading .panel-title a .chevron .glyphicon.glyphicon-chevron-left,
+#alertBox .panel-group .panel-heading .panel-title a.collapsed .chevron .glyphicon.glyphicon-chevron-down {
+  display: none;
+}
+#alertBox .panel-group .panel-heading .panel-title a .chevron .glyphicon.glyphicon-chevron-down,
+#alertBox .panel-group .panel-heading .panel-title a.collapsed .chevron .glyphicon.glyphicon-chevron-left {
+  display: block;
+}
+#alertBox .panel-group .panel-body {
+  margin: 0px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #f9f9f9;
+  padding: 10px;
+}
+#alertBox .panel-group .panel-body h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  font-weight: bold;
+  margin: 0px 0px 5px 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#alertBox .panel-group .panel-body h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #A9A9A9;
+  margin-top: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 0px;
+}
+#alertBox .panel-group .panel-body:first-child {
+  margin-top: 10px;
 }
 
 /*--Vertical Left Menu--*/
@@ -69,6 +161,7 @@ nav#vertical-menu-left #openMenu {
   line-height: 44px;
   border-radius: 4px;
   cursor: pointer;
+  text-align: center;
 }
 nav#vertical-menu-left #openMenu .icon {
   color: rgba(255, 255, 255, 0.7);
@@ -118,7 +211,7 @@ nav#vertical-menu-left a .label {
   color: #f5f5f5;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipses;
+  text-overflow: ellipsis;
 }
 nav#vertical-menu-left a .label .badge {
   margin-left: 5px;
@@ -134,6 +227,14 @@ nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-down,
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left {
   color: #fff;
   font-size: 11px;
+}
+nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left,
+nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-down {
+  display: none;
+}
+nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-down,
+nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-left {
+  display: block;
 }
 nav#vertical-menu-left li.active a .iconMenu {
   background: #ce181f;
@@ -192,7 +293,6 @@ body.menu-open #openMenu {
 }
 
 .breadcrumb > li + li:before {
-  font-family: "glyphicons-halflings-regular";
   content: none;
 }
 

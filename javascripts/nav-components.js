@@ -25,7 +25,7 @@ $( document ).ready(function() {
 	function openTasks(){
 		$('#openAlerts').click(function(){
 			$(this).parent().toggleClass('open');
-			$('#alertBox').slideToggle(300);
+			$('#alertBox').animate({width:'toggle'},350);
 		});
 	}
 });
