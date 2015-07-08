@@ -105,12 +105,16 @@
 #alertBox .panel-group .panel-heading .panel-title a:active {
   text-decoration: none;
 }
-#alertBox .panel-group .panel-heading .panel-title a .chevron .glyphicon.glyphicon-chevron-left,
-#alertBox .panel-group .panel-heading .panel-title a.collapsed .chevron .glyphicon.glyphicon-chevron-down {
+#alertBox .panel-group .panel-heading .panel-title .chevron .glyphicon.glyphicon-chevron-left {
+  display: block;
+}
+#alertBox .panel-group .panel-heading .panel-title .chevron .glyphicon.glyphicon-chevron-down {
   display: none;
 }
-#alertBox .panel-group .panel-heading .panel-title a .chevron .glyphicon.glyphicon-chevron-down,
-#alertBox .panel-group .panel-heading .panel-title a.collapsed .chevron .glyphicon.glyphicon-chevron-left {
+#alertBox .panel-group .panel-heading .panel-title .chevron.in .glyphicon.glyphicon-chevron-left {
+  display: none;
+}
+#alertBox .panel-group .panel-heading .panel-title .chevron.in .glyphicon.glyphicon-chevron-down {
   display: block;
 }
 #alertBox .panel-group .panel-body {
@@ -132,7 +136,7 @@
 #alertBox .panel-group .panel-body h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 100;
   color: #A9A9A9;
   margin-top: 0px;
   overflow: hidden;
@@ -156,6 +160,7 @@ nav#vertical-menu-left {
   padding: 80px 0px 0px;
   box-sizing: border-box;
   overflow-y: auto;
+  z-index: 2;
 }
 nav#vertical-menu-left #openMenu {
   position: absolute;
@@ -199,6 +204,10 @@ nav#vertical-menu-left a .iconMenu {
   margin: 10px 20px 0px 20px;
   border-radius: 4px;
   line-height: 44px;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 nav#vertical-menu-left a .iconMenu .icon {
   color: rgba(255, 255, 255, 0.7);
@@ -233,6 +242,18 @@ nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left {
   color: #fff;
   font-size: 11px;
 }
+nav#vertical-menu-left a:hover,
+nav#vertical-menu-left a:active {
+  text-decoration: none;
+}
+nav#vertical-menu-left a:hover .iconMenu,
+nav#vertical-menu-left a:active .iconMenu {
+  background: #BD070E;
+}
+nav#vertical-menu-left a:hover .label,
+nav#vertical-menu-left a:active .label {
+  color: #E4C0C0;
+}
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left,
 nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-down {
   display: none;
@@ -246,6 +267,10 @@ nav#vertical-menu-left li.active a .iconMenu {
 }
 nav#vertical-menu-left li.active a .iconMenu .glyphicon {
   color: white;
+}
+nav#vertical-menu-left li.active a:hover .iconMenu,
+nav#vertical-menu-left li.active a:active .iconMenu {
+  background: #BD070E;
 }
 nav#vertical-menu-left ul.sublevel {
   background: #444;
@@ -280,6 +305,14 @@ body.menu-open #openMenu {
   background-color: #444;
 }
 
+#OpenMenuSmall {
+  display: none;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+}
+
 /*--Breadcrumb--*/
 .breadcrumb {
   background: none;
@@ -305,4 +338,31 @@ body.menu-open #openMenu {
 .breadcrumb > li .glyphicon {
   color: #222;
   margin: 0px 10px 0px 0px;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    min-height: 50px;
+  }
+  .navbar .navbar-brand img {
+    max-width: 100px;
+  }
+
+  nav#vertical-menu-left {
+    display: none;
+    width: 100%;
+    padding: 0px;
+    z-index: 1030;
+  }
+  nav#vertical-menu-left #openMenu {
+    display: none;
+  }
+  nav#vertical-menu-left ul {
+    margin: 20px 0px 0px 0px;
+  }
+
+  #OpenMenuSmall {
+    display: block;
+    z-index: 1040;
+  }
 }

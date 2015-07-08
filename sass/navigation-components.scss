@@ -43,7 +43,6 @@
 }
 
 /*--Alert Box--*/
-
 #alertBox{
 	position: fixed;
 	right: 0px;
@@ -117,16 +116,18 @@
 					text-decoration: none;
 				}
 
-				a .chevron .glyphicon.glyphicon-chevron-left,
-				a.collapsed .chevron .glyphicon.glyphicon-chevron-down{
-						display: none;
+				.chevron .glyphicon.glyphicon-chevron-left{
+					display: block;
 				}
-
-				a .chevron .glyphicon.glyphicon-chevron-down,
-				a.collapsed .chevron .glyphicon.glyphicon-chevron-left{
-						display: block;
+				.chevron .glyphicon.glyphicon-chevron-down{
+					display: none;
 				}
-
+				.chevron.in .glyphicon.glyphicon-chevron-left{
+					display: none;
+				}
+				.chevron.in .glyphicon.glyphicon-chevron-down{
+					display: block;
+				}
 			}	
 		}
 		.panel-body{
@@ -148,7 +149,7 @@
 			h6{
 				font-family: $font-family-titles;
 				font-size: $font-size-small;
-				font-weight: bold;
+				font-weight: 100;
 				color: #A9A9A9;
 				margin-top: 0px;
 				overflow: hidden;
@@ -164,7 +165,6 @@
 }
 
 /*--Vertical Left Menu--*/
-
 nav#vertical-menu-left{
 	position: fixed;
 	left: 0px;
@@ -176,6 +176,7 @@ nav#vertical-menu-left{
 	padding: 80px 0px 0px;
   	box-sizing: border-box;
   	overflow-y: auto;
+  	z-index: 2;
 
   	#openMenu{
 		position: absolute;
@@ -224,6 +225,10 @@ nav#vertical-menu-left{
 			margin: 10px 20px 0px 20px;
 			border-radius: $border-radius-base;
 			line-height: 44px;
+			-webkit-transition:	all 0.5s linear;
+			-moz-transition: all 0.5s linear;
+			-o-transition: all 0.5s linear;
+			transition: all 0.5s linear;
 			
 			.icon{
 				color: rgba(255,255,255,0.7);
@@ -265,6 +270,22 @@ nav#vertical-menu-left{
 		}		
 	}
 
+	a:hover, 
+	a:active{
+		text-decoration: none;
+	}
+
+	a:hover .iconMenu, 
+	a:active .iconMenu {
+		background: #BD070E;
+	}
+
+	a:hover .label, 
+	a:active .label{
+		color: #E4C0C0;
+	}
+
+
 	a .chevron .glyphicon.glyphicon-chevron-left,
 	a.collapsed .chevron .glyphicon.glyphicon-chevron-down{
 			display: none;
@@ -282,6 +303,12 @@ nav#vertical-menu-left{
 	li.active a .iconMenu .glyphicon{
 		color: rgba(255,255,255,1);
 	}
+
+	li.active a:hover .iconMenu, 
+	li.active a:active .iconMenu {
+		background: #BD070E;
+	}
+
 
 	ul.sublevel{
 		background: $gray-dark;
@@ -321,6 +348,14 @@ body.menu-open #openMenu{
 	background-color: $gray-dark;
 }
 
+#OpenMenuSmall{
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 2;
+}
+
 /*--Breadcrumb--*/
 
 .breadcrumb{
@@ -349,4 +384,35 @@ body.menu-open #openMenu{
 	color: $gray-darker;
 	margin: 0px 10px 0px 0px;
 } 
+
+
+@media(max-width: 767px){
+	.navbar {
+		min-height: 50px;
+
+		.navbar-brand img{
+			max-width: 100px;
+		}
+	}
+
+	nav#vertical-menu-left{
+		display: none;
+		width: 100%;
+		padding: 0px;
+		z-index: 1030;
+
+		#openMenu{
+			display: none;
+		}
+
+		ul{
+			margin: 20px 0px 0px 0px;
+		}
+	}
+
+	#OpenMenuSmall{
+		display: block;
+		z-index: 1040;
+	}
+}
 

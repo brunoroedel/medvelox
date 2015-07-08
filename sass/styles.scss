@@ -126,5 +126,25 @@
 	height: 40px;
 }
 
+@media(max-width: 767px){
+	.container-fluid{
+		margin-left: 0px !important;
+		padding: 0px 10px;
+	}
+	.row {
+	  margin-left: -10px;
+	  margin-right: -10px;
+	}
+	.top-page {
+	  background: #f9f9f9;
+	  border-bottom: 1px solid #ddd;
+	  margin: 50px -10px 30px -10px;
+	  padding: 15px 10px;
+	}
+	.top-page ul.round-details{
+		float: left;
+	}
+}
+
 
 
