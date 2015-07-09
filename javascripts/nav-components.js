@@ -1,11 +1,16 @@
 $( document ).ready(function() {
     var pageWidth = $(window).width();
+    
     verticalMenuLeftControl();
     openTasks();
     moveChevron(); 
+    removeAtributeMenu();
 
     $(window).resize(function() {
-    	removeAtributeMenu();	
+    	var pageWidth = $(window).width();
+    	if(pageWidth < 767){
+    		removeAtributeMenu();
+    	}	
 	});
 
     //open vertical menu
@@ -13,19 +18,29 @@ $( document ).ready(function() {
 		$( "#openMenu" ).click(function() {
 			OpenCloseBigScreen();
 		});
+		
+		//small screens
 		$('#OpenMenuSmall').click(function() {
-			OpenCloseSmallScreen();
+			OpenSmallScreen();
 		});
+		$('#CloseMenuSmall').click(function() {
+			CloseSmallScreen();
+		});
+		$('#OpenSmallAlerts').click(function() {
+			OpenSmallScreenTasks();
+		});
+		$( "#CloseSmallAlerts" ).click(function() {
+			CloseSmallScreenTasks();
+		});	
 	}
 
-	function removeAtributeMenu(){
-		if(pageWidth > 767){
-	    	$('#vertical-menu-left').removeAttr("style");
-	    }
+	function removeAtributeMenu(){	
+	    $('#vertical-menu-left').removeAttr("style");
+	    $('#vertical-menu-left ul li .label').removeAttr("style");
 	}
 });
 
-//open menu tasks
+//open menu tasks alerts
 function openTasks(){
 	$('#openAlerts').click(function(){
 		$(this).parent().toggleClass('open');
@@ -60,9 +75,28 @@ function OpenCloseBigScreen(){
 	}	
 }
 
-//Open Close Small Screen
-function OpenCloseSmallScreen(){	
-	$('#vertical-menu-left').animate({width:'toggle'},350);
+//Open or Close Small Screen vertical left menu
+function OpenSmallScreen(){		
+	$('#vertical-menu-left').removeClass('animated bounceOutDown');
+	$('#vertical-menu-left').addClass('animated bounceInUp');
+}
+
+//Close Vertical left Menu on Mobile screens vertical left menu
+function CloseSmallScreen(){	
+	$('#vertical-menu-left').removeClass('animated bounceInUp');
+	$('#vertical-menu-left').addClass('animated bounceOutDown');
+}
+
+//Open or Close Small Screen task box alerts
+function OpenSmallScreenTasks(){		
+	$('#alertBox').removeClass('animated bounceOutDown');
+	$('#alertBox').addClass('animated bounceInUp');
+}
+
+//Close Vertical left Menu on Mobile screens task box alerts
+function CloseSmallScreenTasks(){	
+	$('#alertBox').removeClass('animated bounceInUp');
+	$('#alertBox').addClass('animated bounceOutDown');
 }
 
 
