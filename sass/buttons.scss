@@ -2,6 +2,69 @@
 
 @import "bootstrap-variables";
 
-.btn{
+
+/*-- button rounded --*/
+.btn.btn-rounded{
+	padding: 5px 8px;
 	border-radius: $border-radius-rounded;
+	background: none;
+}
+
+/*-- button rounded success --*/
+.btn.btn-success.btn-rounded{
+	border: 2px solid $brand-success;
+}
+.btn.btn-success.btn-rounded:hover{
+	background: $brand-success;
+}
+.btn.btn-success.btn-rounded .glyphicon,
+.btn.btn-success.btn-rounded .icon{
+	color: $brand-success;
+	font-size: $font-size-base;
+}
+.btn.btn-success.btn-rounded:hover .glyphicon,
+.btn.btn-success.btn-rounded:hover .icon{
+	color: #fff;
+}
+
+/*-- button rounded info --*/
+.btn.btn-info.btn-rounded{
+	border: 2px solid $brand-info;
+}
+.btn.btn-info.btn-rounded:hover{
+	background: $brand-info;
+}
+.btn.btn-info.btn-rounded .glyphicon,
+.btn.btn-info.btn-rounded .icon{
+	color: $brand-info;
+	font-size: $font-size-base;
+}
+.btn.btn-info.btn-rounded:hover .glyphicon,
+.btn.btn-info.btn-rounded:hover .icon{
+	color: #fff;
+}
+
+/*-- button rounded danger--*/
+.btn.btn-danger.btn-rounded{
+	border: 2px solid $brand-danger;
+}
+.btn.btn-danger.btn-rounded:hover{
+	background: $brand-danger;
+}
+.btn.btn-danger.btn-rounded .glyphicon,
+.btn.btn-danger.btn-rounded .icon{
+	color: $brand-danger;
+	font-size: $font-size-base;
+}
+.btn.btn-danger.btn-rounded:hover .glyphicon,
+.btn.btn-danger.btn-rounded:hover .icon{
+	color: #fff;
+}
+
+@media(max-width: 767px){
+	.btn.btn-rounded {
+	  padding: 2px 5px;
+	  border-radius: 50px;
+	  background: none;
+	}
 }

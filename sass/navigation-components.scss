@@ -11,6 +11,7 @@
 
 	.container-fluid{
 		margin: 0px;
+		padding: 0px 25px;
 	}
 
 	.thumbnail-user{
@@ -79,8 +80,8 @@
 		height: 40px;
 		text-align: center;
 		background: $gray;
-		margin: 10px 10px 0px 10px;
-		border-radius: $border-radius-base;
+		margin: 10px 10px 20px 10px;
+		border-radius: $border-radius-rounded;
 		line-height: 44px;
 		-webkit-transition:	all 0.5s linear;
 		-moz-transition: all 0.5s linear;
@@ -239,7 +240,7 @@ nav#vertical-menu-left{
 		text-align: center;
 		background: #fff;
 		margin: 10px 20px 0px 20px;
-		border-radius: $border-radius-base;
+		border-radius: $border-radius-rounded;
 		line-height: 44px;
 		-webkit-transition:	all 0.5s linear;
 		-moz-transition: all 0.5s linear;
@@ -471,7 +472,7 @@ body.menu-open #openMenu{
 .breadcrumb > li.active{
 	margin: 0px 10px 0px 0px;
 	text-transform: uppercase;
-	color: $gray-darker;
+	color: $gray-middle;
 	font-family: $font-titles;
 	font-size: 0.9em;
 	font-weight: 100;
@@ -484,7 +485,7 @@ body.menu-open #openMenu{
 
 .breadcrumb > li a .glyphicon,
 .breadcrumb > li .glyphicon{
-	color: $gray-darker;
+	color: $gray-middle;
 	margin: 0px 10px 0px 0px;
 } 
 
@@ -498,6 +499,10 @@ body.menu-open #openMenu{
 
 	.navbar {
 		min-height: 50px;
+
+		.container-fluid{
+			padding: 0px 20px;
+		}
 
 		.navbar-brand img{
 			max-width: 100px;
@@ -556,7 +561,6 @@ body.menu-open #openMenu{
 			display: block;
 		}
 	}
-	
 	
 	//animation to open and close menu and task alert box
 	nav#vertical-menu-left.animated,
@@ -652,6 +656,14 @@ body.menu-open #openMenu{
 		#OpenMenuSmall{
 			display: block;	
 		}
+	}
+
+	.breadcrumb > li,
+	.breadcrumb > li.active{
+		font-size: 0.7em;
+	}
+	.breadcrumb > li, .breadcrumb > li.active {
+	 	margin: 0px 5px 0px 0px;
 	}
 
 }

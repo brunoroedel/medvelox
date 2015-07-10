@@ -11,6 +11,7 @@
 }
 .navbar .container-fluid {
   margin: 0px;
+  padding: 0px 25px;
 }
 .navbar .thumbnail-user {
   width: 35px;
@@ -71,8 +72,8 @@
   height: 40px;
   text-align: center;
   background: #555;
-  margin: 10px 10px 0px 10px;
-  border-radius: 4px;
+  margin: 10px 10px 20px 10px;
+  border-radius: 50px;
   line-height: 44px;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -219,7 +220,7 @@ nav#vertical-menu-left #CloseMenuSmall {
   text-align: center;
   background: #fff;
   margin: 10px 20px 0px 20px;
-  border-radius: 4px;
+  border-radius: 50px;
   line-height: 44px;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
@@ -420,7 +421,7 @@ body.menu-open #openMenu {
 .breadcrumb > li.active {
   margin: 0px 10px 0px 0px;
   text-transform: uppercase;
-  color: #222;
+  color: #666666;
   font-family: "Montserrat", sans-serif;
   font-size: 0.9em;
   font-weight: 100;
@@ -432,7 +433,7 @@ body.menu-open #openMenu {
 
 .breadcrumb > li a .glyphicon,
 .breadcrumb > li .glyphicon {
-  color: #222;
+  color: #666666;
   margin: 0px 10px 0px 0px;
 }
 
@@ -443,6 +444,9 @@ body.menu-open #openMenu {
 
   .navbar {
     min-height: 50px;
+  }
+  .navbar .container-fluid {
+    padding: 0px 20px;
   }
   .navbar .navbar-brand img {
     max-width: 100px;
@@ -583,5 +587,14 @@ body.menu-open #openMenu {
   }
   #bottomMenu #OpenMenuSmall {
     display: block;
+  }
+
+  .breadcrumb > li,
+  .breadcrumb > li.active {
+    font-size: 0.7em;
+  }
+
+  .breadcrumb > li, .breadcrumb > li.active {
+    margin: 0px 5px 0px 0px;
   }
 }

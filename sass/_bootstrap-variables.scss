@@ -17,6 +17,7 @@ $bootstrap-sass-asset-helper: false;
 $gray-darker:               #222;
 $gray-dark:                 #444;
 $gray:                   	#555;
+$gray-middle:               #666666;
 $gray-light:				#f5f5f5;
 $gray-lighter:              #f9f9f9;
 
@@ -96,6 +97,7 @@ $icon-font-path:          "../fonts/bootstrap/";
 $icon-font-name:          "glyphicons-halflings-regular";
 $icon-custom-font-name:          "custom-icons";
 
+$icon-info: "\e60b";
 $icon-form-check: "\e60a";
 $icon-menu: "\e609";
 $icon-right-menu: "\e604";
@@ -184,9 +186,9 @@ $border-radius-rounded:        50px;
 // $btn-success-bg:                 $brand-success
 // $btn-success-border:             darken($btn-success-bg, 5%)
 
-// $btn-info-color:                 #fff
-// $btn-info-bg:                    $brand-info
-// $btn-info-border:                darken($btn-info-bg, 5%)
+$btn-info-color:                 #fff;
+$btn-info-bg:                    $brand-info;
+$btn-info-border:                darken($btn-info-bg, 5%);
 
 // $btn-warning-color:              #fff
 // $btn-warning-bg:                 $brand-warning
