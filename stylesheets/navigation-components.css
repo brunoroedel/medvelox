@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Bootstrap/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
 /*--Horizontal top Menu--*/
 .navbar {
@@ -12,6 +12,9 @@
 .navbar .container-fluid {
   margin: 0px;
   padding: 0px 25px;
+}
+.navbar .navbar-brand img {
+  max-width: 180px;
 }
 .navbar .thumbnail-user {
   width: 35px;

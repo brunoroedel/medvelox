@@ -17,6 +17,10 @@
 	font-style: normal;
 }
 
+html, body, .container-fluid, .row{
+	height: 100%;
+}
+
 .icon {
 	font-family: 'custom-icons';
 	speak: none;
@@ -78,10 +82,69 @@ h1{ font-size: $font-size-h2; }
 h2{ font-size: $font-size-h3; }
 h3{ font-size: $font-size-h4; }
 
+h1.login{
+	margin: 100px 0px 40px;
+}
+
+h2.login{
+	margin: 100px 0px 0px;
+	color: #fff;
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+
+footer.login{
+	margin-top: -50px;
+}
+
 /*--Grid customization--*/
 .container-fluid{
 	margin-left: 260px;
 	padding: 0px 25px 0px 25px;
+}
+
+.container-fluid.logout{
+	padding: 0px 15px; 
+}
+
+/*--Spacers--*/
+
+.spacer{
+	width: 100%;
+	clear: both;
+}
+.spacer.sm{
+	height: 10px;
+}
+.spacer.md{
+	height: 20px;
+}
+.spacer.lg{
+	height: 30px;
+}
+.spacer.xl{
+	height: 40px;
+}
+
+.no-padding{
+	padding: 0px;
+}
+
+.no-margin{
+	margin: 0px;
+}
+
+.basic-margin{
+	margin: 10px;
+}
+
+.basic-margin.vertical{
+	margin: 10px 0px;
+}
+
+.basic-margin.horizontal{
+	margin: 0px 10px;
 }
 
 /*--Top Pages--*/
@@ -118,24 +181,6 @@ h3{ font-size: $font-size-h4; }
 	}
 }
 
-/*--Spacers--*/
-.spacer{
-	width: 100%;
-	clear: both;
-}
-.spacer.sm{
-	height: 10px;
-}
-.spacer.md{
-	height: 20px;
-}
-.spacer.lg{
-	height: 30px;
-}
-.spacer.xl{
-	height: 40px;
-}
-
 .highlight {
 	padding: 9px 14px;
 	margin: 0px 0px 15px;
@@ -154,6 +199,20 @@ h3{ font-size: $font-size-h4; }
 		color: $gray-middle;
 	}
 }
+
+
+/*--Custom Backgrounds--*/
+
+.maxheight{
+	height: 100%;
+}
+
+.bg-login{
+	background: url(../img/bg-login.jpg);
+	height: 100%;
+	background-size: cover;
+}
+
 
 @media(max-width: 767px){
 	h1, h2, h3, h4, h5{

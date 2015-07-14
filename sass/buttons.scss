@@ -61,10 +61,25 @@
 	color: #fff;
 }
 
+/*--  button no-background  --*/
+
+.btn.btn-no-background{
+	background: none;
+}
+.btn.btn-no-background.pink{
+	border: 2px solid $brand-pink;
+	color: $brand-pink;
+}
+
+
+
 @media(max-width: 767px){
 	.btn.btn-rounded {
-	  padding: 2px 5px;
-	  border-radius: 50px;
-	  background: none;
+		padding: 2px 6px;
+		border-radius: 50px;
+		background: none;
+	}
+	.btn.btn-rounded .glyphicon{
+		line-height: 20px;
 	}
 }

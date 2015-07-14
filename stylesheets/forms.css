@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Bootstrap/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
 /* Nariko input */
 .input {
@@ -169,7 +169,8 @@
 }
 .input.input--nariko.block .input__field--nariko {
   border: 0px;
-  font-size: 18px;
+  font-size: 14px;
+  color: #666666;
 }
 .input.input--nariko.block .input__label-content--nariko {
   text-transform: uppercase;

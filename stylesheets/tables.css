@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Bootstrap/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
 .table thead tr th {
   font-family: 'Montserrat', Helvetica, sans-serif;

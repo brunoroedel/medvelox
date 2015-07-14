@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Bootstrap/Montserrat-Regular.ttf") format("truetype");
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 html {
@@ -6707,6 +6707,9 @@ button.close {
   margin: 0px;
   padding: 0px 25px;
 }
+.navbar .navbar-brand img {
+  max-width: 180px;
+}
 .navbar .thumbnail-user {
   width: 35px;
   height: 35px;
@@ -7459,7 +7462,8 @@ body.menu-open #openMenu {
 }
 .input.input--nariko.block .input__field--nariko {
   border: 0px;
-  font-size: 18px;
+  font-size: 14px;
+  color: #666666;
 }
 .input.input--nariko.block .input__label-content--nariko {
   text-transform: uppercase;
@@ -7644,11 +7648,25 @@ body.menu-open #openMenu {
   color: #fff;
 }
 
+/*--  button no-background  --*/
+.btn.btn-no-background {
+  background: none;
+}
+
+.btn.btn-no-background.pink {
+  border: 2px solid #f8564e;
+  color: #f8564e;
+}
+
 @media (max-width: 767px) {
   .btn.btn-rounded {
-    padding: 2px 5px;
+    padding: 2px 6px;
     border-radius: 50px;
     background: none;
+  }
+
+  .btn.btn-rounded .glyphicon {
+    line-height: 20px;
   }
 }
 .table thead tr th {
@@ -7698,6 +7716,10 @@ body.menu-open #openMenu {
   font-weight: normal;
   font-style: normal;
 }
+html, body, .container-fluid, .row {
+  height: 100%;
+}
+
 .icon {
   font-family: 'custom-icons';
   speak: none;
@@ -7777,10 +7799,72 @@ h3 {
   font-size: 18px;
 }
 
+h1.login {
+  margin: 100px 0px 40px;
+}
+
+h2.login {
+  margin: 100px 0px 0px;
+  color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+footer.login {
+  margin-top: -50px;
+}
+
 /*--Grid customization--*/
 .container-fluid {
   margin-left: 260px;
   padding: 0px 25px 0px 25px;
+}
+
+.container-fluid.logout {
+  padding: 0px 15px;
+}
+
+/*--Spacers--*/
+.spacer {
+  width: 100%;
+  clear: both;
+}
+
+.spacer.sm {
+  height: 10px;
+}
+
+.spacer.md {
+  height: 20px;
+}
+
+.spacer.lg {
+  height: 30px;
+}
+
+.spacer.xl {
+  height: 40px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.basic-margin {
+  margin: 10px;
+}
+
+.basic-margin.vertical {
+  margin: 10px 0px;
+}
+
+.basic-margin.horizontal {
+  margin: 0px 10px;
 }
 
 /*--Top Pages--*/
@@ -7815,28 +7899,6 @@ h3 {
   padding-right: 0px;
 }
 
-/*--Spacers--*/
-.spacer {
-  width: 100%;
-  clear: both;
-}
-
-.spacer.sm {
-  height: 10px;
-}
-
-.spacer.md {
-  height: 20px;
-}
-
-.spacer.lg {
-  height: 30px;
-}
-
-.spacer.xl {
-  height: 40px;
-}
-
 .highlight {
   padding: 9px 14px;
   margin: 0px 0px 15px;
@@ -7852,6 +7914,17 @@ h3 {
 }
 .highlight .text-muted {
   color: #666666;
+}
+
+/*--Custom Backgrounds--*/
+.maxheight {
+  height: 100%;
+}
+
+.bg-login {
+  background: url(../img/bg-login.jpg);
+  height: 100%;
+  background-size: cover;
 }
 
 @media (max-width: 767px) {
