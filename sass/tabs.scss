@@ -1,0 +1,35 @@
+@import "bootstrap-variables";
+
+.nav-tabs {
+	margin: 20px 15px 40px;
+}
+
+.nav-tabs > li{
+	border: none;
+	margin: 0px 0px -4px;	
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus {
+	border: none;	
+	font-family: $font-family-titles;
+	color: $border-color-middle;
+	background: none;
+	margin: 0px;
+}
+
+.nav-tabs > li > a:hover, 
+.nav-tabs > li > a:focus{
+	border-bottom: 4px solid $brand-danger;
+	color: $gray;
+	margin: 0px;
+}
+
+.nav-tabs > li.active > a, 
+.nav-tabs > li.active > a:hover, 
+.nav-tabs > li.active > a:focus {
+	border: none;	
+	border-bottom: 4px solid $brand-danger;
+	color: $gray;
+}

@@ -116,95 +116,6 @@
 			text-overflow: ellipsis;
 		}
 	}
-
-	.panel-group{
-		margin: 10px;
-
-		.panel-heading{
-			background: none;
-			padding: 10px;
-
-			.panel-title{
-				font-size: $font-size-base;
-				font-family: $font-family-titles;
-				font-weight: 400; 
-				color: $gray;
-				height: 15px;
-				
-				a{
-					padding-right: 30px;
-					width: 215px;
-					float: left;
-					position: relative;
-					text-decoration: none;
-					overflow: hidden;
-					text-overflow: ellipsis;
-					white-space: nowrap;
-
-					.chevron{
-						position: absolute;
-						top: 0px;
-						right: 0px;
-					}
-
-					.badge{
-						background: #777;
-						font-size: 10px;
-						margin: -3px 0px 0px 5px;
-						line-height: 12px;
-					}
-				}
-				a:hover,
-				a:active{
-					text-decoration: none;
-				}
-
-				.chevron .glyphicon.glyphicon-chevron-left{
-					display: block;
-				}
-				.chevron .glyphicon.glyphicon-chevron-down{
-					display: none;
-				}
-				.chevron.in .glyphicon.glyphicon-chevron-left{
-					display: none;
-				}
-				.chevron.in .glyphicon.glyphicon-chevron-down{
-					display: block;
-				}
-			}	
-		}
-		.panel-body{
-			margin: 0px 10px 10px;
-			border: 1px solid $border-color-light;
-			border-radius: 3px;
-			background: $gray-lighter;
-			padding: 10px;
-
-			h5{
-				font-family: $font-family-titles;
-				color: $gray-dark;
-				font-weight: bold;
-				margin: 0px 0px 5px 0px;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;	
-			}
-			h6{
-				font-family: $font-family-titles;
-				font-size: $font-size-small;
-				font-weight: 100;
-				color: #A9A9A9;
-				margin-top: 0px;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;
-				margin-bottom: 0px;
-			}
-		}
-		.panel-body:first-child{
-			margin-top: 10px;
-		}	
-	}
 }
 
 /*--Vertical Left Menu--*/
@@ -411,6 +322,10 @@ nav#vertical-menu-left{
 				text-align: center;
 				line-height: 30px;
 				border-radius: $border-radius-base;
+				-webkit-transition:	all 0.5s linear;
+				-moz-transition: all 0.5s linear;
+				-o-transition: all 0.5s linear;
+				transition: all 0.5s linear;
 			}
 
 			.label{
@@ -418,7 +333,20 @@ nav#vertical-menu-left{
   				top: 5px;
   				color: rgba(255,255,255,0.5); 
 			}
-		}	
+		}
+
+		li a:hover .iconMenu{
+			background: $brand-danger;
+		}
+
+		li.active a{
+			.iconMenu{
+				background: $brand-danger;
+			}
+			.label{
+				color: #fff;
+			}
+		}
 	}	
 }
 
@@ -428,41 +356,34 @@ body.menu-open #openMenu{
 }
 
 /*--Vertical left Menu for small screens--*/
-#bottomMenu {
+
+#OpenMenuSmall{
+	position: absolute;
+	left: 10px;
+	top: 20px;
+	background: none;
+	border: none;
+	padding-top: 5px;
 	display: none;
-	position: fixed;
-	bottom: 0px;
-	left: 0px;
-	z-index: 1040;
-	width: 100%;
-	height: 55px;
-	background: #fff;
-	border-top: 1px solid;
-	border-color: #ddd;
-	padding: 10px;
-	color: $gray;
 
-	#OpenMenuSmall{
-		background: none;
-		float: left;
-		border: none;
-		padding-top: 5px;
-
-		.icon{
-			color: $gray;
-		}
-	}
-	#OpenSmallAlerts{
-		background: none;
-		float: right;
-		border: none;
-		padding-top: 5px;
-
-		.icon{
-			color: $gray;
-		}
+	.icon{
+		color: $gray;
 	}
 }
+#OpenSmallAlerts{
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	background: none;
+	border: none;
+	padding-top: 5px;
+	display: none;
+
+	.icon{
+		color: $gray;
+	}
+}
+
 
 /*--Breadcrumb--*/
 
@@ -487,10 +408,14 @@ body.menu-open #openMenu{
 	content: none;
 }
 
+.breadcrumb > li:last-child .glyphicon{
+	display: none;
+}
+
 .breadcrumb > li a .glyphicon,
 .breadcrumb > li .glyphicon{
 	color: $gray-middle;
-	margin: 0px 10px 0px 0px;
+	margin: 0px 0px 0px 10px;
 } 
 
 
@@ -506,6 +431,15 @@ body.menu-open #openMenu{
 
 		.container-fluid{
 			padding: 0px 20px;
+		}
+
+		.navbar-brand{
+			color: #777;
+			float: none;
+			margin: 10px auto;
+			display: block;
+			width: 136px;
+			text-align: center;
 		}
 
 		.navbar-brand img{
@@ -573,93 +507,160 @@ body.menu-open #openMenu{
 	}
 
 	.animated { 
-		display: block;
-	    -webkit-animation-duration: 1.5s; 
-	    animation-duration: 1.5s; 
+	    -webkit-animation-duration: 1s; 
+	    animation-duration: 1s; 
 	    -webkit-animation-fill-mode: both; 
 	    animation-fill-mode: both; 
-	    -webkit-animation-timing-function: ease-in-out; 
-	    animation-timing-function: ease-in-out; 
 	} 
 
-	@-webkit-keyframes bounceInUp { 
+	@-webkit-keyframes bounceInLeft { 
 	    0% { 
 	        opacity: 0; 
-	        -webkit-transform: translateY(2000px); 
+	        -webkit-transform: translateX(-2000px); 
 	    } 
 	    60% { 
 	        opacity: 1; 
-	        -webkit-transform: translateY(-30px); 
+	        -webkit-transform: translateX(30px); 
 	    } 
 	    80% { 
-	        -webkit-transform: translateY(10px); 
+	        -webkit-transform: translateX(-10px); 
 	    } 
 	    100% { 
-	        -webkit-transform: translateY(0); 
+	        -webkit-transform: translateX(0); 
 	    } 
 	} 
 
-	@keyframes bounceInUp { 
+	@keyframes bounceInLeft { 
 	    0% { 
 	        opacity: 0; 
-	        transform: translateY(2000px); 
+	        transform: translateX(-2000px); 
 	    } 
 	    60% { 
 	        opacity: 1; 
-	        transform: translateY(-30px); 
+	        transform: translateX(30px); 
 	    } 
 	    80% { 
-	        transform: translateY(10px); 
+	        transform: translateX(-10px); 
 	    } 
 	    100% { 
-	        transform: translateY(0); 
+	        transform: translateX(0); 
 	    } 
 	} 
-
-	.bounceInUp { 
-		display: block;
-	    -webkit-animation-name: bounceInUp; 
-	    animation-name: bounceInUp; 
+	.bounceInLeft { 
+	    -webkit-animation-name: bounceInLeft; 
+	    animation-name: bounceInLeft; 
 	}
 
-	@-webkit-keyframes bounceOutDown { 
+		@-webkit-keyframes bounceOutLeft { 
 	    0% { 
-	        -webkit-transform: translateY(0); 
+	        -webkit-transform: translateX(0); 
 	    } 
 	    20% { 
 	        opacity: 1; 
-	        -webkit-transform: translateY(-20px); 
+	        -webkit-transform: translateX(20px); 
 	    } 
 	    100% { 
 	        opacity: 0; 
-	        -webkit-transform: translateY(2000px); 
+	        -webkit-transform: translateX(-2000px); 
 	    } 
 	} 
-	@keyframes bounceOutDown { 
+	@keyframes bounceOutLeft { 
 	    0% { 
-	        transform: translateY(0); 
+	        transform: translateX(0); 
 	    } 
 	    20% { 
 	        opacity: 1; 
-	        transform: translateY(-20px); 
+	        transform: translateX(20px); 
 	    } 
 	    100% { 
 	        opacity: 0; 
-	        transform: translateY(2000px); 
+	        transform: translateX(-2000px); 
 	    } 
 	} 
-	.bounceOutDown { 
-		display: block;
-		-webkit-animation-name: bounceOutDown; 
-		animation-name: bounceOutDown; 
+	.bounceOutLeft { 
+	    -webkit-animation-name: bounceOutLeft; 
+	    animation-name: bounceOutLeft; 
 	}
 
-	#bottomMenu{
-		display: block;
+	@-webkit-keyframes bounceInRight { 
+	    0% { 
+	        opacity: 0; 
+	        -webkit-transform: translateX(2000px); 
+	    } 
+	    60% { 
+	        opacity: 1; 
+	        -webkit-transform: translateX(-30px); 
+	    } 
+	    80% { 
+	        -webkit-transform: translateX(10px); 
+	    } 
+	    100% { 
+	        -webkit-transform: translateX(0); 
+	    } 
+	} 
 
-		#OpenMenuSmall{
-			display: block;	
-		}
+	@keyframes bounceInRight { 
+	    0% { 
+	        opacity: 0; 
+	        transform: translateX(2000px); 
+	    } 
+	    60% { 
+	        opacity: 1; 
+	        transform: translateX(-30px); 
+	    } 
+	    80% { 
+	        transform: translateX(10px); 
+	    } 
+	    100% { 
+	        transform: translateX(0); 
+	    } 
+	} 
+
+	.bounceInRight { 
+	    -webkit-animation-name: bounceInRight; 
+	    animation-name: bounceInRight; 
+	}
+
+	@-webkit-keyframes bounceOutRight { 
+	    0% { 
+	        -webkit-transform: translateX(0); 
+	    } 
+	    20% { 
+	        opacity: 1; 
+	        -webkit-transform: translateX(-20px); 
+	    } 
+	    100% { 
+	        opacity: 0; 
+	        -webkit-transform: translateX(2000px); 
+	    } 
+	} 
+	@keyframes bounceOutRight { 
+	    0% { 
+	        transform: translateX(0); 
+	    } 
+	    20% { 
+	        opacity: 1; 
+	        transform: translateX(-20px); 
+	    } 
+	    100% { 
+	        opacity: 0; 
+	        transform: translateX(2000px); 
+	    } 
+	} 
+	.bounceOutRight { 
+	    -webkit-animation-name: bounceOutRight; 
+	    animation-name: bounceOutRight; 
+	}
+
+
+
+
+
+
+
+	#OpenMenuSmall,
+	#OpenSmallAlerts{
+		display: block;	
 	}
 
 	.breadcrumb > li,

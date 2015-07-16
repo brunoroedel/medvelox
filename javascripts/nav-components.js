@@ -77,26 +77,26 @@ function OpenCloseBigScreen(){
 
 //Open or Close Small Screen vertical left menu
 function OpenSmallScreen(){		
-	$('#vertical-menu-left').removeClass('animated bounceOutDown');
-	$('#vertical-menu-left').addClass('animated bounceInUp');
+	$('#vertical-menu-left').removeClass('animated bounceOutLeft');
+	$('#vertical-menu-left').addClass('animated bounceInLeft');
 }
 
 //Close Vertical left Menu on Mobile screens vertical left menu
 function CloseSmallScreen(){	
 	$('#vertical-menu-left').removeClass('animated bounceInUp');
-	$('#vertical-menu-left').addClass('animated bounceOutDown');
+	$('#vertical-menu-left').addClass('animated bounceOutLeft');
 }
 
 //Open or Close Small Screen task box alerts
 function OpenSmallScreenTasks(){		
-	$('#alertBox').removeClass('animated bounceOutDown');
-	$('#alertBox').addClass('animated bounceInUp');
+	$('#alertBox').removeClass('animated bounceOutRight');
+	$('#alertBox').addClass('animated bounceInRight');
 }
 
 //Close Vertical left Menu on Mobile screens task box alerts
 function CloseSmallScreenTasks(){	
-	$('#alertBox').removeClass('animated bounceInUp');
-	$('#alertBox').addClass('animated bounceOutDown');
+	$('#alertBox').removeClass('animated bounceInRight');
+	$('#alertBox').addClass('animated bounceOutRight');
 }
 
 

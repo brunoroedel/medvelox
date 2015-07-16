@@ -283,34 +283,174 @@
                 <a href="#">Samaritano</a>
               </li>
               <li class="active">
-                <span class="glyphicon glyphicon-chevron-right"></span>Novo Round
+                <span class="glyphicon glyphicon-chevron-right"></span>Novo Paciente
               </li>
             </ol>
           </div>
           <!--/ breadcrumb-->  
 
           <div class="col-lg-6">
-            <h1 class="">Novo Round</h1>
+            <h1 class="">Novo Paciente</h1>
           </div>
         </div>
       </div>
       <!--/ top page-->
 
-      <!--novo round-->
+      <!--novo paciente-->
       <div class="row">
-        <div class="col-lg-10">
-          <form>
+        <form>
+          <div class="col-lg-10">
             <span class="input input--nariko block">
-              <input class="input__field input__field--nariko" type="text" id="input-02" value="Médico CTI Samaritano">
+              <input class="input__field input__field--nariko" type="text" id="" value="Camila Carvalho Ferreira da Silva">
               <label class="input__label input__label--nariko">
-                <span class="input__label-content input__label-content--nariko" for="input-02">
-                  Nome do Round
+                <span class="input__label-content input__label-content--nariko" for="">
+                  Nome
                 </span>
               </label>
             </span>
-          </form>
+          </div>
+          <div class="spacer"></div>
+
+          <div class="col-lg-4">
+            <span class="input input--nariko block">
+              <input class="input__field input__field--nariko" type="text" id="" value="Leito 01">
+              <label class="input__label input__label--nariko">
+                <span class="input__label-content input__label-content--nariko" for="">
+                  Localização
+                </span>
+              </label>
+            </span>
+          </div>
+
+          <div class="col-lg-3">
+            <span class="input input--nariko block">
+              <input class="input__field input__field--nariko" type="text" id="" value="ABC 48257">
+              <label class="input__label input__label--nariko">
+                <span class="input__label-content input__label-content--nariko" for="">
+                  Registro
+                </span>
+              </label>
+            </span>
+          </div>
+
+          <div class="col-lg-3">
+            <span class="input input--nariko block">
+              <input class="input__field input__field--nariko" type="text" id="" value="Pneumonia Comum">
+              <label class="input__label input__label--nariko">
+                <span class="input__label-content input__label-content--nariko" for="">
+                  Diagnóstico
+                </span>
+              </label>
+            </span>
+          </div>
+
+          <div class="col-lg-7">
+            <span class="input input--nariko block">
+              <input class="input__field input__field--nariko" type="text" id="" value="">
+              <label class="input__label input__label--nariko">
+                <span class="input__label-content input__label-content--nariko" for="">
+                  Alergias
+                </span>
+              </label>
+            </span>
+          </div>
+
+          <div class="col-lg-3">
+            <span class="input input--nariko block">
+              <input class="input__field input__field--nariko" type="date" id="" value="">
+              <label class="input__label input__label--nariko">
+                <span class="input__label-content input__label-content--nariko" for="">
+                  Data de Nascimento
+                </span>
+              </label>
+              <span class="icon">
+                <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+              </span>
+            </span>
+          </div>
+        </form>
+  
+        <div class="col-lg-12">
+          <div class="spacer md"></div>
+          <h2>
+            Contatos 
+            <a href="" class="btn btn-success btn-rounded">
+              <span class="glyphicon glyphicon-plus"></span>
+            </a>
+          </h2>
+          <div class="spacer md"></div>
         </div>
-        
+
+        <!--Contato 01-->
+        <div class="col-xs-10 col-sm-10 col-md-5 col-lg-5">
+           <div class="highlight">
+            <div class="row">
+              <div class="col-lg-12"><p>Ana Carolina</p></div>
+              <div class="spacer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+           <div class="highlight">
+            <div class="row">
+              <div class="col-lg-12"><p>(21)98300 1010</p></div>
+              <div class="spacer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+          <button class="btn btn-danger btn-rounded text-center">
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
+        </div>
+        <div class="spacer lg hidden-lg hidden-md"></div>
+        <!--/ Contato 01-->
+
+        <!--Contato 02-->
+        <div class="col-xs-10 col-sm-10 col-md-5 col-lg-5">
+           <div class="highlight">
+            <div class="row">
+              <div class="col-lg-12"><p>Bruno Roedel</p></div>
+              <div class="spacer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+           <div class="highlight">
+            <div class="row">
+              <div class="col-lg-12"><p>(21)98225 6828</p></div>
+              <div class="spacer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+          <button class="btn btn-danger btn-rounded text-center">
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
+        </div>
+        <div class="spacer lg hidden-lg hidden-md"></div>
+        <!--/ Contato 02-->
+
+        <!--Integrante 03-->
+        <div class="col-xs-10 col-sm-10 col-md-5 col-lg-5">
+           <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nome">
+          </div>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Telefone">
+          </div>
+        </div>
+        <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+          <button class="btn btn-success btn-rounded">
+            <span class="glyphicon glyphicon-ok"></span>
+          </button>
+        </div>
+        <div class="spacer lg hidden-lg hidden-md"></div>
+        <!--/ Integrante 03-->
+     
+        <!--Profissionais-->
         <div class="col-lg-12">
           <div class="spacer md"></div>
           <h2>
@@ -322,79 +462,52 @@
           <div class="spacer md"></div>
         </div>
 
-
         <!--Integrante 01-->
-        <div class="col-xs-8 col-sm-9 col-md-8 col-lg-9">
+        <div class="col-xs-10 col-sm-10 col-md-5 col-lg-5">
            <div class="highlight">
             <div class="row">
-              <div class="col-xs-8 col-sm-8 col-ms-8 col-lg-8"><p>Ana Carolina</p></div>
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><p class="text-right text-muted">Ativo</p></div>
+              <div class="col-lg-12"><p>Bruno Roedel</p></div>
               <div class="spacer"></div>
             </div>
           </div>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
-          <button class="btn btn-info btn-rounded">
-            <span class="icon icon-info"></span>
-          </button>
-          <button class="btn btn-danger btn-rounded">
+        <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+           <div class="highlight">
+            <div class="row">
+              <div class="col-lg-12"><p>(21)98225 6828</p></div>
+              <div class="spacer"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+          <button class="btn btn-danger btn-rounded text-center">
             <span class="glyphicon glyphicon-remove"></span>
           </button>
         </div>
+        <div class="spacer lg hidden-lg hidden-md"></div>
         <!--/ Integrante 01-->
 
         <!--Integrante 02-->
-        <div class="col-xs-8 col-sm-9 col-md-8 col-lg-9">
-           <div class="highlight">
-            <div class="row">
-              <div class="col-xs-8 col-sm-8 col-ms-8 col-lg-8"><p>Ana Carolina</p></div>
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><p class="text-right text-muted">Ativo</p></div>
-              <div class="spacer"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
-          <button class="btn btn-info btn-rounded">
-            <span class="icon icon-info"></span>
-          </button>
-          <button class="btn btn-danger btn-rounded">
-            <span class="glyphicon glyphicon-remove"></span>
-          </button>
-        </div>
-        <!--/ Integrante 02-->
-
-        <!--Integrante 03-->
-        <div class="col-xs-8 col-sm-9 col-md-8 col-lg-9">
-           <div class="highlight">
-            <div class="row">
-              <div class="col-xs-8 col-sm-8 col-ms-8 col-lg-8"><p>Ana Carolina</p></div>
-              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><p class="text-right text-muted">Ativo</p></div>
-              <div class="spacer"></div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">
-          <button class="btn btn-info btn-rounded">
-            <span class="icon icon-info"></span>
-          </button>
-          <button class="btn btn-danger btn-rounded">
-            <span class="glyphicon glyphicon-remove"></span>
-          </button>
-        </div>
-        <!--/ Integrante 03-->
-
-        <!--Integrante 03-->
-        <div class="col-xs-8 col-sm-9 col-md-8 col-lg-9">
-          <div class="form-group">
+        <div class="col-xs-10 col-sm-10 col-md-5 col-lg-5">
+           <div class="form-group">
             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nome">
           </div>
         </div>
-        <div class="col-xs-4 col-sm-3 col-md-4 col-lg-3">         
-           <button class="btn btn-success btn-rounded">
+        <div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Telefone">
+          </div>
+        </div>
+        <div class="col-xs-2 col-sm-1 col-md-1 col-lg-1">
+          <button class="btn btn-success btn-rounded">
             <span class="glyphicon glyphicon-ok"></span>
           </button>
         </div>
-        <!--/ Integrante 03-->
+        <div class="spacer lg hidden-lg hidden-md"></div>
+        <!--/ Integrante 02-->
+
+    
+        <!--/ Profissionais-->
 
         <div class="spacer lg"></div>
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
@@ -404,9 +517,9 @@
         <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
           <button class="btn btn-block">Cancelar</button>
         </div>
-      </div>
-      <!--novo round-->    
 
+      </div>
+      <!--novo paciente-->   
     </div><!--/ pageContent-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

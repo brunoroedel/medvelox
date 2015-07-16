@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
+.nav-tabs {
+  margin: 20px 15px 40px;
+}
+
+.nav-tabs > li {
+  border: none;
+  margin: 0px 0px -4px;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  color: #BEBEBE;
+  background: none;
+  margin: 0px;
+}
+
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  border-bottom: 4px solid #ce181f;
+  color: #555;
+  margin: 0px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: none;
+  border-bottom: 4px solid #ce181f;
+  color: #555;
+}

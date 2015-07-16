@@ -5,6 +5,8 @@
 @import "forms";
 @import "buttons";
 @import "tables";
+@import "tabs";
+@import "expand-collapse";
 
 @font-face {
 	font-family: 'custom-icons';
@@ -140,11 +142,17 @@ footer.login{
 }
 
 .basic-margin.vertical{
-	margin: 10px 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .basic-margin.horizontal{
-	margin: 0px 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+hr{
+	border-top: 1px solid $border-color-light;
 }
 
 /*--Top Pages--*/
@@ -156,6 +164,13 @@ footer.login{
 
 	h1{ margin-bottom: 0px; }
 
+	h1 small{
+		color: $border-color-middle;
+		font-size: 50%;
+		margin-left: 10px;
+		font-weight: 100;
+	}
+
 	ul.round-details{
 		margin: 33px 0px 0px 0px;
 		float: right;
@@ -163,6 +178,8 @@ footer.login{
 		li{
 			color: $gray;
 			padding: 0px 10px 0px 0px;
+			text-transform: uppercase;
+			font-family: $font-family-titles;
 
 			strong{
 				margin: 0px 5px;
@@ -227,7 +244,7 @@ footer.login{
 
 	.container-fluid{
 		margin-left: 0px !important;
-		padding: 0px 10px 70px;
+		padding: 20px 10px 0px;
 	}
 	.row {
 	  margin-left: -10px;
