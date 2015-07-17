@@ -3,37 +3,46 @@
   src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
 /*--Horizontal top Menu--*/
+/* line 6, ../sass/navigation-components.scss */
 .navbar {
   margin: 0px;
   background: #fff;
   border-color: #ddd;
   min-height: 70px;
 }
+/* line 12, ../sass/navigation-components.scss */
 .navbar .container-fluid {
   margin: 0px;
   padding: 0px 25px;
 }
+/* line 17, ../sass/navigation-components.scss */
 .navbar .navbar-brand img {
   max-width: 180px;
 }
+/* line 21, ../sass/navigation-components.scss */
 .navbar .thumbnail-user {
   width: 35px;
   height: 35px;
   border: 1px solid #ddd;
 }
+/* line 27, ../sass/navigation-components.scss */
 .navbar .nav.navbar-nav li {
   height: 69px;
 }
+/* line 30, ../sass/navigation-components.scss */
 .navbar .nav.navbar-nav li a {
   line-height: 40px;
 }
+/* line 35, ../sass/navigation-components.scss */
 .navbar li.searchBox {
   width: 280px;
 }
+/* line 39, ../sass/navigation-components.scss */
 .navbar li .icon.icon-right-menu {
   color: #555;
   font-size: 16px;
 }
+/* line 43, ../sass/navigation-components.scss */
 .navbar li:last-child {
   margin-right: -10px;
   width: 60px;
@@ -41,6 +50,7 @@
 }
 
 /*--Alert Box--*/
+/* line 51, ../sass/navigation-components.scss */
 #alertBox {
   position: fixed;
   right: 0px;
@@ -56,6 +66,7 @@
   display: none;
   overflow-y: auto;
 }
+/* line 66, ../sass/navigation-components.scss */
 #alertBox .title {
   background: #444;
   width: 100%;
@@ -66,10 +77,12 @@
   font-weight: 400;
   text-transform: uppercase;
 }
+/* line 76, ../sass/navigation-components.scss */
 #alertBox .title h5 {
   color: #fff;
   margin: 5px 0px;
 }
+/* line 82, ../sass/navigation-components.scss */
 #alertBox #CloseSmallAlerts {
   width: 40px;
   height: 40px;
@@ -86,12 +99,14 @@
   cursor: pointer;
   display: none;
 }
+/* line 98, ../sass/navigation-components.scss */
 #alertBox #CloseSmallAlerts .icon {
   color: #fff;
   font-size: 16px;
   margin-top: 2px;
   line-height: 40px;
 }
+/* line 105, ../sass/navigation-components.scss */
 #alertBox #CloseSmallAlerts .label {
   position: absolute;
   left: 40px;
@@ -107,6 +122,7 @@
 }
 
 /*--Vertical Left Menu--*/
+/* line 122, ../sass/navigation-components.scss */
 nav#vertical-menu-left {
   position: fixed;
   left: 0px;
@@ -120,6 +136,7 @@ nav#vertical-menu-left {
   overflow-y: auto;
   z-index: 2;
 }
+/* line 135, ../sass/navigation-components.scss */
 nav#vertical-menu-left #openMenu {
   position: absolute;
   right: 20px;
@@ -131,11 +148,13 @@ nav#vertical-menu-left #openMenu {
   cursor: pointer;
   text-align: center;
 }
+/* line 146, ../sass/navigation-components.scss */
 nav#vertical-menu-left #openMenu .icon {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-top: 2px;
 }
+/* line 152, ../sass/navigation-components.scss */
 nav#vertical-menu-left #CloseMenuSmall {
   width: 40px;
   height: 40px;
@@ -152,12 +171,14 @@ nav#vertical-menu-left #CloseMenuSmall {
   cursor: pointer;
   display: none;
 }
+/* line 168, ../sass/navigation-components.scss */
 nav#vertical-menu-left #CloseMenuSmall .icon {
   color: #555;
   font-size: 16px;
   margin-top: 2px;
   line-height: 40px;
 }
+/* line 175, ../sass/navigation-components.scss */
 nav#vertical-menu-left #CloseMenuSmall .label {
   position: absolute;
   left: 40px;
@@ -171,24 +192,29 @@ nav#vertical-menu-left #CloseMenuSmall .label {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* line 190, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul {
   margin: 60px 0px 0px 0px;
   padding: 0px;
   list-style: none;
   display: block;
 }
+/* line 197, ../sass/navigation-components.scss */
 nav#vertical-menu-left li {
   display: block;
   margin: 0px;
   padding: 0px;
 }
+/* line 203, ../sass/navigation-components.scss */
 nav#vertical-menu-left li:first-child {
   margin-top: 0px;
 }
+/* line 207, ../sass/navigation-components.scss */
 nav#vertical-menu-left a {
   display: block;
   position: relative;
 }
+/* line 211, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .iconMenu {
   width: 40px;
   height: 40px;
@@ -202,11 +228,13 @@ nav#vertical-menu-left a .iconMenu {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
+/* line 224, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .iconMenu .icon {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-top: 2px;
 }
+/* line 231, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .label {
   position: absolute;
   left: 60px;
@@ -220,62 +248,77 @@ nav#vertical-menu-left a .label {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* line 245, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .label .badge {
   margin-left: 5px;
   background: #777;
   color: rgba(255, 255, 255, 0.7);
 }
+/* line 251, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron {
   position: absolute;
   top: 15px;
   right: 20px;
 }
+/* line 257, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-down,
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left {
   color: #fff;
   font-size: 11px;
 }
+/* line 264, ../sass/navigation-components.scss */
 nav#vertical-menu-left a:hover,
 nav#vertical-menu-left a:active {
   text-decoration: none;
 }
+/* line 269, ../sass/navigation-components.scss */
 nav#vertical-menu-left a:hover .iconMenu,
 nav#vertical-menu-left a:active .iconMenu {
   background: #BD070E;
 }
+/* line 274, ../sass/navigation-components.scss */
 nav#vertical-menu-left a:hover .label,
 nav#vertical-menu-left a:active .label {
   color: #E4C0C0;
 }
+/* line 280, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left,
 nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-down {
   display: none;
 }
+/* line 285, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-down,
 nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-left {
   display: block;
 }
+/* line 290, ../sass/navigation-components.scss */
 nav#vertical-menu-left li.active a .iconMenu {
   background: #ce181f;
 }
+/* line 294, ../sass/navigation-components.scss */
 nav#vertical-menu-left li.active a .iconMenu .glyphicon {
   color: white;
 }
+/* line 298, ../sass/navigation-components.scss */
 nav#vertical-menu-left li.active a:hover .iconMenu,
 nav#vertical-menu-left li.active a:active .iconMenu {
   background: #BD070E;
 }
+/* line 303, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel {
   background: #444;
   margin: 10px 0px 0px;
   padding: 5px 20px 15px;
 }
+/* line 308, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li:first-child a {
   margin-top: 0px;
 }
+/* line 312, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel a {
   display: block;
 }
+/* line 315, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel a .iconMenu {
   background: #555;
   margin: 10px 5px 0px 5px;
@@ -291,27 +334,33 @@ nav#vertical-menu-left ul.sublevel a .iconMenu {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
+/* line 331, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel a .label {
   left: 40px;
   top: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
+/* line 338, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li a:hover .iconMenu {
   background: #ce181f;
 }
+/* line 343, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li.active a .iconMenu {
   background: #ce181f;
 }
+/* line 346, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li.active a .label {
   color: #fff;
 }
 
+/* line 353, ../sass/navigation-components.scss */
 body.menu-open #openMenu {
   transition: background-color 2s ease;
   background-color: #444;
 }
 
 /*--Vertical left Menu for small screens--*/
+/* line 360, ../sass/navigation-components.scss */
 #OpenMenuSmall {
   position: absolute;
   left: 10px;
@@ -321,10 +370,12 @@ body.menu-open #openMenu {
   padding-top: 5px;
   display: none;
 }
+/* line 369, ../sass/navigation-components.scss */
 #OpenMenuSmall .icon {
   color: #555;
 }
 
+/* line 373, ../sass/navigation-components.scss */
 #OpenSmallAlerts {
   position: absolute;
   right: 10px;
@@ -334,17 +385,20 @@ body.menu-open #openMenu {
   padding-top: 5px;
   display: none;
 }
+/* line 382, ../sass/navigation-components.scss */
 #OpenSmallAlerts .icon {
   color: #555;
 }
 
 /*--Breadcrumb--*/
+/* line 390, ../sass/navigation-components.scss */
 .breadcrumb {
   background: none;
   margin: 0px 0px 0px;
   padding: 0px;
 }
 
+/* line 396, ../sass/navigation-components.scss */
 .breadcrumb > li,
 .breadcrumb > li.active {
   margin: 0px 10px 0px 0px;
@@ -355,14 +409,17 @@ body.menu-open #openMenu {
   font-weight: 100;
 }
 
+/* line 406, ../sass/navigation-components.scss */
 .breadcrumb > li + li:before {
   content: none;
 }
 
+/* line 411, ../sass/navigation-components.scss */
 .breadcrumb > li:last-child .glyphicon {
   display: none;
 }
 
+/* line 415, ../sass/navigation-components.scss */
 .breadcrumb > li a .glyphicon,
 .breadcrumb > li .glyphicon {
   color: #666666;
@@ -370,16 +427,20 @@ body.menu-open #openMenu {
 }
 
 @media (max-width: 767px) {
+  /* line 425, ../sass/navigation-components.scss */
   .navbar-collapse.collapse.in {
     height: 100%;
   }
 
+  /* line 429, ../sass/navigation-components.scss */
   .navbar {
     min-height: 50px;
   }
+  /* line 432, ../sass/navigation-components.scss */
   .navbar .container-fluid {
     padding: 0px 20px;
   }
+  /* line 436, ../sass/navigation-components.scss */
   .navbar .navbar-brand {
     color: #777;
     float: none;
@@ -388,60 +449,74 @@ body.menu-open #openMenu {
     width: 136px;
     text-align: center;
   }
+  /* line 445, ../sass/navigation-components.scss */
   .navbar .navbar-brand img {
     max-width: 100px;
   }
+  /* line 449, ../sass/navigation-components.scss */
   .navbar li.searchBox {
     width: 100%;
     box-sizing: border-box;
     padding: 0px 10px;
   }
+  /* line 454, ../sass/navigation-components.scss */
   .navbar li.searchBox .input {
     width: 100%;
     max-width: none;
     vertical-align: top;
   }
+  /* line 461, ../sass/navigation-components.scss */
   .navbar li {
     display: none;
   }
+  /* line 465, ../sass/navigation-components.scss */
   .navbar li.searchBox {
     display: block;
   }
 
+  /* line 470, ../sass/navigation-components.scss */
   nav#vertical-menu-left {
     display: none;
     z-index: 1050;
     width: 100%;
     padding: 0px;
   }
+  /* line 476, ../sass/navigation-components.scss */
   nav#vertical-menu-left #openMenu {
     display: none;
   }
+  /* line 479, ../sass/navigation-components.scss */
   nav#vertical-menu-left #CloseMenuSmall {
     display: block;
   }
+  /* line 483, ../sass/navigation-components.scss */
   nav#vertical-menu-left ul {
     margin: 20px 0px 0px 0px;
   }
 
+  /* line 488, ../sass/navigation-components.scss */
   #alertBox {
     display: none;
     z-index: 1050;
     width: 100%;
     padding: 0px;
   }
+  /* line 494, ../sass/navigation-components.scss */
   #alertBox .title {
     display: none;
   }
+  /* line 498, ../sass/navigation-components.scss */
   #alertBox #CloseSmallAlerts {
     display: block;
   }
 
+  /* line 504, ../sass/navigation-components.scss */
   nav#vertical-menu-left.animated,
   #alertBox.animated {
     display: block;
   }
 
+  /* line 509, ../sass/navigation-components.scss */
   .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -481,6 +556,7 @@ body.menu-open #openMenu {
       transform: translateX(0);
     }
   }
+  /* line 549, ../sass/navigation-components.scss */
   .bounceInLeft {
     -webkit-animation-name: bounceInLeft;
     animation-name: bounceInLeft;
@@ -512,6 +588,7 @@ body.menu-open #openMenu {
       transform: translateX(-2000px);
     }
   }
+  /* line 580, ../sass/navigation-components.scss */
   .bounceOutLeft {
     -webkit-animation-name: bounceOutLeft;
     animation-name: bounceOutLeft;
@@ -549,6 +626,7 @@ body.menu-open #openMenu {
       transform: translateX(0);
     }
   }
+  /* line 619, ../sass/navigation-components.scss */
   .bounceInRight {
     -webkit-animation-name: bounceInRight;
     animation-name: bounceInRight;
@@ -580,21 +658,25 @@ body.menu-open #openMenu {
       transform: translateX(2000px);
     }
   }
+  /* line 650, ../sass/navigation-components.scss */
   .bounceOutRight {
     -webkit-animation-name: bounceOutRight;
     animation-name: bounceOutRight;
   }
 
+  /* line 655, ../sass/navigation-components.scss */
   #OpenMenuSmall,
   #OpenSmallAlerts {
     display: block;
   }
 
+  /* line 660, ../sass/navigation-components.scss */
   .breadcrumb > li,
   .breadcrumb > li.active {
     font-size: 0.7em;
   }
 
+  /* line 664, ../sass/navigation-components.scss */
   .breadcrumb > li, .breadcrumb > li.active {
     margin: 0px 5px 0px 0px;
   }

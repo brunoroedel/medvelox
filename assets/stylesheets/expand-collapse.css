@@ -2,13 +2,16 @@
   font-family: "Montserrat";
   src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
+/* line 5, ../sass/expand-collapse.scss */
 .panel-group {
   margin: 10px 0px;
 }
+/* line 8, ../sass/expand-collapse.scss */
 .panel-group .panel-heading {
   background: none;
   padding: 10px;
 }
+/* line 12, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -16,6 +19,7 @@
   color: #555;
   height: 15px;
 }
+/* line 19, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title a {
   padding-right: 30px;
   width: 100%;
@@ -26,33 +30,41 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* line 29, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title a .chevron {
   position: absolute;
   top: 0px;
   right: 0px;
 }
+/* line 35, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title a .badge {
   background: #777;
   font-size: 10px;
   margin: -3px 0px 0px 5px;
   line-height: 12px;
 }
+/* line 42, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title a:hover,
 .panel-group .panel-heading .panel-title a:active {
   text-decoration: none;
 }
+/* line 47, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title .chevron .glyphicon.glyphicon-chevron-left {
   display: block;
 }
+/* line 50, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title .chevron .glyphicon.glyphicon-chevron-down {
   display: none;
 }
+/* line 53, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title .chevron.in .glyphicon.glyphicon-chevron-left {
   display: none;
 }
+/* line 56, ../sass/expand-collapse.scss */
 .panel-group .panel-heading .panel-title .chevron.in .glyphicon.glyphicon-chevron-down {
   display: block;
 }
+/* line 61, ../sass/expand-collapse.scss */
 .panel-group .panel-body {
   margin: 0px 10px 10px;
   border: 1px solid #ddd;
@@ -60,6 +72,7 @@
   background: #f9f9f9;
   padding: 10px;
 }
+/* line 68, ../sass/expand-collapse.scss */
 .panel-group .panel-body h5 {
   font-family: "Montserrat", sans-serif;
   color: #444;
@@ -69,6 +82,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+/* line 77, ../sass/expand-collapse.scss */
 .panel-group .panel-body h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
@@ -80,6 +94,26 @@
   text-overflow: ellipsis;
   margin-bottom: 0px;
 }
+/* line 89, ../sass/expand-collapse.scss */
+.panel-group .panel-body.bleed {
+  margin: 0px;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-radius: 0px;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 101, ../sass/expand-collapse.scss */
+.panel-group .panel-body.bleed label {
+  margin: 5px 0px;
+  font-weight: 100;
+  color: #555;
+}
+/* line 108, ../sass/expand-collapse.scss */
 .panel-group .panel-body:first-child {
   margin-top: 10px;
 }

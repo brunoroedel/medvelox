@@ -1,70 +1,20 @@
+<?php
+  $sectionTitle = array("Bernardo Joaquim"  => "23 anos");
+  $breadCrumb = array("Inicio", "rounds", "Samaritano");
+  $roundDetails = array("");
+?>
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>MedVelox</title>
-
-    <!-- Bootstrap -->
-    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css" />
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+<html lang="pt-BR">
+  <?php require '../shared/head.php'; ?>
   <body class="menu-open">
-    <?php require 'shared/navibar-top.php'; ?>
-    <?php require 'shared/menu-left.php'; ?>
-    <?php require 'shared/task-box.php'; ?>
+    <?php require '../shared/navibar-top.php'; ?>
+    <?php require '../shared/menu-left.php'; ?>
+    <?php require '../shared/task-box.php'; ?>
 
-    <div class="container-fluid" id="pageContent">      
-      <!--top page-->
-      <div class="top-page">
-        <div class="row">         
-          <!--breadcrumb-->
-          <div class="col-lg-12">
-            <ol class="breadcrumb">
-              <li>
-                <a href="#">Início</a>
-              </li>
-              <li>
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <a href="#">Rounds</a>
-              </li>
-              <li class="active">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                Samaritano
-              </li>
-            </ol>
-          </div>
-          <!--/ breadcrumb-->  
-
-          <div class="col-lg-6">
-            <h1 class="">Bernardo Joaquim <small>23 anos</small></h1>
-          </div>
-          <div class="col-lg-6">
-            <ul class="list-inline round-details">
-              <li>
-                PACIENTES <strong>5</strong>
-              </li>
-              <li>
-                PROFISSIONAIS <strong>5</strong>
-              </li>
-              <li>
-                TAREFAS <strong>5</strong>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!--/ top page-->
-
+    <div class="container-fluid" id="pageContent">     
+      <?php include '../shared/top-page.php'; ?>
+     
       <!--novo exame-->
       <div class="row">
         <!-- Nav tabs -->
@@ -112,10 +62,11 @@
             <div class="col-lg-12">
               <hr>
 
+              <!--exame 1-->
               <div class="panel-group">
                 <div class="panel panel-default">
                   <div class="panel-heading">
-                    <h4 class="panel-title">
+                    <h4 class="panel-title text-uppercase">
                       <a data-toggle="collapse" href="#exame-01">
                         Hematologia
                         <div class="chevron in">
@@ -125,15 +76,327 @@
                       </a>
                     </h4>
                   </div>
-                  <div id="exame-01" class="panel-collapse collapse in">
-                    <div class="panel-body">
-                      <h5>Bernardo Joaquim</h5>
-                      <h6>CTI Cardiaco - Leito 5</h6>
+                  <div id="exame-01" class="panel-collapse collapse">
+                    <div class="panel-body bleed">
+                      <div class="row">
+                        <div class="spacer sm"></div>
+                        <!--linha 1-->
+                        <div class="col-lg-2">
+                          <label>TAP</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 1-->
+
+                        <!--linha 2-->
+                        <div class="col-lg-2">
+                          <label>Bilirrubina Indireta</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 2-->
+
+                        <!--linha 3-->
+                        <div class="col-lg-2">
+                          <label>PPT</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 3-->
+
+                        <!--linha 4-->
+                        <div class="col-lg-2">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="tipo">
+                          </div>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                          <button class="btn btn-success btn-rounded">
+                            <span class="glyphicon glyphicon-ok"></span>
+                          </button>
+                        </div>
+                        <!--/ linha 4-->
+                      </div>
                     </div>
                   </div>
                 </div>     
               </div>
+              <!--/ exame 1-->
+
+              <!--exame 2-->
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title text-uppercase">
+                      <a data-toggle="collapse" href="#exame-02">
+                        Coagulograma
+                        <div class="chevron in">
+                          <span class="glyphicon glyphicon-chevron-down"></span>
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </div>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="exame-02" class="panel-collapse collapse in">
+                    <div class="panel-body bleed">
+                      <div class="row">
+                        <div class="spacer sm"></div>
+                        <!--linha 1-->
+                        <div class="col-lg-2">
+                          <label>TAP</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 1-->
+
+                        <!--linha 2-->
+                        <div class="col-lg-2">
+                          <label>Bilirrubina Indireta</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 2-->
+
+                        <!--linha 3-->
+                        <div class="col-lg-2">
+                          <label>PPT</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 3-->
+
+                        <!--linha 4-->
+                        <div class="col-lg-2">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="tipo">
+                          </div>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                          <button class="btn btn-success btn-rounded">
+                            <span class="glyphicon glyphicon-ok"></span>
+                          </button>
+                        </div>
+                        <!--/ linha 4-->
+                      </div>
+                    </div>
+                  </div>
+                </div>     
+              </div>
+              <!--/ exame 2-->
+
+              <!--exame 3-->
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title text-uppercase">
+                      <a data-toggle="collapse" href="#exame-03">
+                        Bioquímica
+                        <div class="chevron in">
+                          <span class="glyphicon glyphicon-chevron-down"></span>
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </div>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="exame-03" class="panel-collapse collapse">
+                    <div class="panel-body bleed">
+                      <div class="row">
+                        <div class="spacer sm"></div>
+                        <!--linha 1-->
+                        <div class="col-lg-2">
+                          <label>TAP</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 1-->
+
+                        <!--linha 2-->
+                        <div class="col-lg-2">
+                          <label>Bilirrubina Indireta</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 2-->
+
+                        <!--linha 3-->
+                        <div class="col-lg-2">
+                          <label>PPT</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 3-->
+
+                        <!--linha 4-->
+                        <div class="col-lg-2">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="tipo">
+                          </div>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                          <button class="btn btn-success btn-rounded">
+                            <span class="glyphicon glyphicon-ok"></span>
+                          </button>
+                        </div>
+                        <!--/ linha 4-->
+                      </div>
+                    </div>
+                  </div>
+                </div>     
+              </div>
+              <!--/ exame 3-->
+
+              <!--exame 4-->
+              <div class="panel-group">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title text-uppercase">
+                      <a data-toggle="collapse" href="#exame-04">
+                        Outros
+                        <div class="chevron in">
+                          <span class="glyphicon glyphicon-chevron-down"></span>
+                          <span class="glyphicon glyphicon-chevron-left"></span>
+                        </div>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="exame-04" class="panel-collapse collapse">
+                    <div class="panel-body bleed">
+                      <div class="row">
+                        <div class="spacer sm"></div>
+                        <!--linha 1-->
+                        <div class="col-lg-2">
+                          <label>TAP</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 1-->
+
+                        <!--linha 2-->
+                        <div class="col-lg-2">
+                          <label>Bilirrubina Indireta</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 2-->
+
+                        <!--linha 3-->
+                        <div class="col-lg-2">
+                          <label>PPT</label>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                        </div>
+                        <!--/ linha 3-->
+
+                        <!--linha 4-->
+                        <div class="col-lg-2">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="tipo">
+                          </div>
+                        </div>
+                        <div class="col-lg-9">
+                          <div class="form-group">
+                            <input type="email" class="form-control" id="" placeholder="valor">
+                          </div>
+                        </div>
+                        <div class="col-lg-1">
+                          <button class="btn btn-success btn-rounded">
+                            <span class="glyphicon glyphicon-ok"></span>
+                          </button>
+                        </div>
+                        <!--/ linha 4-->
+                      </div>
+                    </div>
+                  </div>
+                </div>     
+              </div>
+              <!--/ exame 4-->
+
             </div>
+            
+            <div class="spacer xl"></div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+              <button class="btn btn-success btn-block">Salvar</button>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+              <button class="btn btn-block">Cancelar</button>
+            </div>
+
+
           </div>
           <!--/exames-->
 
@@ -143,6 +406,6 @@
       <!--/novo exame-->   
     </div><!--/ pageContent-->
 
-    <?php require 'shared/javascript.php'; ?>
+    <?php require '../shared/javascript.php'; ?>
   </body>
 </html>

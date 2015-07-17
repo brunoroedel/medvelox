@@ -1,6 +1,6 @@
 <?php
-  $sectionTitle = "Rounds";
-  $breadCrumb = array("Inicio", $sectionTitle);
+  $sectionTitle = array("Rounds"  => "");
+  $breadCrumb = array("Inicio", "Rounds");
   $roundDetails = array("Pacientes" => 5, "Profissionais" => 5, "Tarefas" => 5);
 ?>
 

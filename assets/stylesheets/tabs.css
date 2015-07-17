@@ -2,15 +2,18 @@
   font-family: "Montserrat";
   src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
+/* line 3, ../sass/tabs.scss */
 .nav-tabs {
   margin: 20px 15px 40px;
 }
 
+/* line 7, ../sass/tabs.scss */
 .nav-tabs > li {
   border: none;
   margin: 0px 0px -4px;
 }
 
+/* line 12, ../sass/tabs.scss */
 .nav-tabs > li > a,
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
@@ -21,17 +24,19 @@
   margin: 0px;
 }
 
+/* line 22, ../sass/tabs.scss */
 .nav-tabs > li > a:hover,
 .nav-tabs > li > a:focus {
-  border-bottom: 4px solid #ce181f;
+  border-bottom: 3px solid #ce181f;
   color: #555;
   margin: 0px;
 }
 
+/* line 29, ../sass/tabs.scss */
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   border: none;
-  border-bottom: 4px solid #ce181f;
+  border-bottom: 3px solid #ce181f;
   color: #555;
 }

@@ -21,7 +21,7 @@
 
 .nav-tabs > li > a:hover, 
 .nav-tabs > li > a:focus{
-	border-bottom: 4px solid $brand-danger;
+	border-bottom: 3px solid $brand-danger;
 	color: $gray;
 	margin: 0px;
 }
@@ -30,6 +30,6 @@
 .nav-tabs > li.active > a:hover, 
 .nav-tabs > li.active > a:focus {
 	border: none;	
-	border-bottom: 4px solid $brand-danger;
+	border-bottom: 3px solid $brand-danger;
 	color: $gray;
 }

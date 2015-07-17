@@ -1,6 +1,6 @@
 <?php 
    //$path = $_SERVER['DOCUMENT_ROOT'];
-   $js = "http://localhost/medvelox/javascripts/";
+   $js = "http://localhost/medvelox/assets/javascripts/";
 ?>
 
 <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->

@@ -1,7 +1,7 @@
 <?php 
    //$path = $_SERVER['DOCUMENT_ROOT'];
-   $css = "http://localhost/medvelox/stylesheets/styles.css";
-   $img = "http://localhost/medvelox/img/"
+   $css = "http://localhost/medvelox/assets/stylesheets/styles.css";
+   $img = "http://localhost/medvelox/assets/img/";
 ?>
 
 
