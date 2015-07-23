@@ -3,6 +3,11 @@
   font-family: "Montserrat";
   src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
+/*!
+ * Bootstrap v3.3.5 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /* line 9, ../../../../../Users/Bruno/Documents/GitHub/apps/compass.app.windows.1.29/lib/ruby/compass_extensions/bootstrap-sass-3.2.0.1/assets/stylesheets/bootstrap/_normalize.scss */
 html {
@@ -8029,6 +8034,10 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
 /*--Horizontal top Menu--*/
 /* line 6, ../sass/navigation-components.scss */
 .navbar {
@@ -8708,6 +8717,10 @@ body.menu-open #openMenu {
     margin: 0px 5px 0px 0px;
   }
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
 /* Nariko input */
 /* line 6, ../sass/forms.scss */
 .input {
@@ -8945,8 +8958,138 @@ body.menu-open #openMenu {
   color: #ccc;
 }
 
-/* Bootstrap Form Custom */
-/* line 255, ../sass/forms.scss */
+/*--Switch element--*/
+/*--http://www.cssscript.com/demo/ios-7-style-switches-with-pure-css-css3/--*/
+/* line 231, ../sass/forms.scss */
+.checkbox-label:before,
+.checkbox-label:after {
+  /*transition*/
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+/* line 239, ../sass/forms.scss */
+.ios-toggle,
+.ios-toggle:active {
+  position: absolute;
+  top: -5000px;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  border: none;
+  outline: none;
+}
+
+/* line 250, ../sass/forms.scss */
+.checkbox-label {
+  display: block;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+  height: 36px;
+  /*border-radius*/
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+
+/* line 267, ../sass/forms.scss */
+.checkbox-label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  line-height: 34px;
+  text-indent: 40px;
+  height: 36px;
+  width: 36px;
+  /*border-radius*/
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  top: 0px;
+  left: 0px;
+  right: auto;
+  background: white;
+  /*box-shadow*/
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
+}
+
+/* line 290, ../sass/forms.scss */
+.checkbox-label:after {
+  content: attr(data-off);
+  display: block;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: -300px;
+  padding: 10px;
+  height: 100%;
+  width: 300px;
+  text-align: right;
+  color: #bfbfbf;
+  white-space: nowrap;
+}
+
+/* line 305, ../sass/forms.scss */
+.ios-toggle:checked + .checkbox-label {
+  /*box-shadow*/
+  -webkit-box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
+  -moz-box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
+  box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
+}
+
+/* line 312, ../sass/forms.scss */
+.ios-toggle:checked + .checkbox-label:before {
+  left: calc(100% - 36px);
+  /*box-shadow*/
+  -webkit-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 320, ../sass/forms.scss */
+.ios-toggle:checked + .checkbox-label:after {
+  content: attr(data-on);
+  left: 60px;
+  width: 36px;
+}
+
+/*--Customizations--*/
+/* line 329, ../sass/forms.scss */
+#checkbox1 + .checkbox-label {
+  /*box-shadow*/
+  -webkit-box-shadow: inset 0 0 0 0px #ce181f, 0 0 0 2px #dddddd;
+  -moz-box-shadow: inset 0 0 0 0px #ce181f, 0 0 0 2px #dddddd;
+  box-shadow: inset 0 0 0 0px #ce181f, 0 0 0 2px #dddddd;
+  width: 70px;
+  margin-right: 10px;
+}
+
+/* line 338, ../sass/forms.scss */
+#checkbox1:checked + .checkbox-label {
+  /*box-shadow*/
+  -webkit-box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
+  -moz-box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
+  box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
+}
+
+/* line 345, ../sass/forms.scss */
+#checkbox1:checked + .checkbox-label:after {
+  color: black;
+}
+
+/* Bootstrap Checkbox Custom */
+/* line 350, ../sass/forms.scss */
 .checkbox {
   /* checkbox aspect */
   /* checked mark aspect */
@@ -8955,13 +9098,13 @@ body.menu-open #openMenu {
   /* accessibility */
   /* hover style just for information */
 }
-/* line 256, ../sass/forms.scss */
+/* line 351, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked),
 .checkbox [type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
 }
-/* line 261, ../sass/forms.scss */
+/* line 356, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label,
 .checkbox [type="checkbox"]:checked + label {
   position: relative;
@@ -8971,11 +9114,11 @@ body.menu-open #openMenu {
   font-size: 12px;
   color: #555;
 }
-/* line 271, ../sass/forms.scss */
+/* line 366, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked + label {
   text-decoration: line-through;
 }
-/* line 276, ../sass/forms.scss */
+/* line 371, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:before,
 .checkbox [type="checkbox"]:checked + label:before {
   content: '';
@@ -8989,7 +9132,7 @@ body.menu-open #openMenu {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 290, ../sass/forms.scss */
+/* line 385, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after,
 .checkbox [type="checkbox"]:checked + label:after {
   font-family: "custom-icons";
@@ -9008,41 +9151,96 @@ body.menu-open #openMenu {
   border: 1px solid #ce181f;
   background: #ce181f;
 }
-/* line 309, ../sass/forms.scss */
+/* line 404, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
-/* line 313, ../sass/forms.scss */
+/* line 408, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
-/* line 320, ../sass/forms.scss */
+/* line 415, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
 .checkbox [type="checkbox"]:disabled:checked + label:before {
   box-shadow: none;
   border-color: #bbb;
   background-color: #ddd;
 }
-/* line 326, ../sass/forms.scss */
+/* line 421, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:checked + label:after {
   color: #999;
 }
-/* line 329, ../sass/forms.scss */
+/* line 424, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled + label {
   color: #aaa;
 }
-/* line 333, ../sass/forms.scss */
+/* line 428, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked:focus + label:before,
 .checkbox [type="checkbox"]:not(:checked):focus + label:before {
   border: 1px dotted blue;
 }
-/* line 339, ../sass/forms.scss */
+/* line 434, ../sass/forms.scss */
 .checkbox label:hover:before {
   border: 1px solid #4778d9 !important;
 }
 
+/* Bootstrap textarea Custom */
+/* line 442, ../sass/forms.scss */
+.textarea-rich textarea.form-control {
+  border-radius: 0px;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 451, ../sass/forms.scss */
+.textarea-rich ::-webkit-input-placeholder {
+  color: #555;
+}
+/* line 455, ../sass/forms.scss */
+.textarea-rich :-moz-placeholder {
+  color: #555;
+}
+/* line 459, ../sass/forms.scss */
+.textarea-rich ::-moz-placeholder {
+  color: #555;
+}
+/* line 463, ../sass/forms.scss */
+.textarea-rich :-ms-input-placeholder {
+  color: #555;
+}
+/* line 467, ../sass/forms.scss */
+.textarea-rich .menu {
+  height: 50px;
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+/* line 474, ../sass/forms.scss */
+.textarea-rich .menu a {
+  width: 50px;
+  height: 49px;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  display: block;
+  float: left;
+  color: #555;
+}
+/* line 485, ../sass/forms.scss */
+.textarea-rich .menu a:hover {
+  background: #ccc;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
 /*-- button rounded --*/
 /* line 7, ../sass/buttons.scss */
 .btn.btn-rounded {
@@ -9148,6 +9346,10 @@ body.menu-open #openMenu {
     line-height: 20px;
   }
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
 /* line 7, ../sass/tables.scss */
 .table thead tr th {
   font-family: 'Montserrat', Helvetica, sans-serif;
@@ -9192,6 +9394,10 @@ body.menu-open #openMenu {
   border-bottom: 1px solid #ddd;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
 /* line 3, ../sass/tabs.scss */
 .nav-tabs {
   margin: 20px 15px 40px;
@@ -9231,6 +9437,38 @@ body.menu-open #openMenu {
   color: #555;
 }
 
+@media (max-width: 767px) {
+  /* line 39, ../sass/tabs.scss */
+  .table-responsive .nav {
+    width: 100%;
+    height: 44px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: left;
+    -webkit-align-content: space-between;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
+}
 /* line 5, ../sass/expand-collapse.scss */
 .panel-group {
   margin: 10px 0px;
@@ -9473,131 +9711,136 @@ h2.login {
 }
 
 /* line 99, ../sass/styles.scss */
+.text-muted {
+  color: #BEBEBE;
+}
+
+/* line 103, ../sass/styles.scss */
 footer.login {
   margin-top: -50px;
 }
 
 /*--Grid customization--*/
-/* line 104, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .container-fluid {
   margin-left: 260px;
   padding: 0px 25px 0px 25px;
 }
 
-/* line 109, ../sass/styles.scss */
+/* line 113, ../sass/styles.scss */
 .container-fluid.logout {
   padding: 0px 15px;
 }
 
 /*--Spacers--*/
-/* line 115, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .spacer {
   width: 100%;
   clear: both;
 }
 
-/* line 119, ../sass/styles.scss */
+/* line 123, ../sass/styles.scss */
 .spacer.sm {
   height: 10px;
 }
 
-/* line 122, ../sass/styles.scss */
+/* line 126, ../sass/styles.scss */
 .spacer.md {
   height: 20px;
 }
 
-/* line 125, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .spacer.lg {
   height: 30px;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .spacer.xl {
   height: 40px;
 }
 
-/* line 132, ../sass/styles.scss */
+/* line 136, ../sass/styles.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 140, ../sass/styles.scss */
 .no-margin {
   margin: 0px;
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .basic-margin {
   margin: 10px;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 148, ../sass/styles.scss */
 .basic-margin.vertical {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 149, ../sass/styles.scss */
+/* line 153, ../sass/styles.scss */
 .basic-margin.horizontal {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 158, ../sass/styles.scss */
 hr {
   border-top: 1px solid #ddd;
 }
 
 /*--Top Pages--*/
-/* line 159, ../sass/styles.scss */
+/* line 163, ../sass/styles.scss */
 .top-page {
   background: #f9f9f9;
   border-bottom: 1px solid #ddd;
   margin: 70px -25px 30px -25px;
   padding: 15px 25px;
 }
-/* line 165, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .top-page h1 {
   margin-bottom: 0px;
 }
-/* line 167, ../sass/styles.scss */
+/* line 171, ../sass/styles.scss */
 .top-page h1 small {
   color: #BEBEBE;
   font-size: 50%;
   margin-left: 10px;
   font-weight: 100;
 }
-/* line 174, ../sass/styles.scss */
+/* line 178, ../sass/styles.scss */
 .top-page ul.round-details {
   margin: 33px 0px 0px 0px;
   float: right;
 }
-/* line 178, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 .top-page ul.round-details li {
   color: #555;
   padding: 0px 10px 0px 0px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
-/* line 184, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .top-page ul.round-details li strong {
   margin: 0px 5px;
 }
-/* line 188, ../sass/styles.scss */
+/* line 192, ../sass/styles.scss */
 .top-page ul.round-details li:after {
   content: " | ";
 }
-/* line 191, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 .top-page ul.round-details li:last-child {
   padding-right: 0px;
 }
-/* line 194, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .top-page ul.round-details li:last-child:after {
   content: "";
   padding-right: 0px;
 }
 
-/* line 201, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .highlight {
   padding: 9px 14px;
   margin: 0px 0px 15px;
@@ -9605,25 +9848,38 @@ hr {
   border: 1px solid #e1e1e8;
   border-radius: 4px;
 }
-/* line 208, ../sass/styles.scss */
+/* line 212, ../sass/styles.scss */
 .highlight p {
   margin: 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 215, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 .highlight .text-muted {
   color: #666666;
 }
 
+/* line 225, ../sass/styles.scss */
+.message-info h4, .message-info p {
+  margin-left: 80px;
+}
+
+/* line 230, ../sass/styles.scss */
+.user-image {
+  width: 60px;
+  height: 60px;
+  margin: 0px 20px 0px 0px;
+  float: left;
+}
+
 /*--Custom Backgrounds--*/
-/* line 223, ../sass/styles.scss */
+/* line 240, ../sass/styles.scss */
 .maxheight {
   height: 100%;
 }
 
-/* line 227, ../sass/styles.scss */
+/* line 244, ../sass/styles.scss */
 .bg-login {
   background: url(../img/bg-login.jpg);
   height: 100%;
@@ -9631,41 +9887,41 @@ hr {
 }
 
 @media (max-width: 767px) {
-  /* line 235, ../sass/styles.scss */
+  /* line 252, ../sass/styles.scss */
   h1, h2, h3, h4, h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
     color: #666666;
   }
 
-  /* line 241, ../sass/styles.scss */
+  /* line 258, ../sass/styles.scss */
   h1 {
     font-size: 24px;
   }
 
-  /* line 242, ../sass/styles.scss */
+  /* line 259, ../sass/styles.scss */
   h2 {
     font-size: 18px;
   }
 
-  /* line 243, ../sass/styles.scss */
+  /* line 260, ../sass/styles.scss */
   h3 {
     font-size: 14px;
   }
 
-  /* line 245, ../sass/styles.scss */
+  /* line 262, ../sass/styles.scss */
   .container-fluid {
     margin-left: 0px !important;
     padding: 20px 10px 0px;
   }
 
-  /* line 249, ../sass/styles.scss */
+  /* line 266, ../sass/styles.scss */
   .row {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  /* line 253, ../sass/styles.scss */
+  /* line 270, ../sass/styles.scss */
   .top-page {
     background: #f9f9f9;
     border-bottom: 1px solid #ddd;
@@ -9673,7 +9929,7 @@ hr {
     padding: 15px 10px;
   }
 
-  /* line 259, ../sass/styles.scss */
+  /* line 276, ../sass/styles.scss */
   .top-page ul.round-details {
     float: left;
   }

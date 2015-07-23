@@ -7,7 +7,7 @@
       <div class="row no-margin">
         <div class="col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
           <h1 class="login">
-            <img src="img/logo-medvelox.png" alt="Medvelox">
+            <img src="assets/img/logo-medvelox.png" alt="Medvelox">
           </h1>
           <form>
             <span class="input input--nariko block">
@@ -34,7 +34,7 @@
             </div>
             <a href="" class="pull-right"><small>Não consegue acessar sua conta</small></a>
             <div class="spacer lg"></div>
-            <a href="round.html" class="btn btn-danger btn-lg btn-block">Entrar</a>
+            <a href="rounds/index.php" class="btn btn-danger btn-lg btn-block">Entrar</a>
             <p class="basic-margin text-center">ou</p>
             <a href="round.html" class="btn btn-no-background pink btn-lg btn-block">Criar minha conta</a>
           </form>

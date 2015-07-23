@@ -1,7 +1,7 @@
 <?php
-  $sectionTitle = "Novo Round";
-  $breadCrumb = array("Inicio", "Rounds", $sectionTitle);
-  $roundDetails = "";
+  $sectionTitle = array("Novo Round" => "");
+  $breadCrumb = array("Inicio", "Rounds", "Novo Round");
+  $roundDetails = array("");
 ?>
 
 <!DOCTYPE html>
