@@ -45,3 +45,8 @@
 .table tbody tr:last-child {
   border-bottom: 1px solid #ddd;
 }
+
+/* line 54, ../sass/tables.scss */
+.table-responsive {
+  border: none;
+}

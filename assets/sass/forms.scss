@@ -3,6 +3,7 @@
 @import "bootstrap-variables";
 
 /* Nariko input */
+/* http://tympanus.net/Development/TextInputEffects/index.html */
 .input {
 	position: relative;
 	z-index: 1;
@@ -346,10 +347,11 @@
 
 
 /* Bootstrap Checkbox Custom */
-
-.checkbox {	
+/*--http://codepen.io/CreativeJuiz/pen/BiHzp--*/
+.checkbox,
+.radio {	
 	[type="checkbox"]:not(:checked),
-	[type="checkbox"]:checked {
+	[type="checkbox"]:checked{
 	  position: absolute;
 	  left: -9999px;
 	}
@@ -363,13 +365,13 @@
 	  color: $gray;
 	}
 
-	[type="checkbox"]:checked + label {
+	[type="checkbox"]:checked + label{
 		text-decoration: line-through;
 	}
 
 	/* checkbox aspect */
 	[type="checkbox"]:not(:checked) + label:before,
-	[type="checkbox"]:checked + label:before {
+	[type="checkbox"]:checked + label:before{
 	  content: '';
 	  position: absolute;
 	  left:0; 
@@ -381,9 +383,10 @@
 	  border-radius: 3px;
 	  box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
 	}
+
 	/* checked mark aspect */
 	[type="checkbox"]:not(:checked) + label:after,
-	[type="checkbox"]:checked + label:after {
+	[type="checkbox"]:checked + label:after{
       font-family: $icon-custom-font-name;
 	  content: '\e60a';
 	  position: absolute;
@@ -400,12 +403,13 @@
 	  border: 1px solid $brand-danger;
 	  background: $brand-danger;
 	}
+
 	/* checked mark aspect changes */
 	[type="checkbox"]:not(:checked) + label:after {
 	  opacity: 0;
 	  transform: scale(0);
 	}
-	[type="checkbox"]:checked + label:after {
+	[type="checkbox"]:checked + label:after{
 	  opacity: 1;
 	  transform: scale(1);
 	  //border: 1px solid $brand-danger;
@@ -418,15 +422,15 @@
 	  border-color: #bbb;
 	  background-color: #ddd;
 	}
-	[type="checkbox"]:disabled:checked + label:after {
+	[type="checkbox"]:disabled:checked + label:after{
 	  color: #999;
 	}
-	[type="checkbox"]:disabled + label {
+	[type="checkbox"]:disabled + label{
 	  color: #aaa;
 	}
 	/* accessibility */
 	[type="checkbox"]:checked:focus + label:before,
-	[type="checkbox"]:not(:checked):focus + label:before {
+	[type="checkbox"]:not(:checked):focus + label:before{
 	  border: 1px dotted blue;
 	}
 
@@ -436,8 +440,51 @@
 	}
 }
 
-/* Bootstrap textarea Custom */
+/* Bootstrap Radio Custom */
+/* http://codepen.io/mitchmc/pen/pebIx */
+.radio{
+	input[type="radio"] {
+	    display:none;
+	}
+	input[type="radio"] + label {
+	    color: $gray;
+	    font-family:Arial, sans-serif;
+	    font-size:14px;
+	}
+	input[type="radio"] + label span {
+	    display:inline-block;
+	    width:19px;
+	    height:19px;
+	    margin:-1px 4px 0 0;
+	    vertical-align:middle;
+	    cursor:pointer;
+	    -moz-border-radius:  50%;
+	    border-radius:  50%;
+	}
 
+	input[type="radio"] + label span {
+	    background-color:#fff;
+	    border: 1px solid $border-color;
+	}
+
+	input[type="radio"]:checked + label span{
+	     background-color:$brand-danger;
+	}
+
+	input[type="radio"] + label span,
+	input[type="radio"]:checked + label span {
+	  -webkit-transition:background-color 0.4s linear;
+	  -o-transition:background-color 0.4s linear;
+	  -moz-transition:background-color 0.4s linear;
+	  transition:background-color 0.4s linear;
+	}
+}
+.radio + .radio, 
+.checkbox + .checkbox {
+	margin-top: 10px;
+}
+
+/* Bootstrap textarea Custom */
 .textarea-rich{
 	textarea.form-control{
 		border-radius: 0px;

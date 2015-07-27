@@ -3,7 +3,8 @@
   src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
 /* Nariko input */
-/* line 6, ../sass/forms.scss */
+/* http://tympanus.net/Development/TextInputEffects/index.html */
+/* line 7, ../sass/forms.scss */
 .input {
   position: relative;
   z-index: 1;
@@ -14,7 +15,7 @@
   vertical-align: top;
 }
 
-/* line 16, ../sass/forms.scss */
+/* line 17, ../sass/forms.scss */
 .input__field {
   position: relative;
   display: block;
@@ -31,12 +32,12 @@
   /* for box shadows to show on iOS */
 }
 
-/* line 31, ../sass/forms.scss */
+/* line 32, ../sass/forms.scss */
 .input__field:focus {
   outline: none;
 }
 
-/* line 35, ../sass/forms.scss */
+/* line 36, ../sass/forms.scss */
 .input__label {
   display: inline-block;
   float: right;
@@ -55,7 +56,7 @@
   user-select: none;
 }
 
-/* line 53, ../sass/forms.scss */
+/* line 54, ../sass/forms.scss */
 .input__label-content {
   position: relative;
   display: block;
@@ -63,7 +64,7 @@
   width: 100%;
 }
 
-/* line 60, ../sass/forms.scss */
+/* line 61, ../sass/forms.scss */
 .graphic {
   position: absolute;
   top: 0;
@@ -71,19 +72,19 @@
   fill: none;
 }
 
-/* line 67, ../sass/forms.scss */
+/* line 68, ../sass/forms.scss */
 .icon {
   color: #ddd;
   font-size: 150%;
 }
 
-/* line 72, ../sass/forms.scss */
+/* line 73, ../sass/forms.scss */
 .input--nariko {
   overflow: hidden;
   padding-top: 20px;
 }
 
-/* line 77, ../sass/forms.scss */
+/* line 78, ../sass/forms.scss */
 .input__field--nariko {
   width: 100%;
   background: transparent;
@@ -95,7 +96,7 @@
   margin: 0px;
 }
 
-/* line 88, ../sass/forms.scss */
+/* line 89, ../sass/forms.scss */
 .input__label--nariko {
   width: 100%;
   bottom: 0;
@@ -109,7 +110,7 @@
   height: 30px;
 }
 
-/* line 101, ../sass/forms.scss */
+/* line 102, ../sass/forms.scss */
 .input__label--nariko::before {
   content: '';
   position: absolute;
@@ -126,7 +127,7 @@
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 118, ../sass/forms.scss */
+/* line 119, ../sass/forms.scss */
 .input__label-content--nariko {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -141,7 +142,7 @@
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 132, ../sass/forms.scss */
+/* line 133, ../sass/forms.scss */
 .input__field--nariko:focus,
 .input--filled .input__field--nariko {
   cursor: text;
@@ -150,7 +151,7 @@
   transition: opacity 0s 0.4s;
 }
 
-/* line 140, ../sass/forms.scss */
+/* line 141, ../sass/forms.scss */
 .input__field--nariko:focus + .input__label--nariko::before,
 .input--filled .input__label--nariko::before {
   -webkit-transition-delay: 0.05s;
@@ -159,7 +160,7 @@
   transform: translate3d(0, -3.3em, 0);
 }
 
-/* line 148, ../sass/forms.scss */
+/* line 149, ../sass/forms.scss */
 .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input--filled .input__label-content--nariko {
   color: #6B6E6E;
@@ -168,7 +169,7 @@
 }
 
 /*--element forms in block--*/
-/* line 157, ../sass/forms.scss */
+/* line 158, ../sass/forms.scss */
 .input.input--nariko.block {
   padding: 20px 60px 0px 10px;
   border: 1px solid #ddd;
@@ -180,35 +181,35 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-/* line 168, ../sass/forms.scss */
+/* line 169, ../sass/forms.scss */
 .input.input--nariko.block .input__label--nariko {
   bottom: 13px;
 }
-/* line 172, ../sass/forms.scss */
+/* line 173, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko {
   border: 0px;
   font-size: 14px;
   color: #666666;
 }
-/* line 178, ../sass/forms.scss */
+/* line 179, ../sass/forms.scss */
 .input.input--nariko.block .input__label-content--nariko {
   text-transform: uppercase;
 }
-/* line 182, ../sass/forms.scss */
+/* line 183, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input.input--nariko.block .input--filled .input__label-content--nariko {
   color: #555;
   -webkit-transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
   transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
 }
-/* line 189, ../sass/forms.scss */
+/* line 190, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input.input--nariko.block .input--filled .input__label-content--nariko {
   color: #555;
   -webkit-transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
   transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
 }
-/* line 196, ../sass/forms.scss */
+/* line 197, ../sass/forms.scss */
 .input.input--nariko.block .icon {
   position: absolute;
   top: 0px;
@@ -220,28 +221,28 @@
   line-height: 60px;
 }
 
-/* line 211, ../sass/forms.scss */
+/* line 212, ../sass/forms.scss */
 .form-group ::-webkit-input-placeholder {
   color: #ccc;
 }
-/* line 215, ../sass/forms.scss */
+/* line 216, ../sass/forms.scss */
 .form-group :-moz-placeholder {
   /* Firefox 18- */
   color: #ccc;
 }
-/* line 219, ../sass/forms.scss */
+/* line 220, ../sass/forms.scss */
 .form-group ::-moz-placeholder {
   /* Firefox 19+ */
   color: #ccc;
 }
-/* line 223, ../sass/forms.scss */
+/* line 224, ../sass/forms.scss */
 .form-group :-ms-input-placeholder {
   color: #ccc;
 }
 
 /*--Switch element--*/
 /*--http://www.cssscript.com/demo/ios-7-style-switches-with-pure-css-css3/--*/
-/* line 231, ../sass/forms.scss */
+/* line 232, ../sass/forms.scss */
 .checkbox-label:before,
 .checkbox-label:after {
   /*transition*/
@@ -251,7 +252,7 @@
   transition: .25s ease-in-out;
 }
 
-/* line 239, ../sass/forms.scss */
+/* line 240, ../sass/forms.scss */
 .ios-toggle,
 .ios-toggle:active {
   position: absolute;
@@ -263,7 +264,7 @@
   outline: none;
 }
 
-/* line 250, ../sass/forms.scss */
+/* line 251, ../sass/forms.scss */
 .checkbox-label {
   display: block;
   position: relative;
@@ -281,7 +282,7 @@
   cursor: pointer;
 }
 
-/* line 267, ../sass/forms.scss */
+/* line 268, ../sass/forms.scss */
 .checkbox-label:before {
   content: '';
   display: block;
@@ -305,7 +306,7 @@
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
 }
 
-/* line 290, ../sass/forms.scss */
+/* line 291, ../sass/forms.scss */
 .checkbox-label:after {
   content: attr(data-off);
   display: block;
@@ -321,7 +322,7 @@
   white-space: nowrap;
 }
 
-/* line 305, ../sass/forms.scss */
+/* line 306, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
@@ -329,7 +330,7 @@
   box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
 }
 
-/* line 312, ../sass/forms.scss */
+/* line 313, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label:before {
   left: calc(100% - 36px);
   /*box-shadow*/
@@ -338,7 +339,7 @@
   box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 320, ../sass/forms.scss */
+/* line 321, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label:after {
   content: attr(data-on);
   left: 60px;
@@ -346,7 +347,7 @@
 }
 
 /*--Customizations--*/
-/* line 329, ../sass/forms.scss */
+/* line 330, ../sass/forms.scss */
 #checkbox1 + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 0px #ce181f, 0 0 0 2px #dddddd;
@@ -356,7 +357,7 @@
   margin-right: 10px;
 }
 
-/* line 338, ../sass/forms.scss */
+/* line 339, ../sass/forms.scss */
 #checkbox1:checked + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
@@ -364,14 +365,16 @@
   box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
 }
 
-/* line 345, ../sass/forms.scss */
+/* line 346, ../sass/forms.scss */
 #checkbox1:checked + .checkbox-label:after {
   color: black;
 }
 
 /* Bootstrap Checkbox Custom */
-/* line 350, ../sass/forms.scss */
-.checkbox {
+/*--http://codepen.io/CreativeJuiz/pen/BiHzp--*/
+/* line 351, ../sass/forms.scss */
+.checkbox,
+.radio {
   /* checkbox aspect */
   /* checked mark aspect */
   /* checked mark aspect changes */
@@ -379,15 +382,19 @@
   /* accessibility */
   /* hover style just for information */
 }
-/* line 351, ../sass/forms.scss */
+/* line 353, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked),
-.checkbox [type="checkbox"]:checked {
+.checkbox [type="checkbox"]:checked,
+.radio [type="checkbox"]:not(:checked),
+.radio [type="checkbox"]:checked {
   position: absolute;
   left: -9999px;
 }
-/* line 356, ../sass/forms.scss */
+/* line 358, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label,
-.checkbox [type="checkbox"]:checked + label {
+.checkbox [type="checkbox"]:checked + label,
+.radio [type="checkbox"]:not(:checked) + label,
+.radio [type="checkbox"]:checked + label {
   position: relative;
   padding-left: 22px;
   line-height: 23px;
@@ -395,13 +402,16 @@
   font-size: 12px;
   color: #555;
 }
-/* line 366, ../sass/forms.scss */
-.checkbox [type="checkbox"]:checked + label {
+/* line 368, ../sass/forms.scss */
+.checkbox [type="checkbox"]:checked + label,
+.radio [type="checkbox"]:checked + label {
   text-decoration: line-through;
 }
-/* line 371, ../sass/forms.scss */
+/* line 373, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:before,
-.checkbox [type="checkbox"]:checked + label:before {
+.checkbox [type="checkbox"]:checked + label:before,
+.radio [type="checkbox"]:not(:checked) + label:before,
+.radio [type="checkbox"]:checked + label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -413,9 +423,11 @@
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 385, ../sass/forms.scss */
+/* line 388, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after,
-.checkbox [type="checkbox"]:checked + label:after {
+.checkbox [type="checkbox"]:checked + label:after,
+.radio [type="checkbox"]:not(:checked) + label:after,
+.radio [type="checkbox"]:checked + label:after {
   font-family: "custom-icons";
   content: '\e60a';
   position: absolute;
@@ -432,43 +444,99 @@
   border: 1px solid #ce181f;
   background: #ce181f;
 }
-/* line 404, ../sass/forms.scss */
-.checkbox [type="checkbox"]:not(:checked) + label:after {
+/* line 408, ../sass/forms.scss */
+.checkbox [type="checkbox"]:not(:checked) + label:after,
+.radio [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
-/* line 408, ../sass/forms.scss */
-.checkbox [type="checkbox"]:checked + label:after {
+/* line 412, ../sass/forms.scss */
+.checkbox [type="checkbox"]:checked + label:after,
+.radio [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
-/* line 415, ../sass/forms.scss */
+/* line 419, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
-.checkbox [type="checkbox"]:disabled:checked + label:before {
+.checkbox [type="checkbox"]:disabled:checked + label:before,
+.radio [type="checkbox"]:disabled:not(:checked) + label:before,
+.radio [type="checkbox"]:disabled:checked + label:before {
   box-shadow: none;
   border-color: #bbb;
   background-color: #ddd;
 }
-/* line 421, ../sass/forms.scss */
-.checkbox [type="checkbox"]:disabled:checked + label:after {
+/* line 425, ../sass/forms.scss */
+.checkbox [type="checkbox"]:disabled:checked + label:after,
+.radio [type="checkbox"]:disabled:checked + label:after {
   color: #999;
 }
-/* line 424, ../sass/forms.scss */
-.checkbox [type="checkbox"]:disabled + label {
+/* line 428, ../sass/forms.scss */
+.checkbox [type="checkbox"]:disabled + label,
+.radio [type="checkbox"]:disabled + label {
   color: #aaa;
 }
-/* line 428, ../sass/forms.scss */
+/* line 432, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked:focus + label:before,
-.checkbox [type="checkbox"]:not(:checked):focus + label:before {
+.checkbox [type="checkbox"]:not(:checked):focus + label:before,
+.radio [type="checkbox"]:checked:focus + label:before,
+.radio [type="checkbox"]:not(:checked):focus + label:before {
   border: 1px dotted blue;
 }
-/* line 434, ../sass/forms.scss */
-.checkbox label:hover:before {
+/* line 438, ../sass/forms.scss */
+.checkbox label:hover:before,
+.radio label:hover:before {
   border: 1px solid #4778d9 !important;
 }
 
+/* Bootstrap Radio Custom */
+/* http://codepen.io/mitchmc/pen/pebIx */
+/* line 446, ../sass/forms.scss */
+.radio input[type="radio"] {
+  display: none;
+}
+/* line 449, ../sass/forms.scss */
+.radio input[type="radio"] + label {
+  color: #555;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+/* line 454, ../sass/forms.scss */
+.radio input[type="radio"] + label span {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 465, ../sass/forms.scss */
+.radio input[type="radio"] + label span {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+/* line 470, ../sass/forms.scss */
+.radio input[type="radio"]:checked + label span {
+  background-color: #ce181f;
+}
+/* line 474, ../sass/forms.scss */
+.radio input[type="radio"] + label span,
+.radio input[type="radio"]:checked + label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+
+/* line 482, ../sass/forms.scss */
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: 10px;
+}
+
 /* Bootstrap textarea Custom */
-/* line 442, ../sass/forms.scss */
+/* line 489, ../sass/forms.scss */
 .textarea-rich textarea.form-control {
   border-radius: 0px;
   -webkit-border-bottom-right-radius: 4px;
@@ -478,23 +546,23 @@
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 451, ../sass/forms.scss */
+/* line 498, ../sass/forms.scss */
 .textarea-rich ::-webkit-input-placeholder {
   color: #555;
 }
-/* line 455, ../sass/forms.scss */
+/* line 502, ../sass/forms.scss */
 .textarea-rich :-moz-placeholder {
   color: #555;
 }
-/* line 459, ../sass/forms.scss */
+/* line 506, ../sass/forms.scss */
 .textarea-rich ::-moz-placeholder {
   color: #555;
 }
-/* line 463, ../sass/forms.scss */
+/* line 510, ../sass/forms.scss */
 .textarea-rich :-ms-input-placeholder {
   color: #555;
 }
-/* line 467, ../sass/forms.scss */
+/* line 514, ../sass/forms.scss */
 .textarea-rich .menu {
   height: 50px;
   width: 100%;
@@ -502,7 +570,7 @@
   border: 1px solid #ccc;
   border-bottom: none;
 }
-/* line 474, ../sass/forms.scss */
+/* line 521, ../sass/forms.scss */
 .textarea-rich .menu a {
   width: 50px;
   height: 49px;
@@ -513,7 +581,7 @@
   float: left;
   color: #555;
 }
-/* line 485, ../sass/forms.scss */
+/* line 532, ../sass/forms.scss */
 .textarea-rich .menu a:hover {
   background: #ccc;
 }

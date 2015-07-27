@@ -11,3 +11,4 @@
 <script src="<?php echo $js; ?>classes.js"></script>
 <script src="<?php echo $js; ?>custom-input.js"></script>
 <script src="<?php echo $js; ?>nav-components.js"></script>
+<script src="<?php echo $js; ?>main.js"></script>

@@ -88,21 +88,33 @@
   background: none;
 }
 
-/* line 69, ../sass/buttons.scss */
+/* line 70, ../sass/buttons.scss */
 .btn.btn-no-background.pink {
   border: 2px solid #f8564e;
   color: #f8564e;
 }
 
+/* line 76, ../sass/buttons.scss */
+.btn.btn-no-background.gray {
+  border: 2px solid #666666;
+  color: #666666;
+}
+
+/* line 81, ../sass/buttons.scss */
+.btn.btn-no-background.gray:hover {
+  background: #666666;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
-  /* line 77, ../sass/buttons.scss */
+  /* line 88, ../sass/buttons.scss */
   .btn.btn-rounded {
     padding: 2px 6px;
     border-radius: 50px;
     background: none;
   }
 
-  /* line 82, ../sass/buttons.scss */
+  /* line 93, ../sass/buttons.scss */
   .btn.btn-rounded .glyphicon {
     line-height: 20px;
   }

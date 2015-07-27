@@ -221,6 +221,22 @@ hr{
 	}
 }
 
+ul.messages { 
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+	li{
+		display: block;
+		border-top: 1px solid #ccc;
+		padding: 15px 0px;
+		margin: 0px;
+	}
+	li:first-child{
+		border:none;
+	}
+}
+
 .message-info{
 	h4, p{
 		margin-left: 80px;
@@ -228,10 +244,75 @@ hr{
 }
 
 .user-image{
+	position: relative;
 	width: 60px;
 	height: 60px;
 	margin: 0px 20px 0px 0px;
 	float: left;
+
+	.status{
+		width: 15px;
+		height: 15px;
+		border-radius: $border-radius-rounded;
+		border: 1px solid $border-color;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+	.status.online{
+		background: $brand-success;
+	}
+	.status.offline{
+		background: $brand-danger;
+	}
+
+	img{
+		width: 60px;
+		height: 60px;
+	}
+}
+
+.day{
+	.alert-info{
+		margin-bottom: 10px;
+
+		h4{
+			margin: 0px 0px 20px;
+			color: $gray;
+
+			small{
+				color: $gray;
+				margin-left: 10px;
+			}	
+		}
+
+		.prescription{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+
+			li{
+				padding: 0px 20px 0px 0px;
+				border-right: 1px solid #bce8f1;
+				display: block;
+				float: left;
+				margin: 0px 20px 0px 0px;
+
+				h5{
+					margin: 0px;
+					color: $gray;
+				}
+				p{
+					font-size: $font-size-small;
+					margin: 0px;
+					color: $gray;
+				}
+			}
+			li:last-child{
+				border-right: none;
+			}
+		}
+	}
 }
 
 
@@ -275,6 +356,23 @@ hr{
 	}
 	.top-page ul.round-details{
 		float: left;
+	}
+	.day{
+	.alert-info{
+		.prescription{
+				li{
+					padding: 0px 0px 10px 0px;
+					border-bottom: 1px solid #bce8f1;
+					display: block;
+					float: left;
+					margin: 0px 0px 10px 0px;
+					width: 100%;
+				}
+				li:last-child{
+					border-bottom: none;
+				}
+			}
+		}
 	}
 }
 

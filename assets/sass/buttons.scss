@@ -66,11 +66,22 @@
 .btn.btn-no-background{
 	background: none;
 }
+
 .btn.btn-no-background.pink{
 	border: 2px solid $brand-pink;
 	color: $brand-pink;
 }
 
+
+.btn.btn-no-background.gray{
+	border: 2px solid $gray-middle;
+	color: $gray-middle;
+}
+
+.btn.btn-no-background.gray:hover{
+	background: $gray-middle;
+	color: #fff;
+}
 
 
 @media(max-width: 767px){
