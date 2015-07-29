@@ -74,6 +74,12 @@ html, body, .container-fluid, .row{
 	content: "\e603";
 }
 
+html,
+body,
+p{
+	font-family: $font-family-sans-serif;
+}
+
 h1, h2, h3, h4, h5{
 	font-family: $font-family-titles;
 	font-weight: lighter;
@@ -216,9 +222,9 @@ hr{
 		text-overflow: ellipsis;
 	}
 
-	.text-muted{
+	/*.text-muted{
 		color: $gray-middle;
-	}
+	}*/
 }
 
 ul.messages { 
@@ -367,6 +373,7 @@ ul.messages {
 					float: left;
 					margin: 0px 0px 10px 0px;
 					width: 100%;
+					border-right: none;
 				}
 				li:last-child{
 					border-bottom: none;

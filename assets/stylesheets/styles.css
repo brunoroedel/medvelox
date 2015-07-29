@@ -8798,12 +8798,18 @@ body.menu-open #openMenu {
 }
 
 /* line 73, ../sass/forms.scss */
+.icon p {
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+/* line 78, ../sass/forms.scss */
 .input--nariko {
   overflow: hidden;
   padding-top: 20px;
 }
 
-/* line 78, ../sass/forms.scss */
+/* line 83, ../sass/forms.scss */
 .input__field--nariko {
   width: 100%;
   background: transparent;
@@ -8815,7 +8821,7 @@ body.menu-open #openMenu {
   margin: 0px;
 }
 
-/* line 89, ../sass/forms.scss */
+/* line 94, ../sass/forms.scss */
 .input__label--nariko {
   width: 100%;
   bottom: 0;
@@ -8829,7 +8835,7 @@ body.menu-open #openMenu {
   height: 30px;
 }
 
-/* line 102, ../sass/forms.scss */
+/* line 107, ../sass/forms.scss */
 .input__label--nariko::before {
   content: '';
   position: absolute;
@@ -8846,7 +8852,7 @@ body.menu-open #openMenu {
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 119, ../sass/forms.scss */
+/* line 124, ../sass/forms.scss */
 .input__label-content--nariko {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -8861,7 +8867,7 @@ body.menu-open #openMenu {
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 133, ../sass/forms.scss */
+/* line 138, ../sass/forms.scss */
 .input__field--nariko:focus,
 .input--filled .input__field--nariko {
   cursor: text;
@@ -8870,7 +8876,7 @@ body.menu-open #openMenu {
   transition: opacity 0s 0.4s;
 }
 
-/* line 141, ../sass/forms.scss */
+/* line 146, ../sass/forms.scss */
 .input__field--nariko:focus + .input__label--nariko::before,
 .input--filled .input__label--nariko::before {
   -webkit-transition-delay: 0.05s;
@@ -8879,7 +8885,7 @@ body.menu-open #openMenu {
   transform: translate3d(0, -3.3em, 0);
 }
 
-/* line 149, ../sass/forms.scss */
+/* line 154, ../sass/forms.scss */
 .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input--filled .input__label-content--nariko {
   color: #6B6E6E;
@@ -8888,7 +8894,7 @@ body.menu-open #openMenu {
 }
 
 /*--element forms in block--*/
-/* line 158, ../sass/forms.scss */
+/* line 163, ../sass/forms.scss */
 .input.input--nariko.block {
   padding: 20px 60px 0px 10px;
   border: 1px solid #ddd;
@@ -8900,35 +8906,35 @@ body.menu-open #openMenu {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-/* line 169, ../sass/forms.scss */
+/* line 174, ../sass/forms.scss */
 .input.input--nariko.block .input__label--nariko {
   bottom: 13px;
 }
-/* line 173, ../sass/forms.scss */
+/* line 178, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko {
   border: 0px;
   font-size: 14px;
   color: #666666;
 }
-/* line 179, ../sass/forms.scss */
+/* line 184, ../sass/forms.scss */
 .input.input--nariko.block .input__label-content--nariko {
   text-transform: uppercase;
 }
-/* line 183, ../sass/forms.scss */
+/* line 188, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input.input--nariko.block .input--filled .input__label-content--nariko {
   color: #555;
   -webkit-transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
   transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
 }
-/* line 190, ../sass/forms.scss */
+/* line 195, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input.input--nariko.block .input--filled .input__label-content--nariko {
   color: #555;
   -webkit-transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
   transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
 }
-/* line 197, ../sass/forms.scss */
+/* line 202, ../sass/forms.scss */
 .input.input--nariko.block .icon {
   position: absolute;
   top: 0px;
@@ -8940,28 +8946,28 @@ body.menu-open #openMenu {
   line-height: 60px;
 }
 
-/* line 212, ../sass/forms.scss */
+/* line 217, ../sass/forms.scss */
 .form-group ::-webkit-input-placeholder {
   color: #ccc;
 }
-/* line 216, ../sass/forms.scss */
+/* line 221, ../sass/forms.scss */
 .form-group :-moz-placeholder {
   /* Firefox 18- */
   color: #ccc;
 }
-/* line 220, ../sass/forms.scss */
+/* line 225, ../sass/forms.scss */
 .form-group ::-moz-placeholder {
   /* Firefox 19+ */
   color: #ccc;
 }
-/* line 224, ../sass/forms.scss */
+/* line 229, ../sass/forms.scss */
 .form-group :-ms-input-placeholder {
   color: #ccc;
 }
 
 /*--Switch element--*/
 /*--http://www.cssscript.com/demo/ios-7-style-switches-with-pure-css-css3/--*/
-/* line 232, ../sass/forms.scss */
+/* line 237, ../sass/forms.scss */
 .checkbox-label:before,
 .checkbox-label:after {
   /*transition*/
@@ -8971,7 +8977,7 @@ body.menu-open #openMenu {
   transition: .25s ease-in-out;
 }
 
-/* line 240, ../sass/forms.scss */
+/* line 245, ../sass/forms.scss */
 .ios-toggle,
 .ios-toggle:active {
   position: absolute;
@@ -8983,7 +8989,7 @@ body.menu-open #openMenu {
   outline: none;
 }
 
-/* line 251, ../sass/forms.scss */
+/* line 256, ../sass/forms.scss */
 .checkbox-label {
   display: block;
   position: relative;
@@ -9001,7 +9007,7 @@ body.menu-open #openMenu {
   cursor: pointer;
 }
 
-/* line 268, ../sass/forms.scss */
+/* line 273, ../sass/forms.scss */
 .checkbox-label:before {
   content: '';
   display: block;
@@ -9025,7 +9031,7 @@ body.menu-open #openMenu {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
 }
 
-/* line 291, ../sass/forms.scss */
+/* line 296, ../sass/forms.scss */
 .checkbox-label:after {
   content: attr(data-off);
   display: block;
@@ -9041,7 +9047,7 @@ body.menu-open #openMenu {
   white-space: nowrap;
 }
 
-/* line 306, ../sass/forms.scss */
+/* line 311, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
@@ -9049,7 +9055,7 @@ body.menu-open #openMenu {
   box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
 }
 
-/* line 313, ../sass/forms.scss */
+/* line 318, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label:before {
   left: calc(100% - 36px);
   /*box-shadow*/
@@ -9058,7 +9064,7 @@ body.menu-open #openMenu {
   box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 321, ../sass/forms.scss */
+/* line 326, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label:after {
   content: attr(data-on);
   left: 60px;
@@ -9066,7 +9072,7 @@ body.menu-open #openMenu {
 }
 
 /*--Customizations--*/
-/* line 330, ../sass/forms.scss */
+/* line 335, ../sass/forms.scss */
 #checkbox1 + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 0px #ce181f, 0 0 0 2px #dddddd;
@@ -9076,7 +9082,7 @@ body.menu-open #openMenu {
   margin-right: 10px;
 }
 
-/* line 339, ../sass/forms.scss */
+/* line 344, ../sass/forms.scss */
 #checkbox1:checked + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
@@ -9084,14 +9090,14 @@ body.menu-open #openMenu {
   box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
 }
 
-/* line 346, ../sass/forms.scss */
+/* line 351, ../sass/forms.scss */
 #checkbox1:checked + .checkbox-label:after {
   color: black;
 }
 
 /* Bootstrap Checkbox Custom */
 /*--http://codepen.io/CreativeJuiz/pen/BiHzp--*/
-/* line 351, ../sass/forms.scss */
+/* line 356, ../sass/forms.scss */
 .checkbox,
 .radio {
   /* checkbox aspect */
@@ -9101,7 +9107,7 @@ body.menu-open #openMenu {
   /* accessibility */
   /* hover style just for information */
 }
-/* line 353, ../sass/forms.scss */
+/* line 358, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked),
 .checkbox [type="checkbox"]:checked,
 .radio [type="checkbox"]:not(:checked),
@@ -9109,7 +9115,7 @@ body.menu-open #openMenu {
   position: absolute;
   left: -9999px;
 }
-/* line 358, ../sass/forms.scss */
+/* line 363, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label,
 .checkbox [type="checkbox"]:checked + label,
 .radio [type="checkbox"]:not(:checked) + label,
@@ -9121,12 +9127,12 @@ body.menu-open #openMenu {
   font-size: 12px;
   color: #555;
 }
-/* line 368, ../sass/forms.scss */
+/* line 373, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked + label,
 .radio [type="checkbox"]:checked + label {
   text-decoration: line-through;
 }
-/* line 373, ../sass/forms.scss */
+/* line 378, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:before,
 .checkbox [type="checkbox"]:checked + label:before,
 .radio [type="checkbox"]:not(:checked) + label:before,
@@ -9142,7 +9148,7 @@ body.menu-open #openMenu {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 388, ../sass/forms.scss */
+/* line 393, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after,
 .checkbox [type="checkbox"]:checked + label:after,
 .radio [type="checkbox"]:not(:checked) + label:after,
@@ -9163,19 +9169,19 @@ body.menu-open #openMenu {
   border: 1px solid #ce181f;
   background: #ce181f;
 }
-/* line 408, ../sass/forms.scss */
+/* line 413, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after,
 .radio [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
-/* line 412, ../sass/forms.scss */
+/* line 417, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked + label:after,
 .radio [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
-/* line 419, ../sass/forms.scss */
+/* line 424, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
 .checkbox [type="checkbox"]:disabled:checked + label:before,
 .radio [type="checkbox"]:disabled:not(:checked) + label:before,
@@ -9184,24 +9190,24 @@ body.menu-open #openMenu {
   border-color: #bbb;
   background-color: #ddd;
 }
-/* line 425, ../sass/forms.scss */
+/* line 430, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:checked + label:after,
 .radio [type="checkbox"]:disabled:checked + label:after {
   color: #999;
 }
-/* line 428, ../sass/forms.scss */
+/* line 433, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled + label,
 .radio [type="checkbox"]:disabled + label {
   color: #aaa;
 }
-/* line 432, ../sass/forms.scss */
+/* line 437, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked:focus + label:before,
 .checkbox [type="checkbox"]:not(:checked):focus + label:before,
 .radio [type="checkbox"]:checked:focus + label:before,
 .radio [type="checkbox"]:not(:checked):focus + label:before {
   border: 1px dotted blue;
 }
-/* line 438, ../sass/forms.scss */
+/* line 443, ../sass/forms.scss */
 .checkbox label:hover:before,
 .radio label:hover:before {
   border: 1px solid #4778d9 !important;
@@ -9209,17 +9215,17 @@ body.menu-open #openMenu {
 
 /* Bootstrap Radio Custom */
 /* http://codepen.io/mitchmc/pen/pebIx */
-/* line 446, ../sass/forms.scss */
+/* line 451, ../sass/forms.scss */
 .radio input[type="radio"] {
   display: none;
 }
-/* line 449, ../sass/forms.scss */
+/* line 454, ../sass/forms.scss */
 .radio input[type="radio"] + label {
   color: #555;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-/* line 454, ../sass/forms.scss */
+/* line 459, ../sass/forms.scss */
 .radio input[type="radio"] + label span {
   display: inline-block;
   width: 19px;
@@ -9230,16 +9236,16 @@ body.menu-open #openMenu {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 465, ../sass/forms.scss */
+/* line 470, ../sass/forms.scss */
 .radio input[type="radio"] + label span {
   background-color: #fff;
   border: 1px solid #ccc;
 }
-/* line 470, ../sass/forms.scss */
+/* line 475, ../sass/forms.scss */
 .radio input[type="radio"]:checked + label span {
   background-color: #ce181f;
 }
-/* line 474, ../sass/forms.scss */
+/* line 479, ../sass/forms.scss */
 .radio input[type="radio"] + label span,
 .radio input[type="radio"]:checked + label span {
   -webkit-transition: background-color 0.4s linear;
@@ -9248,14 +9254,14 @@ body.menu-open #openMenu {
   transition: background-color 0.4s linear;
 }
 
-/* line 482, ../sass/forms.scss */
+/* line 487, ../sass/forms.scss */
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: 10px;
 }
 
 /* Bootstrap textarea Custom */
-/* line 489, ../sass/forms.scss */
+/* line 494, ../sass/forms.scss */
 .textarea-rich textarea.form-control {
   border-radius: 0px;
   -webkit-border-bottom-right-radius: 4px;
@@ -9265,23 +9271,23 @@ body.menu-open #openMenu {
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 498, ../sass/forms.scss */
+/* line 503, ../sass/forms.scss */
 .textarea-rich ::-webkit-input-placeholder {
   color: #555;
 }
-/* line 502, ../sass/forms.scss */
+/* line 507, ../sass/forms.scss */
 .textarea-rich :-moz-placeholder {
   color: #555;
 }
-/* line 506, ../sass/forms.scss */
+/* line 511, ../sass/forms.scss */
 .textarea-rich ::-moz-placeholder {
   color: #555;
 }
-/* line 510, ../sass/forms.scss */
+/* line 515, ../sass/forms.scss */
 .textarea-rich :-ms-input-placeholder {
   color: #555;
 }
-/* line 514, ../sass/forms.scss */
+/* line 519, ../sass/forms.scss */
 .textarea-rich .menu {
   height: 50px;
   width: 100%;
@@ -9289,7 +9295,7 @@ body.menu-open #openMenu {
   border: 1px solid #ccc;
   border-bottom: none;
 }
-/* line 521, ../sass/forms.scss */
+/* line 526, ../sass/forms.scss */
 .textarea-rich .menu a {
   width: 50px;
   height: 49px;
@@ -9300,7 +9306,7 @@ body.menu-open #openMenu {
   float: left;
   color: #555;
 }
-/* line 532, ../sass/forms.scss */
+/* line 537, ../sass/forms.scss */
 .textarea-rich .menu a:hover {
   background: #ccc;
 }
@@ -9522,8 +9528,37 @@ body.menu-open #openMenu {
   color: #555;
 }
 
+/* line 37, ../sass/tabs.scss */
+.nav-tabs.blocked > li {
+  margin: 0px 0px -1px;
+}
+
+/* line 41, ../sass/tabs.scss */
+.nav-tabs.blocked > li > a {
+  text-transform: uppercase;
+}
+
+/* line 45, ../sass/tabs.scss */
+.nav-tabs.blocked > li > a:hover,
+.nav-tabs.blocked > li > a:focus {
+  border: none;
+  background-color: #ce181f;
+  border-radius: 0px;
+  color: #fff;
+}
+
+/* line 53, ../sass/tabs.scss */
+.nav-tabs.blocked > li.active > a,
+.nav-tabs.blocked > li.active > a:hover,
+.nav-tabs.blocked > li.active > a:focus {
+  border: none;
+  background-color: #ce181f;
+  border-radius: 0px;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
-  /* line 40, ../sass/tabs.scss */
+  /* line 65, ../sass/tabs.scss */
   .table-responsive .nav {
     width: 100%;
     height: 44px;
@@ -9760,33 +9795,40 @@ html, body, .container-fluid, .row {
 }
 
 /* line 77, ../sass/styles.scss */
+html,
+body,
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 83, ../sass/styles.scss */
 h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
   color: #666666;
 }
 
-/* line 83, ../sass/styles.scss */
+/* line 89, ../sass/styles.scss */
 h1 {
   font-size: 30px;
 }
 
-/* line 84, ../sass/styles.scss */
+/* line 90, ../sass/styles.scss */
 h2 {
   font-size: 24px;
 }
 
-/* line 85, ../sass/styles.scss */
+/* line 91, ../sass/styles.scss */
 h3 {
   font-size: 18px;
 }
 
-/* line 87, ../sass/styles.scss */
+/* line 93, ../sass/styles.scss */
 h1.login {
   margin: 100px 0px 40px;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 h2.login {
   margin: 100px 0px 0px;
   color: #fff;
@@ -9795,180 +9837,179 @@ h2.login {
   left: 30px;
 }
 
-/* line 99, ../sass/styles.scss */
+/* line 105, ../sass/styles.scss */
 .text-muted {
   color: #BEBEBE;
 }
 
-/* line 103, ../sass/styles.scss */
+/* line 109, ../sass/styles.scss */
 footer.login {
   margin-top: -50px;
 }
 
 /*--Grid customization--*/
-/* line 108, ../sass/styles.scss */
+/* line 114, ../sass/styles.scss */
 .container-fluid {
   margin-left: 260px;
   padding: 0px 25px 0px 25px;
 }
 
-/* line 113, ../sass/styles.scss */
+/* line 119, ../sass/styles.scss */
 .container-fluid.logout {
   padding: 0px 15px;
 }
 
 /*--Spacers--*/
-/* line 119, ../sass/styles.scss */
+/* line 125, ../sass/styles.scss */
 .spacer {
   width: 100%;
   clear: both;
 }
 
-/* line 123, ../sass/styles.scss */
+/* line 129, ../sass/styles.scss */
 .spacer.sm {
   height: 10px;
 }
 
-/* line 126, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .spacer.md {
   height: 20px;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 135, ../sass/styles.scss */
 .spacer.lg {
   height: 30px;
 }
 
-/* line 132, ../sass/styles.scss */
+/* line 138, ../sass/styles.scss */
 .spacer.xl {
   height: 40px;
 }
 
-/* line 136, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 140, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .no-margin {
   margin: 0px;
 }
 
-/* line 144, ../sass/styles.scss */
+/* line 150, ../sass/styles.scss */
 .basic-margin {
   margin: 10px;
 }
 
-/* line 148, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 .basic-margin.vertical {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-/* line 153, ../sass/styles.scss */
+/* line 159, ../sass/styles.scss */
 .basic-margin.horizontal {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-/* line 158, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 hr {
   border-top: 1px solid #ddd;
 }
 
 /*--Top Pages--*/
-/* line 163, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .top-page {
   background: #f9f9f9;
   border-bottom: 1px solid #ddd;
   margin: 70px -25px 30px -25px;
   padding: 15px 25px;
 }
-/* line 169, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .top-page h1 {
   margin-bottom: 0px;
 }
-/* line 171, ../sass/styles.scss */
+/* line 177, ../sass/styles.scss */
 .top-page h1 small {
   color: #BEBEBE;
   font-size: 50%;
   margin-left: 10px;
   font-weight: 100;
 }
-/* line 178, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 .top-page ul.round-details {
   margin: 33px 0px 0px 0px;
   float: right;
 }
-/* line 182, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 .top-page ul.round-details li {
   color: #555;
   padding: 0px 10px 0px 0px;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
-/* line 188, ../sass/styles.scss */
+/* line 194, ../sass/styles.scss */
 .top-page ul.round-details li strong {
   margin: 0px 5px;
 }
-/* line 192, ../sass/styles.scss */
+/* line 198, ../sass/styles.scss */
 .top-page ul.round-details li:after {
   content: " | ";
 }
-/* line 195, ../sass/styles.scss */
+/* line 201, ../sass/styles.scss */
 .top-page ul.round-details li:last-child {
   padding-right: 0px;
 }
-/* line 198, ../sass/styles.scss */
+/* line 204, ../sass/styles.scss */
 .top-page ul.round-details li:last-child:after {
   content: "";
   padding-right: 0px;
 }
 
-/* line 205, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 .highlight {
   padding: 9px 14px;
   margin: 0px 0px 15px;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
   border-radius: 4px;
+  /*.text-muted{
+  	color: $gray-middle;
+  }*/
 }
-/* line 212, ../sass/styles.scss */
+/* line 218, ../sass/styles.scss */
 .highlight p {
   margin: 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 219, ../sass/styles.scss */
-.highlight .text-muted {
-  color: #666666;
-}
 
-/* line 224, ../sass/styles.scss */
+/* line 230, ../sass/styles.scss */
 ul.messages {
   list-style: none;
   margin: 0px;
   padding: 0px;
 }
-/* line 229, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 ul.messages li {
   display: block;
   border-top: 1px solid #ccc;
   padding: 15px 0px;
   margin: 0px;
 }
-/* line 235, ../sass/styles.scss */
+/* line 241, ../sass/styles.scss */
 ul.messages li:first-child {
   border: none;
 }
 
-/* line 241, ../sass/styles.scss */
+/* line 247, ../sass/styles.scss */
 .message-info h4, .message-info p {
   margin-left: 80px;
 }
 
-/* line 246, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 .user-image {
   position: relative;
   width: 60px;
@@ -9976,7 +10017,7 @@ ul.messages li:first-child {
   margin: 0px 20px 0px 0px;
   float: left;
 }
-/* line 253, ../sass/styles.scss */
+/* line 259, ../sass/styles.scss */
 .user-image .status {
   width: 15px;
   height: 15px;
@@ -9986,41 +10027,41 @@ ul.messages li:first-child {
   top: 0px;
   right: 0px;
 }
-/* line 262, ../sass/styles.scss */
+/* line 268, ../sass/styles.scss */
 .user-image .status.online {
   background: #5cb85c;
 }
-/* line 265, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .user-image .status.offline {
   background: #ce181f;
 }
-/* line 269, ../sass/styles.scss */
+/* line 275, ../sass/styles.scss */
 .user-image img {
   width: 60px;
   height: 60px;
 }
 
-/* line 276, ../sass/styles.scss */
+/* line 282, ../sass/styles.scss */
 .day .alert-info {
   margin-bottom: 10px;
 }
-/* line 279, ../sass/styles.scss */
+/* line 285, ../sass/styles.scss */
 .day .alert-info h4 {
   margin: 0px 0px 20px;
   color: #555;
 }
-/* line 283, ../sass/styles.scss */
+/* line 289, ../sass/styles.scss */
 .day .alert-info h4 small {
   color: #555;
   margin-left: 10px;
 }
-/* line 289, ../sass/styles.scss */
+/* line 295, ../sass/styles.scss */
 .day .alert-info .prescription {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 294, ../sass/styles.scss */
+/* line 300, ../sass/styles.scss */
 .day .alert-info .prescription li {
   padding: 0px 20px 0px 0px;
   border-right: 1px solid #bce8f1;
@@ -10028,29 +10069,29 @@ ul.messages li:first-child {
   float: left;
   margin: 0px 20px 0px 0px;
 }
-/* line 301, ../sass/styles.scss */
+/* line 307, ../sass/styles.scss */
 .day .alert-info .prescription li h5 {
   margin: 0px;
   color: #555;
 }
-/* line 305, ../sass/styles.scss */
+/* line 311, ../sass/styles.scss */
 .day .alert-info .prescription li p {
   font-size: 12px;
   margin: 0px;
   color: #555;
 }
-/* line 311, ../sass/styles.scss */
+/* line 317, ../sass/styles.scss */
 .day .alert-info .prescription li:last-child {
   border-right: none;
 }
 
 /*--Custom Backgrounds--*/
-/* line 321, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 .maxheight {
   height: 100%;
 }
 
-/* line 325, ../sass/styles.scss */
+/* line 331, ../sass/styles.scss */
 .bg-login {
   background: url(../img/bg-login.jpg);
   height: 100%;
@@ -10058,41 +10099,41 @@ ul.messages li:first-child {
 }
 
 @media (max-width: 767px) {
-  /* line 333, ../sass/styles.scss */
+  /* line 339, ../sass/styles.scss */
   h1, h2, h3, h4, h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: lighter;
     color: #666666;
   }
 
-  /* line 339, ../sass/styles.scss */
+  /* line 345, ../sass/styles.scss */
   h1 {
     font-size: 24px;
   }
 
-  /* line 340, ../sass/styles.scss */
+  /* line 346, ../sass/styles.scss */
   h2 {
     font-size: 18px;
   }
 
-  /* line 341, ../sass/styles.scss */
+  /* line 347, ../sass/styles.scss */
   h3 {
     font-size: 14px;
   }
 
-  /* line 343, ../sass/styles.scss */
+  /* line 349, ../sass/styles.scss */
   .container-fluid {
     margin-left: 0px !important;
     padding: 20px 10px 0px;
   }
 
-  /* line 347, ../sass/styles.scss */
+  /* line 353, ../sass/styles.scss */
   .row {
     margin-left: -10px;
     margin-right: -10px;
   }
 
-  /* line 351, ../sass/styles.scss */
+  /* line 357, ../sass/styles.scss */
   .top-page {
     background: #f9f9f9;
     border-bottom: 1px solid #ddd;
@@ -10100,12 +10141,12 @@ ul.messages li:first-child {
     padding: 15px 10px;
   }
 
-  /* line 357, ../sass/styles.scss */
+  /* line 363, ../sass/styles.scss */
   .top-page ul.round-details {
     float: left;
   }
 
-  /* line 363, ../sass/styles.scss */
+  /* line 369, ../sass/styles.scss */
   .day .alert-info .prescription li {
     padding: 0px 0px 10px 0px;
     border-bottom: 1px solid #bce8f1;
@@ -10113,8 +10154,9 @@ ul.messages li:first-child {
     float: left;
     margin: 0px 0px 10px 0px;
     width: 100%;
+    border-right: none;
   }
-  /* line 371, ../sass/styles.scss */
+  /* line 378, ../sass/styles.scss */
   .day .alert-info .prescription li:last-child {
     border-bottom: none;
   }

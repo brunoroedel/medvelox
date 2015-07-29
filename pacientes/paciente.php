@@ -42,7 +42,7 @@
         <div class="tab-content">
 
           <!--evolução-->
-          <div class="tab-pane active" id="evolucao">
+          <div class="tab-pane fade active" id="evolucao">
             <div class="col-lg-12">
               <div class="textarea-rich">
                 <div class="menu">
@@ -132,10 +132,292 @@
           </div>
           <!--/evolução-->
 
-          <div class="tab-pane" id="balanco">...</div>
+          <!--Balanço-->
+          <div class="tab-pane fade" id="balanco">
+            <div class="col-lg-4">
+              <span class="input input--nariko block">
+                <input class="input__field input__field--nariko" type="text" id="" value="15/06/2015">
+                <label class="input__label input__label--nariko">
+                  <span class="input__label-content input__label-content--nariko" for="">
+                    Data de referência
+                  </span>
+                </label>
+                <span class="icon">
+                  <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                </span>
+              </span>
+            </div>
+            <div class="col-lg-12">
+              <p class="no-margin">Dias de Acompanhamento: 8</p>
+              <hr>
+            </div>
+            <div class="col-lg-4">
+              <span class="input input--nariko block input--filled">
+                <input class="input__field input__field--nariko" type="text" id="" value="D8">
+                <label class="input__label input__label--nariko">
+                  <span class="input__label-content input__label-content--nariko" for="">
+                    TOT
+              </span>
+            </div>
+            <div class="spacer"></div>
+            <div class="col-lg-4">
+              <span class="input input--nariko block">
+                <input class="input__field input__field--nariko" type="text" id="" value="220">
+                <label class="input__label input__label--nariko">
+                  <span class="input__label-content input__label-content--nariko" for="">
+                    Bal.  Hídrico
+                  </span>
+                </label>
+                <span class="icon">
+                  <p class="text-center">ml</p>
+                </span>
+              </span>
+            </div>
+            <div class="col-lg-4">
+              <span class="input input--nariko block">
+                <input class="input__field input__field--nariko" type="text" id="" value="980">
+                <label class="input__label input__label--nariko">
+                  <span class="input__label-content input__label-content--nariko" for="">
+                    Diurese 24H
+                </label>
+                <span class="icon">
+                  <p class="text-center">°C</p>
+                </span>
+              </span>
+            </div>
+            <div class="col-lg-4">
+              <span class="input input--nariko block">
+                <input class="input__field input__field--nariko" type="text" id="" value="38,5°">
+                <label class="input__label input__label--nariko">
+                  <span class="input__label-content input__label-content--nariko" for="">
+                    Temperatura Máxima 24H
+                </label>
+                <span class="icon">
+                  <p class="text-center">ml</p>
+                </span>
+              </span>
+            </div>
+
+            <!--Acessos-->
+            <div class="col-lg-12">
+              <h2>
+                Acessos
+                <a href="" class="btn btn-success btn-rounded">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </a>
+              </h2>
+              <div class="spacer md"></div>
+              <div class="row">
+                <!--linha 1-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 1-->
+                <!--linha 2-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 2-->
+              </div>
+            </div>
+            <!--/ Acessos-->
+
+            <!--Drenos-->
+            <div class="col-lg-12">
+              <h2>
+                Drenos
+                <a href="" class="btn btn-success btn-rounded">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </a>
+              </h2>
+              <div class="spacer md"></div>
+              <div class="row">
+               <!--linha 1-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 1-->
+                <!--linha 2-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 2-->
+              </div>
+            </div>
+            <!--/ Drenos-->
+
+            <!--Antibióticos-->
+            <div class="col-lg-12">
+              <h2>
+                Antibióticos
+                <a href="" class="btn btn-success btn-rounded">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </a>
+              </h2>
+              <div class="spacer md"></div>
+              <div class="row">
+                <!--linha 1-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 1-->
+                <!--linha 2-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 2-->
+              </div>
+            </div>
+            <!--/ Antibióticos-->
+
+             <!--Infusões-->
+            <div class="col-lg-12">
+              <h2>
+                Infusões
+                <a href="" class="btn btn-success btn-rounded">
+                  <span class="glyphicon glyphicon-plus"></span>
+                </a>
+              </h2>
+              <div class="spacer md"></div>
+              <div class="row">
+                <!--linha 1-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 1-->
+                <!--linha 2-->
+                <div>
+                  <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="tipo" value="D1">
+                    </div>
+                  </div>
+                  <div class="col-xs-6 col-sm-6 col-md-9 col-lg-9">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="" placeholder="valor" value="VJIE">
+                    </div>
+                  </div>
+                  <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1">
+                    <button class="btn btn-danger btn-rounded">
+                      <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                  </div>
+                </div>
+                <!--/ linha 2-->
+              </div>
+            </div>
+            <!--/ Infusões-->
+
+            <div class="spacer lg"></div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+              <button class="btn btn-success btn-block">Salvar</button>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+              <button class="btn btn-block">Cancelar</button>
+            </div>
+          </div>
+          <!--/ Balanço-->
 
           <!-- exames-->
-          <div class="tab-pane" id="exames">
+          <div class="tab-pane fade" id="exames">
 
             <!--lista-exames-->
             <div id="listaExames">
@@ -151,6 +433,95 @@
               <div class="col-lg-offset-5 col-lg-4">
                 <div class="pull-right">
                   <button class="btn btn-danger exames-control">Novo Exame</button>
+                </div>
+              </div>
+              <div class="spacer md"></div>
+
+              <div class="col-lg-12">
+                <div class="table-responsive">
+                  <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr class="info">
+                        <td class="col-lg-3"><b>Hematologia</b></td>
+                        <td class="col-lg-2 text-center">01/03/15</td>
+                        <td class="col-lg-2 text-center">05/03/15</td>
+                        <td class="col-lg-2 text-center">08/03/15</td>
+                        <td class="col-lg-2 text-center">12/03/15</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="col-lg-3 text-info">Hemoglobina</td>
+                        <td class="col-lg-2 text-center">11</td>
+                        <td class="col-lg-2 text-center">13,2</td>
+                        <td class="col-lg-2 text-center">12</td>
+                        <td class="col-lg-2 text-center">11</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-3 text-info">Leocócitos Totais</td>
+                        <td class="col-lg-2 text-center"></td>
+                        <td class="col-lg-2 text-center">5,800</td>
+                        <td class="col-lg-2 text-center"></td>
+                        <td class="col-lg-2 text-center">5,800</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-3 text-info">Plaquetas</td>
+                        <td class="col-lg-2 text-center">11</td>
+                        <td class="col-lg-2 text-center">13,2</td>
+                        <td class="col-lg-2 text-center">12</td>
+                        <td class="col-lg-2 text-center">11</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="spacer md"></div>
+                  <table class="table table-bordered table-hover">
+                    <thead>
+                      <tr class="info">
+                        <td class="col-lg-3"><b>Bioquímica</b></td>
+                        <td class="col-lg-2 text-center">01/03/15</td>
+                        <td class="col-lg-2 text-center">05/03/15</td>
+                        <td class="col-lg-2 text-center">08/03/15</td>
+                        <td class="col-lg-2 text-center">12/03/15</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="col-lg-3 text-info">Glicose</td>
+                        <td class="col-lg-2 text-center">11</td>
+                        <td class="col-lg-2 text-center">13,2</td>
+                        <td class="col-lg-2 text-center">12</td>
+                        <td class="col-lg-2 text-center">11</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-3 text-info">Uréia</td>
+                        <td class="col-lg-2 text-center"></td>
+                        <td class="col-lg-2 text-center">5,800</td>
+                        <td class="col-lg-2 text-center"></td>
+                        <td class="col-lg-2 text-center">5,800</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-3 text-info">Creatinina</td>
+                        <td class="col-lg-2 text-center">11</td>
+                        <td class="col-lg-2 text-center">13,2</td>
+                        <td class="col-lg-2 text-center">12</td>
+                        <td class="col-lg-2 text-center">11</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-3 text-info">Sódio</td>
+                        <td class="col-lg-2 text-center">11</td>
+                        <td class="col-lg-2 text-center">13,2</td>
+                        <td class="col-lg-2 text-center">12</td>
+                        <td class="col-lg-2 text-center">11</td>
+                      </tr>
+                      <tr>
+                        <td class="col-lg-3 text-info">Potássio</td>
+                        <td class="col-lg-2 text-center">11</td>
+                        <td class="col-lg-2 text-center">13,2</td>
+                        <td class="col-lg-2 text-center">12</td>
+                        <td class="col-lg-2 text-center">11</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -495,10 +866,89 @@
           </div>
           <!--/exames-->
 
-          <div class="tab-pane" id="tarefas">...</div>
+          <!--Tarefas-->
+          <div class="tab-pane fade" id="tarefas">
+            <div class="col-lg-10">
+              <h4 class="no-margin">Nova Tarefa</h4>
+            </div>
+            <div class="spacer sm"></div>
+            <div class="col-md-8 col-lg-8">
+              <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="" value="Medir Pressão d...">
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-2">
+              <button class="btn btn-danger btn-block">Novo Exame</button>
+            </div>
+            <div class="spacer"></div>
+            <div class="col-lg-12"><hr></div>
+
+            <div class="col-lg-12">
+              <h4 class="no-margin">Lista de tarefas</h4>
+              <div class="spacer sm"></div>
+              
+              <!--tarefa 01-->
+              <div class="highlight">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="checkbox">
+                      <input type="checkbox" id="tarefa1" checked>
+                      <label for="tarefa1">Medir Pressão</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="spacer sm"></div>
+                    <p class="text-right text-muted">
+                      <small>Criada por: Paulo Niemeyer em 22/04/2015 as 16:26</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--/ tarefa 01-->
+
+              <!--tarefa 02-->
+              <div class="highlight">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="checkbox">
+                      <input type="checkbox" id="tarefa1">
+                      <label for="tarefa1">Colher exames</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="spacer sm"></div>
+                    <p class="text-right text-muted">
+                      <small>Criada por: Paulo Niemeyer em 22/04/2015 as 16:26</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--/ tarefa 02-->
+
+              <!--tarefa 03-->
+              <div class="highlight">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <div class="checkbox">
+                      <input type="checkbox" id="tarefa1">
+                      <label for="tarefa1">Medir temperatura</label>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="spacer sm"></div>
+                    <p class="text-right text-muted">
+                      <small>Criada por: Paulo Niemeyer em 22/04/2015 as 16:26</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--/ tarefa 03-->
+            </div>
+          </div>
+          <!--/ Tarefas-->
 
           <!--Detalhes-->
-          <div class="tab-pane" id="detalhes">            
+          <div class="tab-pane fade" id="detalhes">            
             
             <!-- Nome-->
             <div class="col-lg-10">

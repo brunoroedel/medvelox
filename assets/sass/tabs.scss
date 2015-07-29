@@ -34,6 +34,31 @@
 	color: $gray;
 }
 
+.nav-tabs.blocked > li{
+	margin: 0px 0px -1px;
+}
+
+.nav-tabs.blocked > li > a{
+	text-transform: uppercase;
+}
+
+.nav-tabs.blocked > li > a:hover, 
+.nav-tabs.blocked > li > a:focus{
+	border: none;
+    background-color: #ce181f;
+    border-radius: 0px;
+    color: #fff;
+}
+
+.nav-tabs.blocked > li.active > a, 
+.nav-tabs.blocked > li.active > a:hover, 
+.nav-tabs.blocked > li.active > a:focus{
+	border: none;
+    background-color: #ce181f;
+    border-radius: 0px;
+    color: #fff;
+}
+
 
 
 @media(max-width: 767px){

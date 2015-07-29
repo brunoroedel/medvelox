@@ -41,8 +41,37 @@
   color: #555;
 }
 
+/* line 37, ../sass/tabs.scss */
+.nav-tabs.blocked > li {
+  margin: 0px 0px -1px;
+}
+
+/* line 41, ../sass/tabs.scss */
+.nav-tabs.blocked > li > a {
+  text-transform: uppercase;
+}
+
+/* line 45, ../sass/tabs.scss */
+.nav-tabs.blocked > li > a:hover,
+.nav-tabs.blocked > li > a:focus {
+  border: none;
+  background-color: #ce181f;
+  border-radius: 0px;
+  color: #fff;
+}
+
+/* line 53, ../sass/tabs.scss */
+.nav-tabs.blocked > li.active > a,
+.nav-tabs.blocked > li.active > a:hover,
+.nav-tabs.blocked > li.active > a:focus {
+  border: none;
+  background-color: #ce181f;
+  border-radius: 0px;
+  color: #fff;
+}
+
 @media (max-width: 767px) {
-  /* line 40, ../sass/tabs.scss */
+  /* line 65, ../sass/tabs.scss */
   .table-responsive .nav {
     width: 100%;
     height: 44px;

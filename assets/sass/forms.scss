@@ -70,6 +70,11 @@
 	font-size: 150%;
 }
 
+.icon p{
+	font-size: $font-size-base;
+	color: $border-color-middle;
+}
+
 .input--nariko {
 	overflow: hidden;
 	padding-top: 20px;

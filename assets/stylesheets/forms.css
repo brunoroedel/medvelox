@@ -79,12 +79,18 @@
 }
 
 /* line 73, ../sass/forms.scss */
+.icon p {
+  font-size: 14px;
+  color: #BEBEBE;
+}
+
+/* line 78, ../sass/forms.scss */
 .input--nariko {
   overflow: hidden;
   padding-top: 20px;
 }
 
-/* line 78, ../sass/forms.scss */
+/* line 83, ../sass/forms.scss */
 .input__field--nariko {
   width: 100%;
   background: transparent;
@@ -96,7 +102,7 @@
   margin: 0px;
 }
 
-/* line 89, ../sass/forms.scss */
+/* line 94, ../sass/forms.scss */
 .input__label--nariko {
   width: 100%;
   bottom: 0;
@@ -110,7 +116,7 @@
   height: 30px;
 }
 
-/* line 102, ../sass/forms.scss */
+/* line 107, ../sass/forms.scss */
 .input__label--nariko::before {
   content: '';
   position: absolute;
@@ -127,7 +133,7 @@
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 119, ../sass/forms.scss */
+/* line 124, ../sass/forms.scss */
 .input__label-content--nariko {
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -142,7 +148,7 @@
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 133, ../sass/forms.scss */
+/* line 138, ../sass/forms.scss */
 .input__field--nariko:focus,
 .input--filled .input__field--nariko {
   cursor: text;
@@ -151,7 +157,7 @@
   transition: opacity 0s 0.4s;
 }
 
-/* line 141, ../sass/forms.scss */
+/* line 146, ../sass/forms.scss */
 .input__field--nariko:focus + .input__label--nariko::before,
 .input--filled .input__label--nariko::before {
   -webkit-transition-delay: 0.05s;
@@ -160,7 +166,7 @@
   transform: translate3d(0, -3.3em, 0);
 }
 
-/* line 149, ../sass/forms.scss */
+/* line 154, ../sass/forms.scss */
 .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input--filled .input__label-content--nariko {
   color: #6B6E6E;
@@ -169,7 +175,7 @@
 }
 
 /*--element forms in block--*/
-/* line 158, ../sass/forms.scss */
+/* line 163, ../sass/forms.scss */
 .input.input--nariko.block {
   padding: 20px 60px 0px 10px;
   border: 1px solid #ddd;
@@ -181,35 +187,35 @@
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-/* line 169, ../sass/forms.scss */
+/* line 174, ../sass/forms.scss */
 .input.input--nariko.block .input__label--nariko {
   bottom: 13px;
 }
-/* line 173, ../sass/forms.scss */
+/* line 178, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko {
   border: 0px;
   font-size: 14px;
   color: #666666;
 }
-/* line 179, ../sass/forms.scss */
+/* line 184, ../sass/forms.scss */
 .input.input--nariko.block .input__label-content--nariko {
   text-transform: uppercase;
 }
-/* line 183, ../sass/forms.scss */
+/* line 188, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input.input--nariko.block .input--filled .input__label-content--nariko {
   color: #555;
   -webkit-transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
   transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
 }
-/* line 190, ../sass/forms.scss */
+/* line 195, ../sass/forms.scss */
 .input.input--nariko.block .input__field--nariko:focus + .input__label--nariko .input__label-content--nariko,
 .input.input--nariko.block .input--filled .input__label-content--nariko {
   color: #555;
   -webkit-transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
   transform: translate3d(0, -1em, 0) scale3d(0.7, 0.7, 1);
 }
-/* line 197, ../sass/forms.scss */
+/* line 202, ../sass/forms.scss */
 .input.input--nariko.block .icon {
   position: absolute;
   top: 0px;
@@ -221,28 +227,28 @@
   line-height: 60px;
 }
 
-/* line 212, ../sass/forms.scss */
+/* line 217, ../sass/forms.scss */
 .form-group ::-webkit-input-placeholder {
   color: #ccc;
 }
-/* line 216, ../sass/forms.scss */
+/* line 221, ../sass/forms.scss */
 .form-group :-moz-placeholder {
   /* Firefox 18- */
   color: #ccc;
 }
-/* line 220, ../sass/forms.scss */
+/* line 225, ../sass/forms.scss */
 .form-group ::-moz-placeholder {
   /* Firefox 19+ */
   color: #ccc;
 }
-/* line 224, ../sass/forms.scss */
+/* line 229, ../sass/forms.scss */
 .form-group :-ms-input-placeholder {
   color: #ccc;
 }
 
 /*--Switch element--*/
 /*--http://www.cssscript.com/demo/ios-7-style-switches-with-pure-css-css3/--*/
-/* line 232, ../sass/forms.scss */
+/* line 237, ../sass/forms.scss */
 .checkbox-label:before,
 .checkbox-label:after {
   /*transition*/
@@ -252,7 +258,7 @@
   transition: .25s ease-in-out;
 }
 
-/* line 240, ../sass/forms.scss */
+/* line 245, ../sass/forms.scss */
 .ios-toggle,
 .ios-toggle:active {
   position: absolute;
@@ -264,7 +270,7 @@
   outline: none;
 }
 
-/* line 251, ../sass/forms.scss */
+/* line 256, ../sass/forms.scss */
 .checkbox-label {
   display: block;
   position: relative;
@@ -282,7 +288,7 @@
   cursor: pointer;
 }
 
-/* line 268, ../sass/forms.scss */
+/* line 273, ../sass/forms.scss */
 .checkbox-label:before {
   content: '';
   display: block;
@@ -306,7 +312,7 @@
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #dddddd;
 }
 
-/* line 291, ../sass/forms.scss */
+/* line 296, ../sass/forms.scss */
 .checkbox-label:after {
   content: attr(data-off);
   display: block;
@@ -322,7 +328,7 @@
   white-space: nowrap;
 }
 
-/* line 306, ../sass/forms.scss */
+/* line 311, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
@@ -330,7 +336,7 @@
   box-shadow: inset 0 0 0 20px #13bf11, 0 0 0 2px #13bf11;
 }
 
-/* line 313, ../sass/forms.scss */
+/* line 318, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label:before {
   left: calc(100% - 36px);
   /*box-shadow*/
@@ -339,7 +345,7 @@
   box-shadow: 0 0 0 2px transparent, 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-/* line 321, ../sass/forms.scss */
+/* line 326, ../sass/forms.scss */
 .ios-toggle:checked + .checkbox-label:after {
   content: attr(data-on);
   left: 60px;
@@ -347,7 +353,7 @@
 }
 
 /*--Customizations--*/
-/* line 330, ../sass/forms.scss */
+/* line 335, ../sass/forms.scss */
 #checkbox1 + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 0px #ce181f, 0 0 0 2px #dddddd;
@@ -357,7 +363,7 @@
   margin-right: 10px;
 }
 
-/* line 339, ../sass/forms.scss */
+/* line 344, ../sass/forms.scss */
 #checkbox1:checked + .checkbox-label {
   /*box-shadow*/
   -webkit-box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
@@ -365,14 +371,14 @@
   box-shadow: inset 0 0 0 18px #ce181f, 0 0 0 2px #ce181f;
 }
 
-/* line 346, ../sass/forms.scss */
+/* line 351, ../sass/forms.scss */
 #checkbox1:checked + .checkbox-label:after {
   color: black;
 }
 
 /* Bootstrap Checkbox Custom */
 /*--http://codepen.io/CreativeJuiz/pen/BiHzp--*/
-/* line 351, ../sass/forms.scss */
+/* line 356, ../sass/forms.scss */
 .checkbox,
 .radio {
   /* checkbox aspect */
@@ -382,7 +388,7 @@
   /* accessibility */
   /* hover style just for information */
 }
-/* line 353, ../sass/forms.scss */
+/* line 358, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked),
 .checkbox [type="checkbox"]:checked,
 .radio [type="checkbox"]:not(:checked),
@@ -390,7 +396,7 @@
   position: absolute;
   left: -9999px;
 }
-/* line 358, ../sass/forms.scss */
+/* line 363, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label,
 .checkbox [type="checkbox"]:checked + label,
 .radio [type="checkbox"]:not(:checked) + label,
@@ -402,12 +408,12 @@
   font-size: 12px;
   color: #555;
 }
-/* line 368, ../sass/forms.scss */
+/* line 373, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked + label,
 .radio [type="checkbox"]:checked + label {
   text-decoration: line-through;
 }
-/* line 373, ../sass/forms.scss */
+/* line 378, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:before,
 .checkbox [type="checkbox"]:checked + label:before,
 .radio [type="checkbox"]:not(:checked) + label:before,
@@ -423,7 +429,7 @@
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-/* line 388, ../sass/forms.scss */
+/* line 393, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after,
 .checkbox [type="checkbox"]:checked + label:after,
 .radio [type="checkbox"]:not(:checked) + label:after,
@@ -444,19 +450,19 @@
   border: 1px solid #ce181f;
   background: #ce181f;
 }
-/* line 408, ../sass/forms.scss */
+/* line 413, ../sass/forms.scss */
 .checkbox [type="checkbox"]:not(:checked) + label:after,
 .radio [type="checkbox"]:not(:checked) + label:after {
   opacity: 0;
   transform: scale(0);
 }
-/* line 412, ../sass/forms.scss */
+/* line 417, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked + label:after,
 .radio [type="checkbox"]:checked + label:after {
   opacity: 1;
   transform: scale(1);
 }
-/* line 419, ../sass/forms.scss */
+/* line 424, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:not(:checked) + label:before,
 .checkbox [type="checkbox"]:disabled:checked + label:before,
 .radio [type="checkbox"]:disabled:not(:checked) + label:before,
@@ -465,24 +471,24 @@
   border-color: #bbb;
   background-color: #ddd;
 }
-/* line 425, ../sass/forms.scss */
+/* line 430, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled:checked + label:after,
 .radio [type="checkbox"]:disabled:checked + label:after {
   color: #999;
 }
-/* line 428, ../sass/forms.scss */
+/* line 433, ../sass/forms.scss */
 .checkbox [type="checkbox"]:disabled + label,
 .radio [type="checkbox"]:disabled + label {
   color: #aaa;
 }
-/* line 432, ../sass/forms.scss */
+/* line 437, ../sass/forms.scss */
 .checkbox [type="checkbox"]:checked:focus + label:before,
 .checkbox [type="checkbox"]:not(:checked):focus + label:before,
 .radio [type="checkbox"]:checked:focus + label:before,
 .radio [type="checkbox"]:not(:checked):focus + label:before {
   border: 1px dotted blue;
 }
-/* line 438, ../sass/forms.scss */
+/* line 443, ../sass/forms.scss */
 .checkbox label:hover:before,
 .radio label:hover:before {
   border: 1px solid #4778d9 !important;
@@ -490,17 +496,17 @@
 
 /* Bootstrap Radio Custom */
 /* http://codepen.io/mitchmc/pen/pebIx */
-/* line 446, ../sass/forms.scss */
+/* line 451, ../sass/forms.scss */
 .radio input[type="radio"] {
   display: none;
 }
-/* line 449, ../sass/forms.scss */
+/* line 454, ../sass/forms.scss */
 .radio input[type="radio"] + label {
   color: #555;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-/* line 454, ../sass/forms.scss */
+/* line 459, ../sass/forms.scss */
 .radio input[type="radio"] + label span {
   display: inline-block;
   width: 19px;
@@ -511,16 +517,16 @@
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 465, ../sass/forms.scss */
+/* line 470, ../sass/forms.scss */
 .radio input[type="radio"] + label span {
   background-color: #fff;
   border: 1px solid #ccc;
 }
-/* line 470, ../sass/forms.scss */
+/* line 475, ../sass/forms.scss */
 .radio input[type="radio"]:checked + label span {
   background-color: #ce181f;
 }
-/* line 474, ../sass/forms.scss */
+/* line 479, ../sass/forms.scss */
 .radio input[type="radio"] + label span,
 .radio input[type="radio"]:checked + label span {
   -webkit-transition: background-color 0.4s linear;
@@ -529,14 +535,14 @@
   transition: background-color 0.4s linear;
 }
 
-/* line 482, ../sass/forms.scss */
+/* line 487, ../sass/forms.scss */
 .radio + .radio,
 .checkbox + .checkbox {
   margin-top: 10px;
 }
 
 /* Bootstrap textarea Custom */
-/* line 489, ../sass/forms.scss */
+/* line 494, ../sass/forms.scss */
 .textarea-rich textarea.form-control {
   border-radius: 0px;
   -webkit-border-bottom-right-radius: 4px;
@@ -546,23 +552,23 @@
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-/* line 498, ../sass/forms.scss */
+/* line 503, ../sass/forms.scss */
 .textarea-rich ::-webkit-input-placeholder {
   color: #555;
 }
-/* line 502, ../sass/forms.scss */
+/* line 507, ../sass/forms.scss */
 .textarea-rich :-moz-placeholder {
   color: #555;
 }
-/* line 506, ../sass/forms.scss */
+/* line 511, ../sass/forms.scss */
 .textarea-rich ::-moz-placeholder {
   color: #555;
 }
-/* line 510, ../sass/forms.scss */
+/* line 515, ../sass/forms.scss */
 .textarea-rich :-ms-input-placeholder {
   color: #555;
 }
-/* line 514, ../sass/forms.scss */
+/* line 519, ../sass/forms.scss */
 .textarea-rich .menu {
   height: 50px;
   width: 100%;
@@ -570,7 +576,7 @@
   border: 1px solid #ccc;
   border-bottom: none;
 }
-/* line 521, ../sass/forms.scss */
+/* line 526, ../sass/forms.scss */
 .textarea-rich .menu a {
   width: 50px;
   height: 49px;
@@ -581,7 +587,7 @@
   float: left;
   color: #555;
 }
-/* line 532, ../sass/forms.scss */
+/* line 537, ../sass/forms.scss */
 .textarea-rich .menu a:hover {
   background: #ccc;
 }
