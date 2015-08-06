@@ -2,6 +2,11 @@
 
 @import "bootstrap-variables";
 
+.btn{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
 
 /*-- button rounded --*/
 .btn.btn-rounded{
@@ -66,10 +71,19 @@
 .btn.btn-no-background{
 	background: none;
 }
-
 .btn.btn-no-background.pink{
 	border: 2px solid $brand-pink;
 	color: $brand-pink;
+}
+.btn.btn-no-background.pink .icon{
+	color: $brand-pink;
+}
+.btn.btn-no-background.pink:hover{
+	background:$brand-pink;
+	color: #fff;
+}
+.btn.btn-no-background.pink:hover .icon{
+	color: #fff;
 }
 
 

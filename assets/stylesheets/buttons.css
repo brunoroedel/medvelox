@@ -2,8 +2,15 @@
   font-family: "Montserrat";
   src: url("../fonts/bootstrap/Montserrat-Regular.ttf") format("truetype");
 }
+/* line 5, ../sass/buttons.scss */
+.btn {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 /*-- button rounded --*/
-/* line 7, ../sass/buttons.scss */
+/* line 12, ../sass/buttons.scss */
 .btn.btn-rounded {
   padding: 5px 8px;
   border-radius: 50px;
@@ -11,110 +18,126 @@
 }
 
 /*-- button rounded success --*/
-/* line 14, ../sass/buttons.scss */
+/* line 19, ../sass/buttons.scss */
 .btn.btn-success.btn-rounded {
   border: 2px solid #5cb85c;
 }
 
-/* line 17, ../sass/buttons.scss */
+/* line 22, ../sass/buttons.scss */
 .btn.btn-success.btn-rounded:hover {
   background: #5cb85c;
 }
 
-/* line 20, ../sass/buttons.scss */
+/* line 25, ../sass/buttons.scss */
 .btn.btn-success.btn-rounded .glyphicon,
 .btn.btn-success.btn-rounded .icon {
   color: #5cb85c;
   font-size: 14px;
 }
 
-/* line 25, ../sass/buttons.scss */
+/* line 30, ../sass/buttons.scss */
 .btn.btn-success.btn-rounded:hover .glyphicon,
 .btn.btn-success.btn-rounded:hover .icon {
   color: #fff;
 }
 
 /*-- button rounded info --*/
-/* line 31, ../sass/buttons.scss */
+/* line 36, ../sass/buttons.scss */
 .btn.btn-info.btn-rounded {
   border: 2px solid #5bc0de;
 }
 
-/* line 34, ../sass/buttons.scss */
+/* line 39, ../sass/buttons.scss */
 .btn.btn-info.btn-rounded:hover {
   background: #5bc0de;
 }
 
-/* line 37, ../sass/buttons.scss */
+/* line 42, ../sass/buttons.scss */
 .btn.btn-info.btn-rounded .glyphicon,
 .btn.btn-info.btn-rounded .icon {
   color: #5bc0de;
   font-size: 14px;
 }
 
-/* line 42, ../sass/buttons.scss */
+/* line 47, ../sass/buttons.scss */
 .btn.btn-info.btn-rounded:hover .glyphicon,
 .btn.btn-info.btn-rounded:hover .icon {
   color: #fff;
 }
 
 /*-- button rounded danger--*/
-/* line 48, ../sass/buttons.scss */
+/* line 53, ../sass/buttons.scss */
 .btn.btn-danger.btn-rounded {
   border: 2px solid #ce181f;
 }
 
-/* line 51, ../sass/buttons.scss */
+/* line 56, ../sass/buttons.scss */
 .btn.btn-danger.btn-rounded:hover {
   background: #ce181f;
 }
 
-/* line 54, ../sass/buttons.scss */
+/* line 59, ../sass/buttons.scss */
 .btn.btn-danger.btn-rounded .glyphicon,
 .btn.btn-danger.btn-rounded .icon {
   color: #ce181f;
   font-size: 14px;
 }
 
-/* line 59, ../sass/buttons.scss */
+/* line 64, ../sass/buttons.scss */
 .btn.btn-danger.btn-rounded:hover .glyphicon,
 .btn.btn-danger.btn-rounded:hover .icon {
   color: #fff;
 }
 
 /*--  button no-background  --*/
-/* line 66, ../sass/buttons.scss */
+/* line 71, ../sass/buttons.scss */
 .btn.btn-no-background {
   background: none;
 }
 
-/* line 70, ../sass/buttons.scss */
+/* line 74, ../sass/buttons.scss */
 .btn.btn-no-background.pink {
   border: 2px solid #f8564e;
   color: #f8564e;
 }
 
-/* line 76, ../sass/buttons.scss */
+/* line 78, ../sass/buttons.scss */
+.btn.btn-no-background.pink .icon {
+  color: #f8564e;
+}
+
+/* line 81, ../sass/buttons.scss */
+.btn.btn-no-background.pink:hover {
+  background: #f8564e;
+  color: #fff;
+}
+
+/* line 85, ../sass/buttons.scss */
+.btn.btn-no-background.pink:hover .icon {
+  color: #fff;
+}
+
+/* line 90, ../sass/buttons.scss */
 .btn.btn-no-background.gray {
   border: 2px solid #666666;
   color: #666666;
 }
 
-/* line 81, ../sass/buttons.scss */
+/* line 95, ../sass/buttons.scss */
 .btn.btn-no-background.gray:hover {
   background: #666666;
   color: #fff;
 }
 
 @media (max-width: 767px) {
-  /* line 88, ../sass/buttons.scss */
+  /* line 102, ../sass/buttons.scss */
   .btn.btn-rounded {
     padding: 2px 6px;
     border-radius: 50px;
     background: none;
   }
 
-  /* line 93, ../sass/buttons.scss */
+  /* line 107, ../sass/buttons.scss */
   .btn.btn-rounded .glyphicon {
     line-height: 20px;
   }
