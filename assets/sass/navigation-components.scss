@@ -47,6 +47,39 @@
 	}
 }
 
+/*--logout pages--*/
+
+ul.nav.navbar-nav.navbar-right.logout-pages{
+
+	li{
+		width: auto;
+
+		.spacer.dotted{
+			height: 35px;
+		    border-left: 1px dotted #ddd;
+		    width: 15px;
+		    margin: 17px 0px 17px 15px;
+		}
+
+		a{
+			line-height: 35px;
+			font-family: $font-family-titles;
+		}
+	}
+
+	li.active > a,
+	li > a:hover, 
+	li > a:focus{
+		background: none;
+		border-bottom: 4px solid $brand-danger;
+		text-align: center;
+	}
+
+
+}
+
+
+
 /*--Alert Box--*/
 #alertBox{
 	position: fixed;

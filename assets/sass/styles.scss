@@ -102,6 +102,11 @@ h2.login{
 	left: 30px;
 }
 
+/*--customs background colors--*/
+.bg-white{
+	background: #fff;
+}
+
 .text-muted{
 	color: $border-color-middle;
 }
@@ -332,6 +337,48 @@ ul.messages {
 	background: url(../img/bg-login.jpg);
 	height: 100%;
 	background-size: cover;
+}
+
+
+
+/*--landing page--*/
+
+#start-landing{
+	margin-top: 70px;  
+
+    .container{
+    	border-bottom: 1px dotted #ddd;
+	    .carousel.slide{
+	    	height: 350px;
+	    	padding: 30px 0px;
+
+	    	h1{
+	    		font-family: $font-family-titles;
+	    		font-weight: 100;
+	    		font-size: 28px;
+	    	}
+
+	    	.lead{
+	    		line-height: 24px;
+	    		color: $gray;
+	    	}
+
+	    	.carousel-indicators{
+	    		li{
+	    			background: $border-color-light;
+	    		}
+	    		li.active{
+	    			background: $brand-danger;
+	    			opacity: 0.5;
+	    		}
+	    	}
+
+	    	.carousel-control.left,
+	    	.carousel-control.right{
+	    		background: none;
+	    	}
+	    }
+    }
 }
 
 

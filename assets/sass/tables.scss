@@ -51,6 +51,10 @@
 
 }
 
-.table-responsive{
-	border: none;
+.scroll-container {
+    width: 800px;
+    max-height: 500px;
+    margin: 10px 0px;
+    overflow: hidden;
 }
+

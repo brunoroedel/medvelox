@@ -49,8 +49,34 @@
   text-align: center;
 }
 
+/*--logout pages--*/
+/* line 54, ../sass/navigation-components.scss */
+ul.nav.navbar-nav.navbar-right.logout-pages li {
+  width: auto;
+}
+/* line 57, ../sass/navigation-components.scss */
+ul.nav.navbar-nav.navbar-right.logout-pages li .spacer.dotted {
+  height: 35px;
+  border-left: 1px dotted #ddd;
+  width: 15px;
+  margin: 17px 0px 17px 15px;
+}
+/* line 64, ../sass/navigation-components.scss */
+ul.nav.navbar-nav.navbar-right.logout-pages li a {
+  line-height: 35px;
+  font-family: "Montserrat", sans-serif;
+}
+/* line 70, ../sass/navigation-components.scss */
+ul.nav.navbar-nav.navbar-right.logout-pages li.active > a,
+ul.nav.navbar-nav.navbar-right.logout-pages li > a:hover,
+ul.nav.navbar-nav.navbar-right.logout-pages li > a:focus {
+  background: none;
+  border-bottom: 4px solid #ce181f;
+  text-align: center;
+}
+
 /*--Alert Box--*/
-/* line 51, ../sass/navigation-components.scss */
+/* line 84, ../sass/navigation-components.scss */
 #alertBox {
   position: fixed;
   right: 0px;
@@ -66,7 +92,7 @@
   display: none;
   overflow-y: auto;
 }
-/* line 66, ../sass/navigation-components.scss */
+/* line 99, ../sass/navigation-components.scss */
 #alertBox .title {
   background: #444;
   width: 100%;
@@ -77,12 +103,12 @@
   font-weight: 400;
   text-transform: uppercase;
 }
-/* line 76, ../sass/navigation-components.scss */
+/* line 109, ../sass/navigation-components.scss */
 #alertBox .title h5 {
   color: #fff;
   margin: 5px 0px;
 }
-/* line 82, ../sass/navigation-components.scss */
+/* line 115, ../sass/navigation-components.scss */
 #alertBox #CloseSmallAlerts {
   width: 40px;
   height: 40px;
@@ -99,14 +125,14 @@
   cursor: pointer;
   display: none;
 }
-/* line 98, ../sass/navigation-components.scss */
+/* line 131, ../sass/navigation-components.scss */
 #alertBox #CloseSmallAlerts .icon {
   color: #fff;
   font-size: 16px;
   margin-top: 2px;
   line-height: 40px;
 }
-/* line 105, ../sass/navigation-components.scss */
+/* line 138, ../sass/navigation-components.scss */
 #alertBox #CloseSmallAlerts .label {
   position: absolute;
   left: 40px;
@@ -122,7 +148,7 @@
 }
 
 /*--Vertical Left Menu--*/
-/* line 122, ../sass/navigation-components.scss */
+/* line 155, ../sass/navigation-components.scss */
 nav#vertical-menu-left {
   position: fixed;
   left: 0px;
@@ -136,7 +162,7 @@ nav#vertical-menu-left {
   overflow-y: auto;
   z-index: 2;
 }
-/* line 135, ../sass/navigation-components.scss */
+/* line 168, ../sass/navigation-components.scss */
 nav#vertical-menu-left #openMenu {
   position: absolute;
   right: 20px;
@@ -148,13 +174,13 @@ nav#vertical-menu-left #openMenu {
   cursor: pointer;
   text-align: center;
 }
-/* line 146, ../sass/navigation-components.scss */
+/* line 179, ../sass/navigation-components.scss */
 nav#vertical-menu-left #openMenu .icon {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-top: 2px;
 }
-/* line 152, ../sass/navigation-components.scss */
+/* line 185, ../sass/navigation-components.scss */
 nav#vertical-menu-left #CloseMenuSmall {
   width: 40px;
   height: 40px;
@@ -171,14 +197,14 @@ nav#vertical-menu-left #CloseMenuSmall {
   cursor: pointer;
   display: none;
 }
-/* line 168, ../sass/navigation-components.scss */
+/* line 201, ../sass/navigation-components.scss */
 nav#vertical-menu-left #CloseMenuSmall .icon {
   color: #555;
   font-size: 16px;
   margin-top: 2px;
   line-height: 40px;
 }
-/* line 175, ../sass/navigation-components.scss */
+/* line 208, ../sass/navigation-components.scss */
 nav#vertical-menu-left #CloseMenuSmall .label {
   position: absolute;
   left: 40px;
@@ -192,29 +218,29 @@ nav#vertical-menu-left #CloseMenuSmall .label {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 190, ../sass/navigation-components.scss */
+/* line 223, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul {
   margin: 60px 0px 0px 0px;
   padding: 0px;
   list-style: none;
   display: block;
 }
-/* line 197, ../sass/navigation-components.scss */
+/* line 230, ../sass/navigation-components.scss */
 nav#vertical-menu-left li {
   display: block;
   margin: 0px;
   padding: 0px;
 }
-/* line 203, ../sass/navigation-components.scss */
+/* line 236, ../sass/navigation-components.scss */
 nav#vertical-menu-left li:first-child {
   margin-top: 0px;
 }
-/* line 207, ../sass/navigation-components.scss */
+/* line 240, ../sass/navigation-components.scss */
 nav#vertical-menu-left a {
   display: block;
   position: relative;
 }
-/* line 211, ../sass/navigation-components.scss */
+/* line 244, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .iconMenu {
   width: 40px;
   height: 40px;
@@ -228,13 +254,13 @@ nav#vertical-menu-left a .iconMenu {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
-/* line 224, ../sass/navigation-components.scss */
+/* line 257, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .iconMenu .icon {
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-top: 2px;
 }
-/* line 231, ../sass/navigation-components.scss */
+/* line 264, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .label {
   position: absolute;
   left: 60px;
@@ -248,77 +274,77 @@ nav#vertical-menu-left a .label {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/* line 245, ../sass/navigation-components.scss */
+/* line 278, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .label .badge {
   margin-left: 5px;
   background: #777;
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 251, ../sass/navigation-components.scss */
+/* line 284, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron {
   position: absolute;
   top: 15px;
   right: 20px;
 }
-/* line 257, ../sass/navigation-components.scss */
+/* line 290, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-down,
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left {
   color: #fff;
   font-size: 11px;
 }
-/* line 264, ../sass/navigation-components.scss */
+/* line 297, ../sass/navigation-components.scss */
 nav#vertical-menu-left a:hover,
 nav#vertical-menu-left a:active {
   text-decoration: none;
 }
-/* line 269, ../sass/navigation-components.scss */
+/* line 302, ../sass/navigation-components.scss */
 nav#vertical-menu-left a:hover .iconMenu,
 nav#vertical-menu-left a:active .iconMenu {
   background: #BD070E;
 }
-/* line 274, ../sass/navigation-components.scss */
+/* line 307, ../sass/navigation-components.scss */
 nav#vertical-menu-left a:hover .label,
 nav#vertical-menu-left a:active .label {
   color: #E4C0C0;
 }
-/* line 280, ../sass/navigation-components.scss */
+/* line 313, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-left,
 nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-down {
   display: none;
 }
-/* line 285, ../sass/navigation-components.scss */
+/* line 318, ../sass/navigation-components.scss */
 nav#vertical-menu-left a .chevron .glyphicon.glyphicon-chevron-down,
 nav#vertical-menu-left a.collapsed .chevron .glyphicon.glyphicon-chevron-left {
   display: block;
 }
-/* line 290, ../sass/navigation-components.scss */
+/* line 323, ../sass/navigation-components.scss */
 nav#vertical-menu-left li.active a .iconMenu {
   background: #ce181f;
 }
-/* line 294, ../sass/navigation-components.scss */
+/* line 327, ../sass/navigation-components.scss */
 nav#vertical-menu-left li.active a .iconMenu .glyphicon {
   color: white;
 }
-/* line 298, ../sass/navigation-components.scss */
+/* line 331, ../sass/navigation-components.scss */
 nav#vertical-menu-left li.active a:hover .iconMenu,
 nav#vertical-menu-left li.active a:active .iconMenu {
   background: #BD070E;
 }
-/* line 303, ../sass/navigation-components.scss */
+/* line 336, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel {
   background: #444;
   margin: 10px 0px 0px;
   padding: 5px 20px 15px;
 }
-/* line 308, ../sass/navigation-components.scss */
+/* line 341, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li:first-child a {
   margin-top: 0px;
 }
-/* line 312, ../sass/navigation-components.scss */
+/* line 345, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel a {
   display: block;
 }
-/* line 315, ../sass/navigation-components.scss */
+/* line 348, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel a .iconMenu {
   background: #555;
   margin: 10px 5px 0px 5px;
@@ -334,33 +360,33 @@ nav#vertical-menu-left ul.sublevel a .iconMenu {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
-/* line 331, ../sass/navigation-components.scss */
+/* line 364, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel a .label {
   left: 40px;
   top: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 338, ../sass/navigation-components.scss */
+/* line 371, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li a:hover .iconMenu {
   background: #ce181f;
 }
-/* line 343, ../sass/navigation-components.scss */
+/* line 376, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li.active a .iconMenu {
   background: #ce181f;
 }
-/* line 346, ../sass/navigation-components.scss */
+/* line 379, ../sass/navigation-components.scss */
 nav#vertical-menu-left ul.sublevel li.active a .label {
   color: #fff;
 }
 
-/* line 353, ../sass/navigation-components.scss */
+/* line 386, ../sass/navigation-components.scss */
 body.menu-open #openMenu {
   transition: background-color 2s ease;
   background-color: #444;
 }
 
 /*--Vertical left Menu for small screens--*/
-/* line 360, ../sass/navigation-components.scss */
+/* line 393, ../sass/navigation-components.scss */
 #OpenMenuSmall {
   position: absolute;
   left: 10px;
@@ -370,12 +396,12 @@ body.menu-open #openMenu {
   padding-top: 5px;
   display: none;
 }
-/* line 369, ../sass/navigation-components.scss */
+/* line 402, ../sass/navigation-components.scss */
 #OpenMenuSmall .icon {
   color: #555;
 }
 
-/* line 373, ../sass/navigation-components.scss */
+/* line 406, ../sass/navigation-components.scss */
 #OpenSmallAlerts {
   position: absolute;
   right: 10px;
@@ -385,20 +411,20 @@ body.menu-open #openMenu {
   padding-top: 5px;
   display: none;
 }
-/* line 382, ../sass/navigation-components.scss */
+/* line 415, ../sass/navigation-components.scss */
 #OpenSmallAlerts .icon {
   color: #555;
 }
 
 /*--Breadcrumb--*/
-/* line 390, ../sass/navigation-components.scss */
+/* line 423, ../sass/navigation-components.scss */
 .breadcrumb {
   background: none;
   margin: 0px 0px 0px;
   padding: 0px;
 }
 
-/* line 396, ../sass/navigation-components.scss */
+/* line 429, ../sass/navigation-components.scss */
 .breadcrumb > li,
 .breadcrumb > li.active {
   margin: 0px 10px 0px 0px;
@@ -409,17 +435,17 @@ body.menu-open #openMenu {
   font-weight: 100;
 }
 
-/* line 406, ../sass/navigation-components.scss */
+/* line 439, ../sass/navigation-components.scss */
 .breadcrumb > li + li:before {
   content: none;
 }
 
-/* line 411, ../sass/navigation-components.scss */
+/* line 444, ../sass/navigation-components.scss */
 .breadcrumb > li:last-child .glyphicon {
   display: none;
 }
 
-/* line 415, ../sass/navigation-components.scss */
+/* line 448, ../sass/navigation-components.scss */
 .breadcrumb > li a .glyphicon,
 .breadcrumb > li .glyphicon {
   color: #666666;
@@ -427,20 +453,20 @@ body.menu-open #openMenu {
 }
 
 @media (max-width: 767px) {
-  /* line 425, ../sass/navigation-components.scss */
+  /* line 458, ../sass/navigation-components.scss */
   .navbar-collapse.collapse.in {
     height: 100%;
   }
 
-  /* line 429, ../sass/navigation-components.scss */
+  /* line 462, ../sass/navigation-components.scss */
   .navbar {
     min-height: 50px;
   }
-  /* line 432, ../sass/navigation-components.scss */
+  /* line 465, ../sass/navigation-components.scss */
   .navbar .container-fluid {
     padding: 0px 20px;
   }
-  /* line 436, ../sass/navigation-components.scss */
+  /* line 469, ../sass/navigation-components.scss */
   .navbar .navbar-brand {
     color: #777;
     float: none;
@@ -449,74 +475,74 @@ body.menu-open #openMenu {
     width: 136px;
     text-align: center;
   }
-  /* line 445, ../sass/navigation-components.scss */
+  /* line 478, ../sass/navigation-components.scss */
   .navbar .navbar-brand img {
     max-width: 100px;
   }
-  /* line 449, ../sass/navigation-components.scss */
+  /* line 482, ../sass/navigation-components.scss */
   .navbar li.searchBox {
     width: 100%;
     box-sizing: border-box;
     padding: 0px 10px;
   }
-  /* line 454, ../sass/navigation-components.scss */
+  /* line 487, ../sass/navigation-components.scss */
   .navbar li.searchBox .input {
     width: 100%;
     max-width: none;
     vertical-align: top;
   }
-  /* line 461, ../sass/navigation-components.scss */
+  /* line 494, ../sass/navigation-components.scss */
   .navbar li {
     display: none;
   }
-  /* line 465, ../sass/navigation-components.scss */
+  /* line 498, ../sass/navigation-components.scss */
   .navbar li.searchBox {
     display: block;
   }
 
-  /* line 470, ../sass/navigation-components.scss */
+  /* line 503, ../sass/navigation-components.scss */
   nav#vertical-menu-left {
     display: none;
     z-index: 1050;
     width: 100%;
     padding: 0px;
   }
-  /* line 476, ../sass/navigation-components.scss */
+  /* line 509, ../sass/navigation-components.scss */
   nav#vertical-menu-left #openMenu {
     display: none;
   }
-  /* line 479, ../sass/navigation-components.scss */
+  /* line 512, ../sass/navigation-components.scss */
   nav#vertical-menu-left #CloseMenuSmall {
     display: block;
   }
-  /* line 483, ../sass/navigation-components.scss */
+  /* line 516, ../sass/navigation-components.scss */
   nav#vertical-menu-left ul {
     margin: 20px 0px 0px 0px;
   }
 
-  /* line 488, ../sass/navigation-components.scss */
+  /* line 521, ../sass/navigation-components.scss */
   #alertBox {
     display: none;
     z-index: 1050;
     width: 100%;
     padding: 0px;
   }
-  /* line 494, ../sass/navigation-components.scss */
+  /* line 527, ../sass/navigation-components.scss */
   #alertBox .title {
     display: none;
   }
-  /* line 498, ../sass/navigation-components.scss */
+  /* line 531, ../sass/navigation-components.scss */
   #alertBox #CloseSmallAlerts {
     display: block;
   }
 
-  /* line 504, ../sass/navigation-components.scss */
+  /* line 537, ../sass/navigation-components.scss */
   nav#vertical-menu-left.animated,
   #alertBox.animated {
     display: block;
   }
 
-  /* line 509, ../sass/navigation-components.scss */
+  /* line 542, ../sass/navigation-components.scss */
   .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -556,7 +582,7 @@ body.menu-open #openMenu {
       transform: translateX(0);
     }
   }
-  /* line 549, ../sass/navigation-components.scss */
+  /* line 582, ../sass/navigation-components.scss */
   .bounceInLeft {
     -webkit-animation-name: bounceInLeft;
     animation-name: bounceInLeft;
@@ -588,7 +614,7 @@ body.menu-open #openMenu {
       transform: translateX(-2000px);
     }
   }
-  /* line 580, ../sass/navigation-components.scss */
+  /* line 613, ../sass/navigation-components.scss */
   .bounceOutLeft {
     -webkit-animation-name: bounceOutLeft;
     animation-name: bounceOutLeft;
@@ -626,7 +652,7 @@ body.menu-open #openMenu {
       transform: translateX(0);
     }
   }
-  /* line 619, ../sass/navigation-components.scss */
+  /* line 652, ../sass/navigation-components.scss */
   .bounceInRight {
     -webkit-animation-name: bounceInRight;
     animation-name: bounceInRight;
@@ -658,25 +684,25 @@ body.menu-open #openMenu {
       transform: translateX(2000px);
     }
   }
-  /* line 650, ../sass/navigation-components.scss */
+  /* line 683, ../sass/navigation-components.scss */
   .bounceOutRight {
     -webkit-animation-name: bounceOutRight;
     animation-name: bounceOutRight;
   }
 
-  /* line 655, ../sass/navigation-components.scss */
+  /* line 688, ../sass/navigation-components.scss */
   #OpenMenuSmall,
   #OpenSmallAlerts {
     display: block;
   }
 
-  /* line 660, ../sass/navigation-components.scss */
+  /* line 693, ../sass/navigation-components.scss */
   .breadcrumb > li,
   .breadcrumb > li.active {
     font-size: 0.7em;
   }
 
-  /* line 664, ../sass/navigation-components.scss */
+  /* line 697, ../sass/navigation-components.scss */
   .breadcrumb > li, .breadcrumb > li.active {
     margin: 0px 5px 0px 0px;
   }

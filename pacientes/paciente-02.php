@@ -8,7 +8,6 @@
 <html lang="pt-BR">
   <?php require '../shared/head.php'; ?>
   <body class="menu-open">
-    <img src="..assets/img/download.png" id="loader">
     <?php require '../shared/navibar-top.php'; ?>
     <?php require '../shared/menu-left.php'; ?>
     <?php require '../shared/task-box.php'; ?>
@@ -126,6 +125,9 @@
                 </ul>
               </div>
               <!--/ dia 01-->
+
+
+
             </div>
           </div>
           <!--/evolução-->
@@ -416,6 +418,7 @@
 
           <!-- exames-->
           <div class="tab-pane fade" id="exames">
+
             <!--lista-exames-->
             <div id="listaExames">
               <div class="col-md-3 col-lg-3">
@@ -434,11 +437,713 @@
               </div>
               <div class="spacer md"></div>
 
-              <div class="col-lg-12">
-                <div id="example1" class="scroll-container"></div>
-              </div>
+                <div class="table-fixed">
+                  <table class="table table-bordered table-hover">
+                      <thead>
+                        <tr class="info">
+                          <td class="col-lg-3"><b>Exames</b></td>
+                        </tr>
+                      <thead>
+                      <tbody>
+                        <tr class="info">
+                          <td class="col-lg-3"><b>Exame 01</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 02</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 03</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 04</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 05</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 06</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 07</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 08</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 09</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 10</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 11</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 12</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 13</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 14</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 15</b></td>
+                        </tr>
+                        <tr class="info">
+                          <td class="col-lg-2"><b>Exame 16</b></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                </div>
+
+                <div class="table-scrolled">
+                  <table class="scrollable">
+                    <thead>
+                        <tr>
+                            <th>Full name</th>
+                            <th>CCY</th>
+                            <th>Last</th>
+                            <th>+/-</th>
+                            <th>%</th>
+                            <th>Bid</th>
+                            <th>Ask</th>
+                            <th>Volume</th>
+                            <th>Turnover</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>A.P. Møller...</td>
+                            <td>DKK</td>
+                            <td>33,220.00</td>
+                            <td>760</td>
+                            <td>2.34</td>
+                            <td>33,140.00</td>
+                            <td>33,220.00</td>
+                            <td>594</td>
+                            <td>19,791,910</td>
+                        </tr>
+                        <tr>
+                            <td>A.P. Møller...</td>
+                            <td>DKK</td>
+                            <td>34,620.00</td>
+                            <td>640</td>
+                            <td>1.88</td>
+                            <td>34,620.00</td>
+                            <td>34,700.00</td>
+                            <td>9,954</td>
+                            <td>346,530,246</td>
+                        </tr>
+                        <tr>
+                            <td>Carlsberg A</td>
+                            <td>DKK</td>
+                            <td>380</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>371</td>
+                            <td>391.5</td>
+                            <td>6</td>
+                            <td>2,280</td>
+                        </tr>
+                        <tr>
+                            <td>Carlsberg B</td>
+                            <td>DKK</td>
+                            <td>364.4</td>
+                            <td>8.6</td>
+                            <td>2.42</td>
+                            <td>363</td>
+                            <td>364.4</td>
+                            <td>636,267</td>
+                            <td>228,530,601</td>
+                        </tr>
+                        <tr>
+                            <td>Chr. Hansen...</td>
+                            <td>DKK</td>
+                            <td>114.5</td>
+                            <td>-1.6</td>
+                            <td>-1.38</td>
+                            <td>114.2</td>
+                            <td>114.5</td>
+                            <td>141,822</td>
+                            <td>16,311,454</td>
+                        </tr>
+                        <tr>
+                            <td>Coloplast B</td>
+                            <td>DKK</td>
+                            <td>809.5</td>
+                            <td>11</td>
+                            <td>1.38</td>
+                            <td>809</td>
+                            <td>809.5</td>
+                            <td>85,840</td>
+                            <td>69,363,301</td>
+                        </tr>
+                        <tr>
+                            <td>D/S Norden</td>
+                            <td>DKK</td>
+                            <td>155</td>
+                            <td>-1.5</td>
+                            <td>-0.96</td>
+                            <td>155</td>
+                            <td>155.1</td>
+                            <td>51,681</td>
+                            <td>8,037,225</td>
+                        </tr>
+                        <tr>
+                            <td>Danske Bank</td>
+                            <td>DKK</td>
+                            <td>69.05</td>
+                            <td>2.55</td>
+                            <td>3.83</td>
+                            <td>69.05</td>
+                            <td>69.2</td>
+                            <td>1,723,719</td>
+                            <td>115,348,068</td>
+                        </tr>
+                        <tr>
+                            <td>DSV</td>
+                            <td>DKK</td>
+                            <td>105.4</td>
+                            <td>0.2</td>
+                            <td>0.19</td>
+                            <td>105.2</td>
+                            <td>105.4</td>
+                            <td>674,873</td>
+                            <td>71,575,035</td>
+                        </tr>
+                        <tr>
+                            <td>FLSmidth &amp; Co.</td>
+                            <td>DKK</td>
+                            <td>295.8</td>
+                            <td>-1.8</td>
+                            <td>-0.6</td>
+                            <td>295.1</td>
+                            <td>295.8</td>
+                            <td>341,263</td>
+                            <td>100,301,032</td>
+                        </tr>
+                        <tr>
+                            <td>G4S plc</td>
+                            <td>DKK</td>
+                            <td>22.53</td>
+                            <td>0.05</td>
+                            <td>0.22</td>
+                            <td>22.53</td>
+                            <td>22.57</td>
+                            <td>190,920</td>
+                            <td>4,338,150</td>
+                        </tr>
+                        <tr>
+                            <td>Jyske Bank</td>
+                            <td>DKK</td>
+                            <td>144.2</td>
+                            <td>1.4</td>
+                            <td>0.98</td>
+                            <td>142.8</td>
+                            <td>144.2</td>
+                            <td>78,163</td>
+                            <td>11,104,874</td>
+                        </tr>
+                        <tr>
+                            <td>Københavns ...</td>
+                            <td>DKK</td>
+                            <td>1,580.00</td>
+                            <td>-12</td>
+                            <td>-0.75</td>
+                            <td>1,590.00</td>
+                            <td>1,620.00</td>
+                            <td>82</td>
+                            <td>131,110</td>
+                        </tr>
+                        <tr>
+                            <td>Lundbeck</td>
+                            <td>DKK</td>
+                            <td>103.4</td>
+                            <td>-2.5</td>
+                            <td>-2.36</td>
+                            <td>103.4</td>
+                            <td>103.8</td>
+                            <td>157,162</td>
+                            <td>16,462,282</td>
+                        </tr>
+                        <tr>
+                            <td>Nordea Bank</td>
+                            <td>DKK</td>
+                            <td>43.22</td>
+                            <td>-0.06</td>
+                            <td>-0.14</td>
+                            <td>43.22</td>
+                            <td>43.25</td>
+                            <td>167,520</td>
+                            <td>7,310,143</td>
+                        </tr>
+                        <tr>
+                            <td>Novo Nordisk B</td>
+                            <td>DKK</td>
+                            <td>552.5</td>
+                            <td>-3.5</td>
+                            <td>-0.63</td>
+                            <td>550.5</td>
+                            <td>552.5</td>
+                            <td>843,533</td>
+                            <td>463,962,375</td>
+                        </tr>
+                        <tr>
+                            <td>Novozymes B</td>
+                            <td>DKK</td>
+                            <td>805.5</td>
+                            <td>5.5</td>
+                            <td>0.69</td>
+                            <td>805</td>
+                            <td>805.5</td>
+                            <td>152,188</td>
+                            <td>121,746,199</td>
+                        </tr>
+                        <tr>
+                            <td>Pandora</td>
+                            <td>DKK</td>
+                            <td>39.04</td>
+                            <td>0.94</td>
+                            <td>2.47</td>
+                            <td>38.8</td>
+                            <td>39.04</td>
+                            <td>350,965</td>
+                            <td>13,611,838</td>
+                        </tr>
+                        <tr>
+                            <td>Rockwool In...</td>
+                            <td>DKK</td>
+                            <td>492</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>482</td>
+                            <td>492</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Rockwool In...</td>
+                            <td>DKK</td>
+                            <td>468</td>
+                            <td>12</td>
+                            <td>2.63</td>
+                            <td>465.2</td>
+                            <td>468</td>
+                            <td>9,885</td>
+                            <td>4,623,850</td>
+                        </tr>
+                        <tr>
+                            <td>Sydbank</td>
+                            <td>DKK</td>
+                            <td>95</td>
+                            <td>0.05</td>
+                            <td>0.05</td>
+                            <td>94.7</td>
+                            <td>95</td>
+                            <td>103,438</td>
+                            <td>9,802,899</td>
+                        </tr>
+                        <tr>
+                            <td>TDC</td>
+                            <td>DKK</td>
+                            <td>43.6</td>
+                            <td>0.13</td>
+                            <td>0.3</td>
+                            <td>43.5</td>
+                            <td>43.6</td>
+                            <td>845,110</td>
+                            <td>36,785,339</td>
+                        </tr>
+                        <tr>
+                            <td>Topdanmark</td>
+                            <td>DKK</td>
+                            <td>854</td>
+                            <td>13.5</td>
+                            <td>1.61</td>
+                            <td>854</td>
+                            <td>855</td>
+                            <td>38,679</td>
+                            <td>32,737,678</td>
+                        </tr>
+                        <tr>
+                            <td>Tryg</td>
+                            <td>DKK</td>
+                            <td>290.4</td>
+                            <td>0.3</td>
+                            <td>0.1</td>
+                            <td>290</td>
+                            <td>290.4</td>
+                            <td>94,587</td>
+                            <td>27,537,247</td>
+                        </tr>
+                        <tr>
+                            <td>Vestas Wind...</td>
+                            <td>DKK</td>
+                            <td>90.15</td>
+                            <td>-4.2</td>
+                            <td>-4.45</td>
+                            <td>90.1</td>
+                            <td>90.15</td>
+                            <td>1,317,313</td>
+                            <td>121,064,314</td>
+                        </tr>
+                        <tr>
+                            <td>William Dem...</td>
+                            <td>DKK</td>
+                            <td>417.6</td>
+                            <td>0.1</td>
+                            <td>0.02</td>
+                            <td>417</td>
+                            <td>417.6</td>
+                            <td>64,242</td>
+                            <td>26,859,554</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
             </div>
             <!--/lista exames-->
+
+            <!--novo exame-->
+            <div id="novoExame" class="hidden">
+              <div class="col-lg-3">
+                <span class="input input--nariko block">
+                  <input class="input__field input__field--nariko" type="text" id="" value="10/05/15">
+                  <label class="input__label input__label--nariko">
+                    <span class="input__label-content input__label-content--nariko" for="">
+                      Data de Referência
+                    </span>
+                  </label>
+                  <span class="icon">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </span>
+              </div>
+              <div class="spacer"></div>
+              <div class="col-lg-12">
+                <hr>
+                <!--exame 1-->
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title text-uppercase">
+                        <a data-toggle="collapse" href="#exame-01">
+                          Hematologia
+                          <div class="chevron in">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </div>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="exame-01" class="panel-collapse collapse">
+                      <div class="panel-body bleed">
+                        <div class="row">
+                          <div class="spacer sm"></div>
+                          <!--linha 1-->
+                          <div class="col-lg-2">
+                            <label>TAP</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 1-->
+                          <!--linha 2-->
+                          <div class="col-lg-2">
+                            <label>Bilirrubina Indireta</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 2-->
+                          <!--linha 3-->
+                          <div class="col-lg-2">
+                            <label>PPT</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 3-->
+                          <!--linha 4-->
+                          <div class="col-lg-2">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="tipo">
+                            </div>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                            <button class="btn btn-success btn-rounded">
+                              <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                          </div>
+                          <!--/ linha 4-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>     
+                </div>
+                <!--/ exame 1-->
+                <!--exame 2-->
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title text-uppercase">
+                        <a data-toggle="collapse" href="#exame-02">
+                          Coagulograma
+                          <div class="chevron in">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </div>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="exame-02" class="panel-collapse collapse in">
+                      <div class="panel-body bleed">
+                        <div class="row">
+                          <div class="spacer sm"></div>
+                          <!--linha 1-->
+                          <div class="col-lg-2">
+                            <label>TAP</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 1-->
+                          <!--linha 2-->
+                          <div class="col-lg-2">
+                            <label>Bilirrubina Indireta</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 2-->
+                          <!--linha 3-->
+                          <div class="col-lg-2">
+                            <label>PPT</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 3-->
+                          <!--linha 4-->
+                          <div class="col-lg-2">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="tipo">
+                            </div>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                            <button class="btn btn-success btn-rounded">
+                              <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                          </div>
+                          <!--/ linha 4-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>     
+                </div>
+                <!--/ exame 2-->
+                <!--exame 3-->
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title text-uppercase">
+                        <a data-toggle="collapse" href="#exame-03">
+                          Bioquímica
+                          <div class="chevron in">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </div>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="exame-03" class="panel-collapse collapse">
+                      <div class="panel-body bleed">
+                        <div class="row">
+                          <div class="spacer sm"></div>
+                          <!--linha 1-->
+                          <div class="col-lg-2">
+                            <label>TAP</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 1-->
+                          <!--linha 2-->
+                          <div class="col-lg-2">
+                            <label>Bilirrubina Indireta</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 2-->
+                          <!--linha 3-->
+                          <div class="col-lg-2">
+                            <label>PPT</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 3-->
+                          <!--linha 4-->
+                          <div class="col-lg-2">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="tipo">
+                            </div>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                            <button class="btn btn-success btn-rounded">
+                              <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                          </div>
+                          <!--/ linha 4-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>     
+                </div>
+                <!--/ exame 3-->
+                <!--exame 4-->
+                <div class="panel-group">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title text-uppercase">
+                        <a data-toggle="collapse" href="#exame-04">
+                          Outros
+                          <div class="chevron in">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </div>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="exame-04" class="panel-collapse collapse">
+                      <div class="panel-body bleed">
+                        <div class="row">
+                          <div class="spacer sm"></div>
+                          <!--linha 1-->
+                          <div class="col-lg-2">
+                            <label>TAP</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 1-->
+                          <!--linha 2-->
+                          <div class="col-lg-2">
+                            <label>Bilirrubina Indireta</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 2-->
+                          <!--linha 3-->
+                          <div class="col-lg-2">
+                            <label>PPT</label>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                          </div>
+                          <!--/ linha 3-->
+                          <!--linha 4-->
+                          <div class="col-lg-2">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="tipo">
+                            </div>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="" placeholder="valor">
+                            </div>
+                          </div>
+                          <div class="col-lg-1">
+                            <button class="btn btn-success btn-rounded">
+                              <span class="glyphicon glyphicon-ok"></span>
+                            </button>
+                          </div>
+                          <!--/ linha 4-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>     
+                </div>
+                <!--/ exame 4-->
+              </div>
+              <div class="spacer xl"></div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+                <button class="btn btn-success btn-block exames-control">Salvar</button>
+              </div>
+              <div class="col-xs-6 col-sm-6 col-md-3 col-lg-2">
+                <button class="btn btn-block">Cancelar</button>
+              </div>
+            </div>
+            <!--/novo exame-->
           </div>
           <!--/exames-->
 
@@ -794,47 +1499,8 @@
     </div><!--/ pageContent-->
 
     <?php require '../shared/javascript.php'; ?>
-  <script>
-    var data = [
-      ["Dias", "01/02/2015", "02/02/2015", "03/02/2015", "04/02/2015", "05/02/2015", "06/02/2015", "07/02/2015", "08/02/2015"],
-      ["Exame 01", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 02", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 03", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 04", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 05", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 06", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 07", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 08", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 09", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 10", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 11", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 12", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 13", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 14", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 15", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 16", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 17", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 18", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 19", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 20", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 21", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 22", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 23", 1, 2, 3, 4, 5, 6, 7, 8],
-      ["Exame 24", 1, 2, 3, 4, 5, 6, 7, 8]
-    ];
-
-    var container = document.getElementById('example1');
-    var hot = new Handsontable(container, {
-      data: data,
-      minSpareRows: false,
-      rowHeaders: true,
-      colHeaders: true,
-      stretchH: 'all',
-      contextMenu: true,
-      fixedRowsTop: 1,
-      fixedColumnsLeft: 1,
-      colWidths: [200, 90, 90, 90, 90, 90, 90, 90],
-    });
-  </script>
+    <script>
+      $('#exames01').fixedHeaderTable({ altClass: 'odd', footer: true, fixedColumns: 1 });
+    </script>
   </body>
 </html>

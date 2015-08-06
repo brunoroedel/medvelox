@@ -1,7 +1,8 @@
 <?php 
    //$path = $_SERVER['DOCUMENT_ROOT'];
-   $css = "http://localhost/medvelox/assets/stylesheets/styles.css";
+   $css = "http://localhost/medvelox/assets/stylesheets/";
    $img = "http://localhost/medvelox/assets/img/";
+   $js = "http://localhost/medvelox/assets/javascripts/";
 ?>
 
 
@@ -12,9 +13,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>MedVelox</title>
 
-    <!-- Bootstrap -->
-    <link href="<?php echo $css; ?>" rel="stylesheet" type="text/css" />
+    
 
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--scrollable tables-->
+    <script src="http://handsontable.com/dist/handsontable.full.js"></script>
+    <link rel="stylesheet" media="screen" href="http://handsontable.com/dist/handsontable.full.css">
+    <link rel="stylesheet" media="screen" href="<?php echo $css; ?>handsontable.bootstrap.css">
+
+    <!-- Bootstrap -->
+    <link href="<?php echo $css; ?>styles.css" rel="stylesheet" type="text/css" />
+    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesnt work if you view the page via file:// -->
     <!--[if lt IE 9]>
