@@ -12,17 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>MedVelox</title>
-
-    
-
-    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <!--scrollable tables-->
-    <script src="http://handsontable.com/dist/handsontable.full.js"></script>
-    <link rel="stylesheet" media="screen" href="http://handsontable.com/dist/handsontable.full.css">
-    <link rel="stylesheet" media="screen" href="<?php echo $css; ?>handsontable.bootstrap.css">
-
     <!-- Bootstrap -->
     <link href="<?php echo $css; ?>styles.css" rel="stylesheet" type="text/css" />
     

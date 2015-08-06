@@ -47,9 +47,35 @@
 }
 
 /* line 54, ../sass/tables.scss */
-.scroll-container {
-  width: 800px;
-  max-height: 500px;
-  margin: 10px 0px;
-  overflow: hidden;
+.table-container {
+  border: 1px solid #ddd;
+}
+
+/* line 58, ../sass/tables.scss */
+.table-container table thead tr:first-child {
+  background: #5bc0de;
+}
+
+/* line 62, ../sass/tables.scss */
+.table-container table thead tr:first-child th {
+  background-image: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+/* line 68, ../sass/tables.scss */
+.table-container table thead tr:first-child th:first-child {
+  text-align: left;
+}
+
+/* line 72, ../sass/tables.scss */
+.table-container table tr td {
+  text-align: center;
+}
+
+/* line 76, ../sass/tables.scss */
+.table-container table tr td:first-child {
+  background: #f9f9f9;
+  border-right: 1px solid #ddd;
+  text-align: left;
 }

@@ -51,10 +51,32 @@
 
 }
 
-.scroll-container {
-    width: 800px;
-    max-height: 500px;
-    margin: 10px 0px;
-    overflow: hidden;
+.table-container {
+    border: 1px solid #ddd;
 }
+
+.table-container table thead tr:first-child{
+	background: $brand-info;
+}
+
+.table-container table thead tr:first-child th{
+	background-image: none;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	text-align: center;
+}
+
+.table-container table thead tr:first-child th:first-child{
+	text-align: left;
+}
+
+.table-container table tr td{
+	text-align: center;
+}
+
+.table-container table tr td:first-child{
+	background: $gray-lighter;
+	border-right: 1px solid $border-color-light;
+	text-align: left;
+}
+
 

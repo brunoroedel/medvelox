@@ -22,11 +22,6 @@ $( document ).ready(function() {
 		interval: false,
 		cycle: true,
 	});
-
-	/*$( window ).resize(function() {
-		var tamanhoColuna = $('.scroll-container').parent().width();
-		$('.scroll-container').width(tamanhoColuna);
-	});*/
 });
 
 
